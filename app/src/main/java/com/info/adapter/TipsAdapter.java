@@ -553,19 +553,19 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             //set value to label
             if (Common.checkStringIsDouble(sectorNews.getAvg10days())) {
-                viewHolder.txtTenDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg10days())));
+                viewHolder.txtTenDaysValue.append("₹" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg10days())));
             } else {
                 viewHolder.txtTenDaysValue.setText(context.getResources().getString(R.string.dashDash));
                 viewHolder.txtTenDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
             }
             if (Common.checkStringIsDouble(sectorNews.getAvg50days())) {
-                viewHolder.txtFiftyDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg50days())));
+                viewHolder.txtFiftyDaysValue.append("₹" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg50days())));
             } else {
                 viewHolder.txtFiftyDaysValue.setText(context.getResources().getString(R.string.dashDash));
                 viewHolder.txtFiftyDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
             }
             if (Common.checkStringIsDouble(sectorNews.getAvg200days())) {
-                viewHolder.txtTwoHundredDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg200days())));
+                viewHolder.txtTwoHundredDaysValue.append("₹" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg200days())));
             } else {
                 viewHolder.txtTwoHundredDaysValue.setText(context.getResources().getString(R.string.dashDash));
                 viewHolder.txtTwoHundredDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
@@ -627,7 +627,7 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             double twoHundredDayVal = Common.getDounbleValuefromStringforPredectionValue(sectorNews.getAvg200days());
             AMDTipsViewHolderHorizontal viewHolder = (AMDTipsViewHolderHorizontal) tipsViewHolder;
             viewHolder.txtStockName.setText(sectorNews.getStockName());
-            viewHolder.txtStockCompanyName.setVisibility(View.VISIBLE);
+            viewHolder.txtStockCompanyName.setVisibility(View.GONE);
             DataRepository.getStockPrice(context, sectorNews.getStockName(), new PriceCallback<StockPrice>() {
                 @Override
                 public void onPriceUpdate(StockPrice data) {

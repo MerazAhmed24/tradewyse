@@ -10,24 +10,10 @@
     android:padding="@dimen/common_paddng_3dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_190sdp"
+        android:minWidth="@dimen/_179sdp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/txtDateTime"
-            android:layout_width="wrap_content"
-            android:minWidth="@dimen/_179sdp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="@dimen/common_paddng_5dp"
-            android:gravity="right"
-            android:singleLine="true"
-            android:text="Fri,12 Jul 2019 20:08:02 GMT "
-            android:textColor="@color/text_color_light_grey"
-            android:textSize="@dimen/text_size_small"
-            android:visibility="visible" />
-
 
         <RelativeLayout
             android:id="@+id/rootLayoutRoundedBorder"
@@ -44,7 +30,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/common_paddng_3dp"
-
                 android:gravity="center_vertical"
                 android:paddingRight="@dimen/common_paddng_5dp">
 
@@ -72,7 +57,7 @@
                     <LinearLayout
                         android:id="@+id/layout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_toRightOf="@+id/imgProfile"
                         android:gravity="center_vertical"
@@ -85,9 +70,21 @@
                             android:ems="11"
                             android:maxLines="1"
                             android:text="@string/TradeWyseAI"
-                            android:textColor="@color/text_color_username"
+                            android:textColor="@color/black"
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtName"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="Fri,12 Jul 2019 20:08:02 GMT "
+                            android:textColor="@color/text_color_light_grey"
+                            android:textSize="@dimen/text_size_small"
+                            android:visibility="visible" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo"
@@ -143,25 +140,62 @@
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/common_paddng_2dp">
 
-                    <TextView
-                        android:id="@+id/txtStockName"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/common_paddng_3dp"
-                        android:paddingRight="@dimen/common_paddng_5dp"
-                        android:text="@string/dummy_stock_name"
-                        android:textColor="@color/text_color_black"
-                        android:textSize="@dimen/text_size_large"
-                        android:textStyle="bold" />
+                        android:weightSum="3"
+                        android:paddingVertical="@dimen/_3sdp">
+
+                        <TextView
+                            android:id="@+id/txtStockName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/common_paddng_5dp"
+                            android:text="@string/dummy_stock_name"
+                            android:layout_weight="1"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_large"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtStatusBuySellAvoid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/common_paddng_3dp"
+                            android:layout_toRightOf="@id/txtStockName"
+                            android:background="@color/text_color_black"
+                            android:maxWidth="55dp"
+                            android:layout_weight="0.8"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:singleLine="true"
+                            android:text="@string/buy"
+                            android:textAlignment="center"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="₹40.00"
+                            android:paddingStart="@dimen/_15ssp"
+                            android:layout_weight="1.2"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/_12ssp"  />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/secondRowLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/common_paddng_3dp"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <TextView
                             android:id="@+id/txtNews"
@@ -190,6 +224,114 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/rootPricelayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                        android:gravity="left"
+                        android:layout_marginBottom="@dimen/common_paddng_1dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/tenDayLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/common_paddng_3dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtTenDays11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:gravity="center"
+                                android:text="@string/noOfDays"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/txtTenDaysValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:gravity="center"
+                                android:text="@string/tenDayValueApprox"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_black"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fiftyDayLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/common_paddng_3dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtFiftyDays"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:gravity="center"
+                                android:text="50 Day"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/txtFiftyDaysValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/common_paddng_10dp"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:gravity="center"
+                                android:text="@string/tenDayValueApprox"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_black"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/twoHundredDayLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/common_paddng_3dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtTwoHundredDays"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtFiftyDaysValue"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:gravity="center"
+                                android:text="200 Day"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/txtTwoHundredDaysValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtTwoHundredDays"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/common_paddng_10dp"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:layout_marginRight="@dimen/common_paddng_5dp"
+                                android:gravity="center"
+                                android:text="@string/tenDayValueApprox"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_black"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
                     <RelativeLayout
                         android:id="@+id/thirdRow"
                         android:layout_width="wrap_content"
@@ -199,6 +341,7 @@
                         android:layout_marginTop="@dimen/common_paddng_3dp"
                         android:layout_marginBottom="@dimen/common_paddng_10dp"
                         android:gravity="left"
+                        android:visibility="gone"
                         android:orientation="horizontal">
 
                         <TextView
@@ -206,6 +349,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="2dp"
                             android:gravity="center_vertical|left"
                             android:paddingTop="@dimen/common_paddng_1dp"
                             android:paddingRight="@dimen/common_paddng_5dp"
@@ -262,26 +406,9 @@
                             android:textStyle="bold" />
 
                     </RelativeLayout>
+
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/txtStatusBuySellAvoid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="@dimen/common_paddng_5dp"
-                    android:layout_marginRight="@dimen/common_paddng_3dp"
-                    android:background="@color/text_color_black"
-                    android:ems="3"
-                    android:gravity="center"
-                    android:maxWidth="55dp"
-                    android:paddingLeft="@dimen/common_paddng_5dp"
-                    android:paddingRight="@dimen/common_paddng_5dp"
-                    android:singleLine="true"
-                    android:text="@string/buy"
-                    android:textColor="@color/text_color_white"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textStyle="bold" />
 
             </RelativeLayout>
 

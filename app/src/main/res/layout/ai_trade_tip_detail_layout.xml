@@ -173,7 +173,6 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentLeft="true"
                                     android:layout_marginBottom="@dimen/common_paddng_2dp"
-                                    android:layout_toLeftOf="@+id/secondPartLayout"
                                     android:orientation="vertical">
 
                                     <TextView

@@ -13,7 +13,7 @@
         android:id="@+id/layoutMakeATip"
         android:layout_width="120dp"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="@dimen/common_paddng_10dp"
         android:background="@drawable/bg_with_white_rounded_border"
         android:gravity="center"
@@ -50,27 +50,13 @@
     <!-- Buy layout -->
     <LinearLayout
         android:id="@+id/tipBuyRootLayoutRoot"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_190sdp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/common_paddng_5dp"
         android:layout_marginEnd="@dimen/common_paddng_15dp"
         android:minWidth="@dimen/_179sdp"
         android:orientation="vertical"
         android:visibility="gone">
-
-        <TextView
-            android:id="@+id/txtBuyTimeAgo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginStart="5dp"
-            android:gravity="end"
-            android:minWidth="@dimen/_179sdp"
-            android:paddingBottom="@dimen/common_paddng_2dp"
-            android:text=""
-            android:textColor="@color/text_color_light_grey"
-            android:textSize="@dimen/text_size_small"
-            android:visibility="visible" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,15 +88,25 @@
                     android:id="@+id/txtBuyTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toEndOf="@+id/imageViewBuy"
-                    android:paddingBottom="@dimen/common_paddng_2dp"
                     android:singleLine="true"
                     android:text="MACD Tips"
                     android:textColor="@color/dark_black_color"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtBuyTimeAgo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtBuyTitle"
+                    android:layout_toRightOf="@+id/imageViewBuy"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:minWidth="@dimen/_179sdp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_grey"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="visible" />
 
             </RelativeLayout>
 
@@ -185,26 +181,12 @@
     <!-- Sell layout -->
     <LinearLayout
         android:id="@+id/tipSellRootLayoutRoot"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_190sdp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/common_paddng_5dp"
         android:minWidth="@dimen/_179sdp"
         android:orientation="vertical"
         android:visibility="gone">
-
-        <TextView
-            android:id="@+id/txtSellTimeAgo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginStart="5dp"
-            android:gravity="end"
-            android:minWidth="@dimen/_179sdp"
-            android:paddingBottom="@dimen/common_paddng_2dp"
-            android:text=""
-            android:textColor="@color/text_color_light_grey"
-            android:textSize="@dimen/text_size_small"
-            android:visibility="visible" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -236,15 +218,26 @@
                     android:id="@+id/txtSellTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toEndOf="@+id/imageViewSell"
-                    android:paddingBottom="@dimen/common_paddng_2dp"
                     android:singleLine="true"
                     android:text="MACD Tips"
                     android:textColor="@color/dark_black_color"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSellTimeAgo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSellTitle"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imageViewSell"
+                    android:minWidth="@dimen/_179sdp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_grey"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="visible" />
 
             </RelativeLayout>
 

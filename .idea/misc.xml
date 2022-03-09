@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/activity_aitrade_tip_detail.xml" value="0.20018115942028986" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/ai_trade_tip_detail_layout.xml" value="0.1" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/ai_tradetip_item_horizontal.xml" value="0.33" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/item_add_tips_horizontal.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/item_tips_horizontal.xml" value="0.33" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/item_tips_vertical.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_horizontal_header.xml" value="0.25" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_macd_alert.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_social_chat_stock.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_vertical_header.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/service_filter_option.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/stok_expand_list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/stok_list_item.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

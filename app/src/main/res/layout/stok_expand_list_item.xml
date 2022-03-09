@@ -167,8 +167,7 @@
                     android:layout_marginTop="@dimen/_3sdp"
                     android:text="-24.28"
                     android:textColor="#fff"
-                    android:textSize="14sp"
-                    app:drawableRightCompat="@drawable/ic_arrow_downward_red" />
+                    android:textSize="14sp"/>
 
             </LinearLayout>
 

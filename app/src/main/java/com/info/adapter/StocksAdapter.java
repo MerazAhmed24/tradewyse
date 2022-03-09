@@ -134,7 +134,7 @@ public class StocksAdapter extends RecyclerView.Adapter<StocksAdapter.StocksView
             stocksViewHolder.txtStockName.setText(stocks.getStockName());
             stocksViewHolder.txtStockCompanyName.setText(stocks.getCompanyName());
             //stocksViewHolder.txtStockPrice.setText(StringHelper.getAmount(stocks.getStockPrice(), "--"));
-            stocksViewHolder.txtStockPrice.setText("$"+Common.formatDouble(stocks.getStockPrice()));
+            stocksViewHolder.txtStockPrice.setText("₹"+Common.formatDouble(stocks.getStockPrice()));
             stocksViewHolder.txtStockPriceChange.setText(Common.formatDouble(Math.abs(stocks.getStockChange())));
             stocksViewHolder.delete_button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -165,10 +165,10 @@ public class StocksAdapter extends RecyclerView.Adapter<StocksAdapter.StocksView
             Log.v("data", "last else");
         }
         if (stocks.getStockChange() < 0.0) {
-            stocksViewHolder.txtStockPriceChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_downward, 0);
+            stocksViewHolder.txtStockPriceChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_low, 0);
             stocksViewHolder.txtStockPriceChange.setTextColor(context.getResources().getColor(text_color_red));
         } else {
-            stocksViewHolder.txtStockPriceChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_upward, 0);
+            stocksViewHolder.txtStockPriceChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_high, 0);
             stocksViewHolder.txtStockPriceChange.setTextColor(context.getResources().getColor(R.color.text_color_green));
         }
 

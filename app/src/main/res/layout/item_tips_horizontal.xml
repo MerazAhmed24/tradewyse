@@ -9,23 +9,10 @@
     android:orientation="vertical"
     android:padding="@dimen/common_paddng_5dp">
 
-    <TextView
-        android:id="@+id/txtTimeAgo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginStart="5dp"
-        android:gravity="end"
-        android:minWidth="@dimen/_179sdp"
-        android:paddingBottom="@dimen/common_paddng_2dp"
-        android:text="10 hr Ago"
-        android:textColor="@color/text_color_light_grey"
-        android:textSize="@dimen/text_size_small"
-        android:visibility="visible" />
 
     <LinearLayout
         android:id="@+id/tipRootLayout"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/_190sdp"
         android:layout_height="wrap_content"
         android:background="@drawable/mentor_list_item_bg_rounded"
         android:orientation="vertical"
@@ -56,17 +43,25 @@
                 android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/imgProfile"
-                android:ems="11"
-                android:paddingLeft="@dimen/common_paddng_3dp"
-                android:paddingBottom="@dimen/common_paddng_2dp"
                 android:singleLine="true"
                 android:text="Tyrone Jackson"
-                android:textColor="@color/text_color_username"
+                android:textColor="@color/black"
                 android:textSize="@dimen/text_size_large"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTimeAgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:minWidth="@dimen/_179sdp"
+                android:paddingBottom="@dimen/common_paddng_2dp"
+                android:text="10 hr Ago"
+                android:textColor="@color/text_color_light_grey"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="visible" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/flagIcon"
@@ -83,14 +78,15 @@
         <View
             android:id="@+id/seperator"
             style="@style/item_separator"
+            android:background="@color/text_color_grey"
+            android:textColor="@color/text_color_dark_grey"
             android:layout_below="@+id/profileLayout" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/seperator"
-            android:orientation="vertical"
-            android:padding="2dp">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/label"
@@ -113,38 +109,41 @@
                     android:textColor="@color/text_color_black"
                     android:textSize="@dimen/text_size_large"
                     android:textStyle="bold" />
-
                 <TextView
-                    android:id="@+id/txtCreateTipPrice"
+                    android:id="@+id/txtBuySell"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:background="@color/text_color_black"
                     android:gravity="center"
-                    android:maxLines="1"
-                    android:paddingBottom="@dimen/common_paddng_7dp"
-                    android:text="SP asdaY"
-                    android:textColor="@color/text_color_black"
-                    android:textSize="@dimen/text_size_large"
+                    android:layout_weight="0.8"
+                    android:maxWidth="@dimen/_53sdp"
+                    android:singleLine="true"
+                    android:text="BUY"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_medium"
                     android:textStyle="bold" />
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.2"
+                    android:layout_marginStart="@dimen/_15ssp"
                     android:gravity="center">
-
                     <TextView
-                        android:id="@+id/txtBuySell"
+                        android:id="@+id/txtCreateTipPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@color/text_color_black"
                         android:gravity="center"
-                        android:maxWidth="@dimen/_53sdp"
-                        android:singleLine="true"
-                        android:text="BUY"
-                        android:textColor="@color/text_color_white"
-                        android:textSize="@dimen/text_size_medium"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/common_paddng_7dp"
+                        android:text="SP asdaY"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_large"
                         android:textStyle="bold" />
+
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -172,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/txtExitPoint"
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
-                        android:text="ENTRY"
+                        android:text="Entry"
                         android:textColor="@color/text_color_dark_grey"
                         android:textSize="@dimen/text_size_small" />
 
@@ -208,7 +207,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
-                        android:text="EXIT"
+                        android:text="Exit"
                         android:textColor="@color/text_color_dark_grey"
                         android:textSize="@dimen/text_size_small" />
 
@@ -244,7 +243,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
-                        android:text="STOP"
+                        android:text="Stop"
                         android:textColor="@color/text_color_dark_grey"
                         android:textSize="@dimen/text_size_small" />
 
