@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/login_bg"
+    android:paddingLeft="@dimen/common_paddng_10dp"
+    android:paddingRight="@dimen/common_paddng_10dp"
+    android:id="@+id/layoutLogInbg"
+    tools:context="com.info.tradewyse.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/lyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_paddng_20dp"
+        android:layout_marginTop="@dimen/login_root_layout_margin_top"
+        android:layout_marginRight="@dimen/common_paddng_20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StockPrice"
+            android:layout_marginTop="@dimen/login_heading_margin_top"
+            android:layout_marginBottom="@dimen/common_paddng_40dp"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_large_heading" />
+
+        <EditText
+            android:id="@+id/eEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:background="@drawable/edit_text_login_bg"
+            android:hint="@string/emailandusername"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/common_paddng_10dp"
+            android:textColor="@color/text_color_white"
+            android:textColorHint="@color/text_color_white" />
+
+        <View
+            android:id="@+id/eEmailLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/white_seperator_line_height"
+            android:layout_below="@+id/eEmail"
+            android:background="@color/text_color_white"
+            android:textColor="@color/text_color_white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_paddng_25dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/text_color_light_grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/edit_text_login_bg"
+                android:capitalize="words"
+                android:hint="@string/pwd"
+                android:inputType="textPassword"
+                android:padding="@dimen/common_paddng_10dp"
+                android:textColor="@color/text_color_white"
+                android:textColorHint="@color/text_color_white" />
+
+            <View
+                android:id="@+id/ePasswordLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/white_seperator_line_height"
+                android:layout_below="@+id/eEmail"
+                android:background="@color/text_color_white"
+                android:textColor="@color/text_color_white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_below="@+id/edCompanyName"
+            android:layout_marginTop="@dimen/common_paddng_25dp"
+            android:background="@color/login_btn_color"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyProfile"
+        android:layout_marginLeft="@dimen/common_paddng_20dp"
+        android:layout_marginTop="@dimen/common_paddng_7dp"
+        android:layout_marginRight="@dimen/common_paddng_20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCreateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/createAcc"
+            android:textAllCaps="false"
+            android:textColor="@color/login_screen_link_color"
+            android:textSize="@dimen/text_size_large"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtSeperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_paddng_10dp"
+            android:layout_marginRight="@dimen/common_paddng_10dp"
+            android:background="@android:color/transparent"
+            android:text="|"
+            android:textColor="@color/login_screen_link_color"
+            android:textSize="@dimen/text_size_large_heading"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnFgtPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/forgotPwd"
+            android:textAllCaps="false"
+            android:textColor="@color/login_screen_link_color"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLayout"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/TakeTour"
+        android:textAllCaps="false"
+        android:textColor="@color/login_screen_link_color"
+        android:textSize="@dimen/text_size_large" />
+
+
+</RelativeLayout>

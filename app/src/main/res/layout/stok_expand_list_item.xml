@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.info.commons.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRevealLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="@dimen/common_paddng_8dp"
+    android:layout_marginRight="@dimen/common_paddng_8dp"
+    android:layout_marginBottom="@dimen/common_paddng_10dp"
+    android:background="@drawable/rounded_corner"
+    app:dragFromEdge="right">
+
+    <TextView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_bg_red"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Delete"
+        android:textColor="@color/text_color_white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:padding="@dimen/common_paddng_3dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/firstRootRowId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2.5"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtStockName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPY"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtStockCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_paddng_1dp"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="SPDRdfsdfd fsdf sadf sfsdfsadfs"
+                    android:textColor="@color/text_color_username"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layoutChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="-12dp"
+                            android:layout_weight=".4"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:orientation="vertical" />
+
+                    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+                        android:id="@+id/loader"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:lazyloader_animDur="700"
+                        app:lazyloader_dotsDist="3dp"
+                        app:lazyloader_dotsRadius="3dp"
+                        android:visibility="gone"
+                        app:lazyloader_firstDelayDur="150"
+                        app:lazyloader_firstDotColor="@color/text_color_white"
+                        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+                        app:lazyloader_secondDelayDur="300"
+                        app:lazyloader_secondDotColor="@color/text_color_white"
+                        app:lazyloader_thirdDotColor="@color/text_color_white" />
+
+                    <TextView
+                        android:id="@+id/tvbluedotLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:text="......................"
+                        android:textColor="@color/blue_color"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtStockPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:text="$4.28994"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtStockPriceChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="-24.28"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    app:drawableRightCompat="@drawable/ic_arrow_downward_red" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstRootRowId"
+            android:gravity="right"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtStockPriceChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_downward_red"
+                android:text="-24.28"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_medium" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</com.info.commons.SwipeRevealLayout>

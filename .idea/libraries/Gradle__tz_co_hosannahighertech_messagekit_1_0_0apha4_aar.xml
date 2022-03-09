@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: tz.co.hosannahighertech:messagekit:1.0.0apha4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba149751b23a569ef18bc597b0558664/jetified-messagekit-1.0.0apha4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba149751b23a569ef18bc597b0558664/jetified-messagekit-1.0.0apha4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba149751b23a569ef18bc597b0558664/jetified-messagekit-1.0.0apha4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tz.co.hosannahighertech/messagekit/1.0.0apha4/73f2748ea5911e13dab21e87c90dc1472394079f/messagekit-1.0.0apha4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tz.co.hosannahighertech/messagekit/1.0.0apha4/8eb44ef5b027582b212dcb7a2646b51a9dcef368/messagekit-1.0.0apha4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

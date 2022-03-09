@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#093271"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AddTipsActivity">
+
+    <include layout="@layout/toolbar_add_tip"></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#093271"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_paddng_5dp"
+            android:layout_marginTop="@dimen/common_paddng_5dp"
+            android:layout_marginRight="@dimen/common_paddng_5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_paddng_5dp"
+                android:layout_marginRight="@dimen/common_paddng_5dp"
+                android:layout_marginBottom="@dimen/common_paddng_10dp">
+
+                <TextView
+                    android:id="@+id/txtStockName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    android:textStyle="bold"
+                    tools:text="SPY"/>
+
+                <TextView
+                    android:id="@+id/txtCurrentValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_addTipValuesLarge"
+
+                    android:textStyle="bold"
+                    tools:text="$77.90"/>
+
+                <TextView
+                    android:id="@+id/txtChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCurrentValue"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_color_green"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    tools:text="0.33" />
+
+                <TextView
+                    android:id="@+id/txtStockCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtStockName"
+                    android:layout_marginRight="@dimen/common_paddng_5dp"
+                    android:layout_toLeftOf="@+id/txtChange"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_large"
+                    tools:text="Aglient Tech, INC"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSetEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_paddng_5dp"
+                android:background="@drawable/rounded_corner"
+                android:paddingLeft="@dimen/common_paddng_10dp"
+                android:paddingTop="@dimen/common_paddng_10dp"
+                android:paddingBottom="@dimen/common_paddng_10dp">
+
+                <TextView
+                    android:id="@+id/txtSetEntry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Entry"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <com.info.commons.PreFixEditText
+                    android:id="@+id/txtEntryPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSetEntry"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_dollar_currency_symbol"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:longClickable="false"
+                    android:text="0.00"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_addTipValuesLarge"
+                    android:textStyle="bold"/>
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                    android:id="@+id/seekBarEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEntryPoint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/common_paddng_10dp"
+                    android:layout_marginTop="@dimen/common_paddng_2dp"
+                    android:layout_marginRight="@dimen/common_paddng_10dp"
+                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                    android:longClickable="false"
+                    android:visibility="gone"
+                    app:bar_color="#FFFFFF"
+                    app:bar_highlight_color="#FFFFFF"
+                    app:corner_radius="3"
+                    app:data_type="_float"
+                    app:left_thumb_color="#FFFFFF"
+                    app:left_thumb_color_pressed="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSetExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_paddng_5dp"
+                android:background="@drawable/rounded_corner"
+                android:paddingLeft="@dimen/common_paddng_10dp"
+                android:paddingTop="@dimen/common_paddng_10dp"
+                android:paddingBottom="@dimen/common_paddng_10dp">
+
+                <TextView
+                    android:id="@+id/txtSetExit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Exit"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <com.info.commons.PreFixEditText
+                    android:id="@+id/txtExitPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSetExit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_dollar_currency_symbol"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:longClickable="false"
+                    android:text="0.00"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_addTipValuesLarge"
+                    android:textStyle="bold" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+
+                    android:id="@+id/seekBarExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtExitPoint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/common_paddng_10dp"
+                    android:layout_marginTop="@dimen/common_paddng_2dp"
+                    android:layout_marginRight="@dimen/common_paddng_10dp"
+                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                    android:visibility="gone"
+                    app:bar_color="#FFFFFF"
+                    app:bar_highlight_color="#FFFFFF"
+                    app:corner_radius="3"
+                    app:data_type="_float"
+                    app:left_thumb_color="#FFFFFF"
+                    app:left_thumb_color_pressed="#FFFFFF"
+                    app:max_value="150"
+                    app:min_value="50" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSetStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_paddng_5dp"
+                android:background="@drawable/rounded_corner"
+                android:paddingLeft="@dimen/common_paddng_10dp"
+                android:paddingTop="@dimen/common_paddng_10dp"
+                android:paddingBottom="@dimen/common_paddng_10dp">
+
+                <TextView
+                    android:id="@+id/txtSetStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Stop"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <com.info.commons.PreFixEditText
+                    android:id="@+id/txtStopPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSetStop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_dollar_currency_symbol"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:longClickable="false"
+                    android:text="0.00"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_addTipValuesLarge"
+                    android:textStyle="bold" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+
+                    android:id="@+id/seekBarStop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtStopPoint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/common_paddng_10dp"
+                    android:layout_marginTop="@dimen/common_paddng_2dp"
+                    android:layout_marginRight="@dimen/common_paddng_10dp"
+                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                    android:visibility="gone"
+                    app:bar_color="#FFFFFF"
+                    app:bar_highlight_color="#FFFFFF"
+                    app:corner_radius="3"
+                    app:data_type="_float"
+                    app:left_thumb_color="#FFFFFF"
+                    app:left_thumb_color_pressed="#FFFFFF"
+                    app:max_value="150"
+                    app:min_value="50"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_paddng_5dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTipComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_paddng_5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="Enter comment"
+                    android:maxLength="240"
+                    android:minLines="2"
+                    android:paddingBottom="@dimen/common_paddng_15dp"
+                    android:textCursorDrawable="@drawable/black_cursor"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/tipPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_paddng_5dp"
+                        android:layout_marginBottom="@dimen/common_paddng_5dp"
+                        android:visibility="gone"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:viewAspectRatio="1.33">
+
+                    </com.facebook.drawee.view.SimpleDraweeView>
+
+                    <ImageView
+                        android:id="@+id/takePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/common_paddng_5dp"
+                        android:background="@color/color_mentor_list_bg"
+                        app:srcCompat="@drawable/ic_image_select"/>
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

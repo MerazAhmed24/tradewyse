@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#203257"
+        android:orientation="vertical"
+        tools:context="com.info.tradewyse.SettingActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/rootRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view"
+                    style="@style/item_separator_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:background="@color/color_app_dark_bg"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_notification_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/notifications"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/notification_badge"
+                        android:layout_width="@dimen/_9sdp"
+                        android:layout_height="@dimen/_9sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_toRightOf="@id/txt_notification_room"
+                        android:background="@drawable/ic_notification_badge" />
+
+                    <View
+                        android:id="@+id/notification_room_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/txt_notification_room"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chat_room_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_app_dark_bg"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_chat_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/chat_rooms"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/chat_room_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/txt_chat_room"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gettingStarted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_gettingStarted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/getting_started"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/txt_gettingStarted"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_subscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mentor"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_subscription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/subscribe"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/subcription_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/txt_subscription"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_faq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_learn_trade"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_faq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="FAQs"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/faq_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"                        android:layout_below="@id/txt_faq"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_demo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_faq"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_demo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/TakeTour"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/demo_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/txt_demo"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mentor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/al_stock_prediction_layout"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_mentor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/become_a_mentor"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/mentor_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"                        android:layout_below="@id/txt_mentor"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_changepass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/txt_changepass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="Change Password"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/changepass_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"                        android:layout_below="@id/txt_changepass"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_suggestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_learn_trade"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_suggestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/Suggetion"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/suggestion_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/txt_suggestion"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_faq"
+                    android:background="@color/color_app_dark_bg"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="Settings"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/settings_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_below="@id/txt_setting"
+                        android:layout_alignStart="@id/txt_setting"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chat_room_layout"
+                    android:background="@color/color_app_dark_bg"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_user_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/user_search"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/user_search_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_below="@id/txt_user_search"
+                        android:layout_alignStart="@+id/txt_user_search"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/al_stock_prediction_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_search_layout"
+                    android:background="@color/color_app_dark_bg"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_ai_prediction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/ai_stock_prediction"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/ai_prediction_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_below="@id/txt_ai_prediction"
+                        android:layout_alignStart="@+id/txt_ai_prediction"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_learn_trade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_app_dark_bg"
+                    android:paddingTop="@dimen/common_paddng_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_learn_trade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="Learn How to Trade"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/learn_trade_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:layout_below="@id/txt_learn_trade"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/view3"
+                    style="@style/item_separator_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_paddng_1dp"
+                    android:layout_below="@+id/rl_setting"
+                    android:layout_marginTop="35dp"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:background="@color/tip_bg_color"
+                    android:paddingTop="@dimen/common_paddng_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/common_paddng_18dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/LogOut"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/logout_view"
+                        style="@style/item_separator_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/txt_logout"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>

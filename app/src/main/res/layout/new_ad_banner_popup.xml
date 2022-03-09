@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/popupview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:background="@drawable/round_corner_ad_baner_popup"
+
+        android:padding="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/ad_banner_close_btn"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ad_banner_cross_btn" />
+
+        <RelativeLayout
+            android:id="@+id/imageslider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/got_it_btn"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="6dp" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                app:ci_drawable="@drawable/circleindicator_round"
+                app:ci_height="5dp"
+                app:ci_width="5dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/got_it_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/common_paddng_10dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/round_corner_btn_bg_blue"
+            android:text="Got It!"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_19ssp" />
+
+    </RelativeLayout>
+</RelativeLayout>

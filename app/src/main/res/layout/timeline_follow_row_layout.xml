@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/timeline_adapter_parent_ll"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/common_paddng_10dp"
+    android:paddingRight="@dimen/common_paddng_10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@color/text_color_grey" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/drawable_circle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_paddng_5dp"
+            android:visibility="visible">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_user_default"
+                app:roundAsCircle="true"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:viewAspectRatio="1.33"  />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:text="User followed you"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size_large" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tv_follow_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dark_follow_light_white_broder_btn_bg"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/Follow"
+                android:textColor="@color/dot_dark_screen3"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_you_are"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/tv_follow_btn"
+                android:text="@string/you_are"
+                android:textColor="@color/dot_dark_screen3"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/common_paddng_2dp"
+                android:text="8:35 pm"
+                android:textColor="@color/dot_dark_screen3"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

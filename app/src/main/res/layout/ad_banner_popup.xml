@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/popupview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:background="@drawable/round_corner_ad_baner_popup"
+        android:elevation="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/ad_banner_cose_btn"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/ad_banner_cross_btn" />
+
+        <ScrollView
+            android:id="@+id/dataview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/got_it_btn"
+            android:layout_below="@id/ad_banner_cose_btn"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/center_iv"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/center_iv"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/sfbold"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_19ssp" />
+
+                <TextView
+                    android:id="@+id/short_desc_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_tv"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/sfregular"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/seemore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dataview"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            android:fontFamily="@font/sfmedium"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/see_more"
+            android:textColor="@color/tw__blue_default"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/got_it_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/round_corner_btn_bg_blue"
+            android:text="Got It!"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_19ssp" />
+
+    </RelativeLayout>
+</RelativeLayout>

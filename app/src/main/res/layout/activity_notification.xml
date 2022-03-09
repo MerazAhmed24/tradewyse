@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="footerModel"
+            type="com.info.model.FooterModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5180EA"
+        tools:context="com.info.tradewyse.NotificationActivity">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/toolbar_notification" />
+
+        <com.info.commons.OnlyVerticalSwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dividerView"
+            android:layout_below="@id/include_header"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/notification_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="#5180EA"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/empty_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bell_notifications" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/sfmedium"
+                        android:text="@string/no_new_notifications"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/_23ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_11sdp"
+                        android:fontFamily="@font/app_font"
+                        android:gravity="center"
+                        android:text="@string/check_this_section_for_all_updates_and_general_announcements"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/_15ssp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.info.commons.OnlyVerticalSwipeRefreshLayout>
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottomView"
+            android:background="@drawable/divider_shape" />
+
+        <include
+            layout="@layout/footer_layout"
+            bind:footerModel="@{footerModel}" />
+    </RelativeLayout>
+</layout>

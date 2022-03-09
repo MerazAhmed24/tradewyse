@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_white_rounded"
+        android:padding="@dimen/_10sdp">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/buttonAddMe"
+            android:scrollbars="none"
+            android:layout_marginBottom="19dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/imageViewClose"
+                    android:fontFamily="@font/sfmedium"
+                    android:gravity="start"
+                    android:text="Unlock The Fundementals Room"
+                    android:textColor="#212842"
+                    android:textSize="@dimen/_13ssp" />
+
+                <ImageView
+                    android:id="@+id/imageViewClose"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ad_banner_cross_btn" />
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTitle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/imageView"
+                        android:fontFamily="@font/sfmedium"
+                        android:gravity="start"
+                        android:text="Membership to this room is limited. Would you like to be added to the room waitlist?"
+                        android:textColor="#212842"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@drawable/unlock" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/sfregular"
+                    android:gravity="start"
+                    android:text="TradeTips chat rooms are built with you in mind. That’s why we like to keep our rooms reasonably small so you don’t have to compete for an experienced investor’s attention."
+                    android:textColor="#212842"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonAddMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/common_paddng_10dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/round_corner_btn_bg_blue"
+            android:text="Add Me"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.info.commons.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRevealLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/rounded_corner"
+    app:dragFromEdge="right">
+
+    <TextView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_bg_red"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Delete"
+        android:textColor="@color/text_color_white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/root_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:minWidth="@dimen/stock_list_item_width"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingTop="@dimen/_11sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_11sdp">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bell_icon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/notification_bell_icon" />
+
+                <ImageView
+                    android:id="@+id/unread_badge"
+                    android:layout_width="@dimen/_9sdp"
+                    android:layout_height="@dimen/_9sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@drawable/ic_notification_badge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/notification_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="5 Mins Ago"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notification_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/sfmedium"
+            android:maxLines="3"
+            android:minLines="2"
+            android:text="Notifications Text body"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_13sdp" />
+
+    </RelativeLayout>
+</com.info.commons.SwipeRevealLayout>

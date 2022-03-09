@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/common_paddng_10dp"
+    android:id="@+id/timeline_adapter_parent_ll"
+    android:paddingRight="@dimen/common_paddng_10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@color/text_color_grey" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/drawable_circle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tipTweetDetailLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_paddng_5dp"
+            android:paddingRight="@dimen/common_paddng_5dp"
+            android:paddingBottom="@dimen/common_paddng_5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/horLine"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@color/text_color_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/horLine"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/timeline_save" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="Followed Tip"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:id="@+id/center_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/bg_fill_white_round_border"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llUserName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:id="@+id/user_img"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/ic_user_default"
+                                    app:roundAsCircle="true"
+                                    fresco:actualImageScaleType="centerCrop"
+                                    fresco:viewAspectRatio="1.33" />
+
+                                <TextView
+                                    android:id="@+id/user_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/user_name"
+                                    android:textColor="@color/text_color_dark_grey1"
+                                    android:textSize="@dimen/text_size_vsmall" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:background="@color/text_color_light_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvStockName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="GIB"
+                                        android:textColor="@color/dark_black_color"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="@string/entry"
+                                        android:textColor="@color/text_color_dark_grey1"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvEntryPointPrice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="$62.25"
+                                        android:textColor="@color/text_color_green"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvCreateTipPrice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="$62.25"
+                                        android:textColor="@color/dark_black_color"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="@string/exit"
+                                        android:textColor="@color/text_color_dark_grey1"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvExitPointPrice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="$62.25"
+                                        android:textColor="@color/text_color_green"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvStockSuggestion"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:layout_marginRight="@dimen/_3sdp"
+                                        android:background="@drawable/rounded_corner_bg_green"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="@string/buy"
+                                        android:ems="3"
+                                        android:textColor="@color/text_color_white"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="STOP"
+                                        android:textColor="@color/text_color_dark_grey1"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvStopPointPrice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="$62.25"
+                                        android:textColor="@color/dark_black_color"
+                                        android:textSize="@dimen/text_size_small_plus"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.9"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:gravity="right"
+                            android:layout_gravity="bottom"
+                            android:padding="@dimen/common_paddng_2dp"
+                            android:text="8:35 pm"
+                            android:textColor="@color/dot_dark_screen3"
+                            android:textSize="@dimen/text_size_small" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/center_view"
+                        android:padding="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/comment_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/coment" />
+
+                            <TextView
+                                android:id="@+id/tv_comment_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:text="2"
+                                android:textColor="@color/tw__solid_white"
+                                android:textSize="@dimen/text_size_large" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/like_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_toRightOf="@+id/comment_ll">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_like"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/like" />
+
+                            <TextView
+                                android:id="@+id/tvlike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:text="2"
+                                android:textColor="@color/tw__solid_white"
+                                android:textSize="@dimen/text_size_large" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

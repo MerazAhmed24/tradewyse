@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.digits.sdk.android:digits:1.8.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2575fd6ccee6dd2798d19c2774485aed/jetified-digits-1.8.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2575fd6ccee6dd2798d19c2774485aed/jetified-digits-1.8.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2575fd6ccee6dd2798d19c2774485aed/jetified-digits-1.8.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2575fd6ccee6dd2798d19c2774485aed/jetified-digits-1.8.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.digits.sdk.android/digits/1.8.0/6058154d6f9b2fc1ccab82f46dbc91740fcea17a/digits-1.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

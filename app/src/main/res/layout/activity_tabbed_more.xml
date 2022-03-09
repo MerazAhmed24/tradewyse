@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="footerModel"
+            type="com.info.model.FooterModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/toolbar_tabbed_activity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dividerView"
+            android:layout_below="@id/include_header"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/navHeaderItem"
+                layout="@layout/nav_header_dash_board" />
+
+            <include
+                android:id="@+id/navDrawerItem"
+                layout="@layout/nav_drawer_item" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottomView"
+            android:background="@drawable/divider_shape" />
+
+        <include
+            layout="@layout/footer_layout"
+            bind:footerModel="@{footerModel}" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+    <RelativeLayout
+        android:id="@+id/sepratorOtherUserDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ViewCircle"
+            android:layout_width="20dp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/drawable_circle_white_bg" />
+
+        <View
+            android:id="@+id/ViewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toLeftOf="@id/other_user_chat_message_date"
+            android:layout_toRightOf="@+id/ViewCircle"
+            android:layout_weight="3"
+            android:background="@color/text_color_light_grey1" />
+
+        <TextView
+            android:id="@+id/other_user_chat_message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text=""
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/_13ssp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sepratorOtherUserDoc">
+
+        <ImageView
+            android:id="@+id/other_user_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@id/rl2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/ic_user_default"
+            android:contentDescription="@string/open_channel_chat_content_desc_profile" />
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_100sdp"
+            android:layout_toRightOf="@id/other_user_image"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+
+            <TextView
+                android:id="@+id/other_user_chat_message_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="TradeTips"
+                android:textColor="@color/openChatNicknameOther"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_image_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/other_user_chat_message_nickname"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/bg_chat_view_other_user"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/file_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignTop="@+id/other_user_file_name"
+                                android:layout_alignBottom="@+id/other_user_file_size"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/ic_file"
+                                app:tint="@color/colorPrimary" />
+
+                            <!--<TextView
+                                android:id="@+id/file_extention"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@id/file_icon"
+                                android:layout_alignRight="@id/file_icon"
+                                android:layout_alignBottom="@id/file_icon"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:minEms="4"
+                                android:paddingBottom="8dp"
+                                android:text=".pdf"
+                                android:textColor="@android:color/white" />-->
+
+                            <TextView
+                                android:id="@+id/other_user_file_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/file_icon"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:minEms="4"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <TextView
+                                android:id="@+id/other_user_file_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/other_user_file_name"
+                                android:layout_toEndOf="@id/file_icon"
+                                android:lines="1"
+                                android:minEms="4"
+                                android:paddingBottom="8dp"
+                                android:text=""
+                                android:textSize="10sp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/other_user_chat_caption_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:autoLink="web|phone|email"
+                    android:background="@drawable/other_user_chat_bubble"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text=""
+                    android:textColor="@color/dark_black_color"
+                    android:textColorLink="@color/tw__blue_pressed"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <!-- <ImageView
+                 android:id="@+id/other_user_chat_message"
+                 android:layout_width="@dimen/_230sdp"
+                 android:layout_height="@dimen/_230sdp"
+                 android:layout_below="@id/other_user_chat_message_nickname"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginLeft="13dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginBottom="@dimen/_5sdp" />-->
+
+            <TextView
+                android:id="@+id/other_user_chat_message_edited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_image_text"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/other_user_chat_message_time"
+                android:gravity="center_vertical"
+                android:text="(edited)"
+                android:textColor="#828282"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/other_user_chat_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_image_text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="11:36"
+                android:textColor="@color/openChatText"
+                android:textSize="@dimen/_10ssp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.info.tradewyse.SignUpActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_add_tip"></include>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include2"
+        android:background="@color/tw__solid_white"/>
+
+    <LinearLayout
+        android:id="@+id/lyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include2"
+        android:layout_marginLeft="@dimen/common_paddng_20dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/common_paddng_20dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StockPrice"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/common_paddng_30dp"
+            android:gravity="center"
+            android:text="Make money for your\nInvesting knowledge"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StockPrice"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="* All fields required"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_become_mentor"
+            android:hint="First Name"
+            android:inputType="text"
+            android:padding="@dimen/common_paddng_10dp"
+            android:textColor="@color/dark_black_color"
+            android:textColorHint="@color/graph_color" />
+
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_paddng_25dp"
+            android:background="@drawable/edit_text_become_mentor"
+            android:hint="Last Name"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/common_paddng_10dp"
+            android:textColor="@color/dark_black_color"
+            android:textColorHint="@color/graph_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StockPrice"
+            android:layout_marginTop="@dimen/common_paddng_25dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Why do you want to be a Mentor?"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_become_mentor"
+            android:minLines="5"
+            android:padding="@dimen/common_paddng_10dp"
+            android:textColor="@color/dark_black_color"
+            android:textColorHint="@color/graph_color" />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_below="@+id/edCompanyName"
+            android:layout_marginTop="@dimen/common_paddng_25dp"
+            android:background="@drawable/bg_with_white_rounded_border"
+            android:text="@string/Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_large" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbarMentor"
+        android:visibility="visible"
+        android:background="@drawable/progress_background"
+        android:layout_centerHorizontal="true"></ProgressBar>
+
+
+</RelativeLayout>

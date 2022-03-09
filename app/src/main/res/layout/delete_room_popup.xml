@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tip_bg_color"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:contentPaddingTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_end_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:padding="@dimen/common_paddng_10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/profile_blue" />
+
+                <TextView
+                    android:id="@+id/tvRoomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/room_name"
+                    android:textColor="@color/graph_color"
+                    android:textSize="@dimen/_10ssp"></TextView>
+
+                <ImageView
+                    android:id="@+id/otherAction6"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start|center"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/delete_red" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color_light_grey"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xlarge"></TextView>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="@dimen/common_paddng_10dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/otherAction2"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:srcCompat="@drawable/share" />
+
+                <TextView
+                    android:id="@+id/tvRequestDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/request_for_delete"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_15ssp"></TextView>
+
+                <ImageView
+                    android:id="@+id/otherAction5"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/delete_red" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color_light_grey"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xlarge"></TextView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_paddng_10dp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_15ssp"></TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

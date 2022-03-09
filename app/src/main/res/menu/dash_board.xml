@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/action_profile"
+        android:visible="true"
+        android:icon="@drawable/ic_person"
+        app:showAsAction="always" />
+<!--    <item
+        android:id="@+id/enable_login"
+        android:title="EnableLogin"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/disable_login"
+        android:title="DisableLogin"
+        app:showAsAction="never" />-->
+
+</menu>

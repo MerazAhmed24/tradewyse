@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/toolbar_chat_activity" />
+
+    <RelativeLayout
+        android:id="@+id/rlOnlineView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_header"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linearViewOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:gravity="center"
+                android:text="Members"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imagegroupIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_group_icon"
+                app:tint="@color/gray" />
+
+            <ImageView
+                android:id="@+id/nextIcon"
+                android:layout_width="15dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/common_paddng_15dp"
+                app:srcCompat="@drawable/chevronrightarrow"
+                app:tint="@color/gray" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/linearViewOnline"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/gray" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/loading_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlOnlineView"
+        android:background="@color/tw__light_gray"
+        android:gravity="center"
+        android:text="Loading please wait....."
+        android:textColor="@color/dark_black_color"
+        android:textSize="@dimen/_13ssp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/divider_iv"
+        android:layout_below="@id/loading_tv">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutReplyRoot"
+            android:background="@color/text_color_white"
+            android:foregroundGravity="top" />
+
+        <ImageView
+            android:id="@+id/imageViewScrollDown"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_above="@+id/layoutReplyRoot"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:src="@drawable/chevronrfillicon"
+            android:visibility="gone"
+            app:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/layoutReplyRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <include layout="@layout/item_chat_reply_view" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--<tz.co.hosannahighertech.messagekit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:incomingDefaultBubbleColor="@color/colorPrimaryDark"
+        app:incomingDefaultBubblePressedColor="@color/colorPrimary"
+        app:incomingDefaultBubbleSelectedColor="@color/gray"
+        app:incomingDefaultImageOverlayPressedColor="@color/black"
+        app:incomingDefaultImageOverlaySelectedColor="@color/groupChatDateBackground"
+        app:incomingTextColor="@color/black"
+        app:incomingTextLinkColor="@color/green_light"
+        app:incomingTextSize="18sp"
+        app:outcomingDefaultBubbleColor="@color/green_light"
+        app:outcomingDefaultBubblePressedColor="@color/green"
+        app:outcomingDefaultBubbleSelectedColor="@color/dark_gray"
+        app:outcomingDefaultImageOverlayPressedColor="@color/black"
+        app:outcomingDefaultImageOverlaySelectedColor="@color/groupChatDateBackground"
+        app:outcomingTextColor="@color/white"
+        app:outcomingTextLinkColor="@color/gray"
+        app:outcomingTextSize="18sp"
+        android:layout_above="@id/divider_iv"
+        android:layout_below="@id/include_header"/>-->
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        style="@style/progress_dialog"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/text_color_white">
+
+        <View
+            android:id="@+id/ViewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="3"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/ViewDivider"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@color/text_color_white"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/attachmentIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@drawable/attachment_icon" />
+
+            <EditText
+                android:id="@+id/message_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/sendTv"
+                android:layout_toRightOf="@id/attachmentIv"
+                android:background="@color/text_color_white"
+                android:focusable="true"
+                android:inputType="textCapSentences"
+                android:gravity="center_vertical"
+                android:hint="Type your message here."
+                android:maxLines="9"
+                android:minLines="2"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/sendTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/send"
+                android:textColor="@color/tw__medium_gray"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_above="@id/bottom_rl"
+        android:background="@color/graph_color"
+        android:visibility="gone" />
+
+</RelativeLayout>

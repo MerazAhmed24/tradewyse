@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AddTipsActivity">
+
+    <include layout="@layout/toolbar_add_tip"></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="@dimen/common_paddng_10dp"
+            android:layout_marginTop="@dimen/common_paddng_10dp"
+            android:layout_marginRight="@dimen/common_paddng_10dp"
+            android:layout_marginBottom="@dimen/common_paddng_10dp"
+            android:background="@drawable/light_grey_bg_screen_rounded"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_paddng_8dp"
+            android:paddingTop="@dimen/common_paddng_8dp"
+            android:paddingRight="@dimen/common_paddng_8dp">
+
+            <TextView
+                android:id="@+id/tvLabelSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_subscription"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_xxlarge"></TextView>
+
+          <com.jaredrummler.materialspinner.MaterialSpinner
+              android:id="@+id/spinner"
+              android:layout_marginTop="@dimen/_8sdp"
+              android:hint="Select Subscription"
+              android:layout_below="@+id/tvLabelSubscription"
+              android:layout_width="match_parent"
+              app:ms_arrow_tint="@color/colorPrimary"
+              android:layout_height="wrap_content"></com.jaredrummler.materialspinner.MaterialSpinner>
+            <TextView
+                android:id="@+id/tvLabelResion"
+                android:layout_below="@id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/enterReason"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_xxlarge"></TextView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtReason"
+                android:layout_below="@+id/tvLabelResion"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+               android:background="@color/text_color_white"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/enterReasonHint"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+
+                android:gravity="top"
+                />
+
+            <Button
+                android:layout_below="@+id/edtReason"
+                android:id="@+id/btnRequestRefund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_xxxlarge"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/graph_color"
+                android:text="@string/cancelRequest"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

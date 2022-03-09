@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical"
+    tools:context=".ServicesPaymentActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutdataview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_add_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/your_orders"
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_white_black_stroc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/tv1subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tradetips_subscription"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvsubsriptionprice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@id/tv1subscription"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="@dimen/_100sdp"
+                android:text=""
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_white_black_stroc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tvservicetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvserviceprice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@id/tvservicetype"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvmentorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvservicetype"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:text="sb cjsbj"
+                android:textColor="#2C2C2C" />
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_below="@id/tvservicetype"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/tvmentorname"
+                app:srcCompat="@drawable/mentoricon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="@string/tradetips_incorporate"
+            android:textSize="@dimen/_14ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/background_promo_code"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvpromo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/discount_promo_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvpromocode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/tvpromo1"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/tvpromo1"
+                android:gravity="end"
+                android:text="TTapp"
+                android:textColor="#686F81"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/payment_summary"
+            android:textColor="@color/dark_black_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:paddingStart="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/tvsubtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtotal"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvsubtotalamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/tvsubtotal"
+                android:layout_alignParentEnd="true"
+                android:text="$60"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvdiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvsubtotal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/discount_applied"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvdicountamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvsubtotalamount"
+                android:layout_alignEnd="@id/tvdiscount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="-$00"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvdiscount"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/total_payable"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvdicountamount"
+                android:layout_alignEnd="@id/tvtotal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="$60"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/bottomviewpayment"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/divider_shape" />
+
+    <RelativeLayout
+        android:id="@+id/bottomviewpayment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutbottomchild"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/pay"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/tvtotalpayamount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="$60"
+                android:textColor="@color/dark_black_color"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:background="@drawable/round_corner_btn_bg_blue"
+            android:text="@string/continuepayment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+</RelativeLayout>

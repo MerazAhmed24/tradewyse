@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:id="@+id/layoutRootLayout"
+    android:visibility="gone">
+
+    <!--Make a tip layout for mentor-->
+    <RelativeLayout
+        android:id="@+id/layoutMakeATip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_paddng_5dp"
+        android:layout_marginTop="@dimen/common_paddng_15dp"
+        android:layout_marginRight="@dimen/common_paddng_5dp"
+        android:layout_marginBottom="@dimen/common_paddng_5dp"
+        android:background="@drawable/bg_with_white_rounded_border"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/common_paddng_10dp"
+            app:srcCompat="@drawable/ic_add_circle_outline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/common_paddng_20dp"
+            android:text="@string/make_a_tip"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_xlarge" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewVerticalTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutMakeATip"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"/>
+
+    <!--Buy Header-->
+    <LinearLayout
+        android:id="@+id/layoutBuyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerViewVerticalTips"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtBuyDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="@dimen/common_paddng_5dp"
+            android:paddingTop="@dimen/common_paddng_1dp"
+            android:paddingEnd="@dimen/common_paddng_7dp"
+            android:paddingBottom="@dimen/common_paddng_3dp"
+            android:text=""
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:id="@+id/layoutBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mentor_list_item_bg_rounded"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/common_paddng_15dp"
+                android:paddingEnd="@dimen/common_paddng_10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBuy"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/buy_icon" />
+
+                <TextView
+                    android:id="@+id/txtBuyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toStartOf="@+id/txtMACDBuy"
+                    android:layout_toEndOf="@+id/imageViewBuy"
+                    android:paddingBottom="@dimen/common_paddng_2dp"
+                    android:singleLine="true"
+                    android:text="MACD Tips"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/txtMACDBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_backgroud_green">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="7dp"
+                        android:paddingEnd="7dp"
+                        android:text="Buy"
+                        android:textAlignment="center"
+                        android:textColor="#1e841c"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtBuyTitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="start"
+                android:paddingStart="@dimen/common_paddng_15dp"
+                android:paddingEnd="@dimen/common_paddng_10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtBuySignals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutBuyWhatIsMACD"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:text="What is MACD?"
+                        android:textColor="@color/button_dark_bg"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_help"
+                        app:tint="@color/button_dark_bg" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTitlesBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:alpha="0.4"
+                    android:background="#9B9B9B"
+                    app:cardCornerRadius="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutBuyTitles"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:text="Stock"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.3"
+                        android:gravity="start"
+                        android:text="Company"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Closing Price"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="14sp"
+                        android:paddingStart="@dimen/_8sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRecyclerViewBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewBuyStocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBuyBlank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No MACD crossover signals."
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textViewBuyClickHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/macd_blank_title"
+                    android:textColor="@color/blue_color"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBuyViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/item_separator"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue_color" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Sell Header-->
+    <LinearLayout
+        android:id="@+id/layoutSellHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutBuyHeader"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtSellDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="@dimen/common_paddng_5dp"
+            android:paddingTop="@dimen/common_paddng_1dp"
+            android:paddingEnd="@dimen/common_paddng_7dp"
+            android:paddingBottom="@dimen/common_paddng_3dp"
+            android:text=""
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mentor_list_item_bg_rounded"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/common_paddng_15dp"
+                android:paddingEnd="@dimen/common_paddng_10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewSell"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/sell_icon" />
+
+                <TextView
+                    android:id="@+id/txtSellTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toStartOf="@+id/txtMACDSell"
+                    android:layout_toEndOf="@+id/imageViewSell"
+                    android:paddingBottom="@dimen/common_paddng_2dp"
+                    android:singleLine="true"
+                    android:text="MACD Tips"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/txtMACDSell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_backgroud_red">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="Sell"
+                        android:textAlignment="center"
+                        android:textColor="#a94018"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtSellTitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="start"
+                android:paddingStart="@dimen/common_paddng_15dp"
+                android:paddingEnd="@dimen/common_paddng_10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtSellSignals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutSellWhatIsMACD"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:text="What is MACD?"
+                        android:textColor="@color/button_dark_bg"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_help"
+                        app:tint="@color/button_dark_bg" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTitlesSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:alpha="0.4"
+                    android:background="#9B9B9B"
+                    app:cardCornerRadius="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutSellTitles"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:text="Stock"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.3"
+                        android:gravity="start"
+                        android:text="Company"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Closing Price"
+                        android:textColor="@color/dark_black_color"
+                        android:textSize="14sp"
+                        android:paddingStart="@dimen/_8sdp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRecyclerViewSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSellStocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSellBlank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No MACD crossover signal."
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textViewSellClickHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/macd_blank_title"
+                    android:textColor="@color/blue_color"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSellViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/item_separator"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue_color" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

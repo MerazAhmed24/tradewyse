@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.weidongjian.android:popupWindowHelper:0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c077b3023a06dfffe5bd68a70eec2bb8/jetified-popupWindowHelper-0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c077b3023a06dfffe5bd68a70eec2bb8/jetified-popupWindowHelper-0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c077b3023a06dfffe5bd68a70eec2bb8/jetified-popupWindowHelper-0.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.weidongjian.android/popupWindowHelper/0.5/3f6becf40a594b192178ae7f2ab8ec6dabeb50c9/popupWindowHelper-0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.weidongjian.android/popupWindowHelper/0.5/c3da2e6065be65cc26b2cb4a3eea70f8397a5be4/popupWindowHelper-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

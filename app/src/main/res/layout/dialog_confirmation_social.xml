@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_white_rounded"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/closeDialog"
+                android:text="We always post your comments here and in the Strategy Chat Room"
+                android:textColor="#69738E"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/closeDialog"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:srcCompat="@drawable/ad_banner_cross_btn" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/userImageSocial"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/place_holder_profile_icon"
+                app:roundAsCircle="true" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="4.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUsernameCngDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfmedium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tvDateTimeMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#69738E"
+                    android:textSize="@dimen/_8ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSocialMessageConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:autoLink="web|email"
+            android:fontFamily="@font/sfregular"
+            android:linksClickable="true"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorLink="@color/blue_color"
+            android:textSize="@dimen/_12ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <CheckBox
+                android:id="@+id/view_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_1sdp"
+                android:paddingHorizontal="@dimen/_2sdp"
+                app:buttonTint="@color/check_box_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/view_check_box"
+                android:maxLines="2"
+                android:paddingStart="@dimen/_2sdp"
+                android:text="I don’t need to see this message again."
+                android:textColor="#69738E"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/round_corner_btn_bg_blue"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+</FrameLayout>

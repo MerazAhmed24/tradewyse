@@ -1,0 +1,762 @@
+<resources>
+    <string name="app_name">TradeTips</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Trad Wyse</string>
+    <string name="nav_header_subtitle">Welcome to TradWyse</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="left_panel_title_home">Dashboard</string>
+    <string name="left_panel_title_mentors">Mentors</string>
+    <string name="left_panel_title_trad_tips">Trad Tips</string>
+    <string name="left_panel_title_share">Share</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stocks">Stocks</string>
+    <string name="title_activity_edit_profile">Profile</string>
+    <string name="user_name">JOHN JOHNES</string>
+    <string name="name_label">NAME</string>
+    <string name="email_label">EMAIL</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="current_label">CURRENT</string>
+    <string name="new_pwd_label">NEW</string>
+    <string name="confirm_new_pwd_label">CONFIRM NEW</string>
+    <string name="save">Save</string>
+    <string name="today">Today</string>
+    <string name="date">12/28/18 3:34 PM</string>
+    <string name="action_profile">Profile</string>
+    <string name="hr_ago">2 hous ago</string>
+    <string name="min_ago">what if I wait for two days to buy, would it be a good stratgy?</string>
+    <string name="stock_detail">Nullam ruturm metus a magna molestie,
+    nibh, vitae facilisis rutrum allam ruturm metus a magna molestie,
+    nibh, vitae facilisis rutrum.</string>
+
+    <string name="time_line">Nullam ruturm metus a magna molestie,
+    nibh, vitae facilisis rutrum.</string>
+
+    <!--non tincidunt urna fucibus Nam lacinia convallis
+    lectus, id accumsan lorem sollicitudin at. Donec mollis ip sum sit amet finibus laoreet, nulla vel auctor-->
+    <string name="login">Log In</string>
+    <string name="LogOut">Log Out</string>
+    <string name="createAcc">Create Account</string>
+    <string name="forgotPwd">Forgot Password?</string>
+    <string name="Password_not_match">Password and Confirm Password don’t match.\n\nPlease try again.</string>
+    <string name="Submit">Submit</string>
+    <string name="TakeTour">See Demo</string> <!--See the Intro Again-->
+    <string name="pwd">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="incorrect_pass">The old password is not correct.</string>
+    <string name="emailandusername">Username or Email</string>
+    <string name="password_updated">Your password has been successfully updated.</string>
+    <string name="email_not_empty">The email address should not be empty.</string>
+    <string name="password_must_contain"><![CDATA[Password must be 8 or more characters, and Include upper and lowercase letters, numbers and symbols (like, -/:@%#$&?).]]></string>
+    <string name="username_not_empty">The username should not be empty.</string>
+    <string name="password_not_empty">The password should not be empty.</string>
+    <string name="cnf_passnot_empty">The confirm password should not be empty.</string>
+    <string name="cnf_pass_not_empty">Please confirm your password.</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="changepwd">Change Password</string>
+    <string name="oldpass">Current Password</string>
+    <string name="newpass">New Password</string>
+
+    <string name="required_field">The required field should not be empty.</string>
+    <string name="new_cng_pwd_same">The new password and confirm password should be the same.</string>
+    <string name="oldpassempty">The old password should not be empty.</string>
+    <string name="newpassempty">The new password should not be empty.</string>
+    <string name="cnfpassempty">Please confirm your password.</string>
+    <string name="HaveAcc">Already Have An Account?</string>
+    <!--<string name="TimeZone">NYT</string>-->
+    <string name="TimeZone">EST</string>
+
+    <string name="loginSpace">Log in</string>
+    <string name="tour1Title">@string/app_name</string>
+    <string name="tour1Description">The Stock Advicing Personal Assistant For Everyday People</string>
+
+    <string name="tour2Title">@string/app_name</string>
+    <string name="tour2Description">Automatically Picks Winning Socks Tailored Just For You</string>
+
+    <string name="tour3Title">@string/app_name</string>
+    <string name="tour3Description">Artificial Intelligence Runs The Numbers, And Gives You The Future Price of Stock</string>
+
+    <string name="tour4Title">@string/app_name</string>
+    <string name="tour4Description">Easy way to Trade your stock</string>
+
+
+    <string name="next">Next</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="search_stocks">Search Stocks</string>
+    <string name="no_result_found">No stocks found for your search</string>
+    <string name="title_activity_profile_tabbed">ProfileTabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>t
+    <string name="tab_text_3">Tab 3</string>
+    <string name="time_line_text">What if I wait two days to buy, would it be a good strategy?</string>
+    <string name="please_add_stocks_using_option">Please add stocks using \'+\' option.</string>
+    <string name="exit">EXIT</string>
+    <string name="entry">ENTRY</string>
+
+
+    <string name="term_of_use_heading"> <![CDATA[ <b>TRADETIPS,INC.</b> ]]></string>
+
+    <string name="term_of_use_subheading"> <![CDATA[  <b>Terms of Use</b>]]></string>
+
+    <string name="term_of_use_description"><![CDATA[  These Terms of Use constitute a legally binding agreement between TradeTips, Inc.
+(“TradeTips”) and you, and sets forth the terms and conditions that govern your use of
+the TradeTips.com websites and other TradeTips applications (collectively known as the
+&quot;Site&quot; or “Application” or “App”). TradeTips.com and TradeTips Applications are
+offered to you upon the condition of your acceptance, without modification, of these
+Terms of Use (the &quot;Terms&quot;). Your use of TradeTips.com and TradeTips applications
+constitutes your agreement to all such Terms. Please read these Terms carefully, and keep
+a copy of them for your reference. \n
+<b>TradeTips is a Technical Financial Data News Service </b>\n\n\n
+TradeTips is a subscription-based service (the &quot;Service&quot;) where members may have
+access to our proprietary system, which generates predictive forecasts of financial market
+behaviors over various time periods. The Service also allows commentary related to stock
+market forecasts from live experienced investors as well as public users. The system
+focuses on stock market equities, ETFs, and other financial instruments. TradeTips
+utilizes machine learning and other techniques to publish probabilistic results. All data
+generated by our system or Service are for educational purposes only. Neither TradeTips,
+nor its employees or agents are financial or investment advisors, do not provide financial
+or investment advice, and make no claims or guarantee of accuracy of any forecasts or
+predictions derived from the TradeTips Site, websites or applications. Any investments
+you make, whether based on information from the Site or otherwise, are your sole
+responsibility.\n
+You acknowledge and understand that the Site is not intended to supply investment,
+financial, tax or legal advice, and any prediction or observation concerning any security,
+trading algorithm, market or investment strategy is not a recommendation to buy, sell,
+avoid or hold such investment or security or to make any other investment decisions. We
+offer no advice regarding the nature, potential value, risk, position or suitability of any
+particular investment strategy, trading algorithm, transaction, security, news or
+investment. You acknowledge and agree that any use of the Site, any decisions made in
+reliance on the Site, including any trading or investment decisions or strategies, are made
+at your own risk. If investment, trading or other professional advice is required, the
+services of a competent, licensed professional should be sought. No employee, agent or
+representative of TradeTips is authorized to provide any such advice pursuant to this
+Agreement, and any such advice, if given, is in violation of TradeTips’ policies,
+is unauthorized and may not be relied upon.\n
+<b>Privacy</b>\n
+Your use of TradeTips.com and other TradeTips applications is subject to TradeTips&#39;
+Privacy Policy. Please review our Privacy Policy, which also governs the Site and
+informs users of our data collection practices. For more information please see
+TradeTips.com for details.
+\n\n
+<b>Electronic Communications</b> You consent to receive electronic communications and you
+agree that all agreements, notices, disclosures and other communications that we provide
+to you electronically, via email, application and on the Site, satisfy any legal requirement
+that such communications be in writing.\n
+<b>Your Account</b>\n
+If you use the Site, you are responsible for maintaining the confidentiality of your
+account and password and for restricting access to any computer or other device used by
+you, and you agree to accept responsibility for all activities that occur under your account
+or password. You may not assign or otherwise transfer your account to any other person
+or entity or authorize any other person to utilize your login information or password.
+Notwithstanding the foregoing, you are entirely responsible for any and all activities and
+conduct, whether by you or anyone else, that are conducted through your account. You
+acknowledge that TradeTips is not responsible for third party access to your account that
+results in or from theft or misappropriation of your account information. TradeTips and
+its associates reserve the right to refuse or cancel service, terminate accounts, or remove
+or edit content in our sole discretion. \n
+TradeTips does not knowingly collect, either online or offline, personal information from
+persons under the age of thirteen. If you are under 18, you may use TradeTips.com only
+with permission of a parent or guardian.\n
+<b>Links to Third Party Sites/Third Party Services</b>\n
+TradeTips.com, and the Site may contain links to other apps, websites and services
+(&quot;Linked Sites&quot;). The Linked Sites are not under the control of TradeTips and TradeTips
+is not responsible for the contents of any Linked Site, including without limitation any
+link contained in a Linked Site, or any changes or updates to a Linked Site. TradeTips
+provides these links to you only as a convenience, and the inclusion of any link does not
+imply endorsement by TradeTips of the site or any association with its operators.
+Third party sites and organizations deliver certain services made available via
+TradeTips.com. By using any product, service or functionality originating from the
+TradeTips.com domain, or Applications you hereby acknowledge and consent that
+TradeTips may share such information and data with any third party with whom
+TradeTips has a contractual relationship to provide the requested product, service or
+functionality on behalf of TradeTips users and customers.
+<b>No unlawful or prohibited use/Intellectual Property</b>
+You are granted a non-exclusive, non-transferable, revocable license to access and
+use TradeTips.com and TradeTips Applications strictly in accordance with these
+Terms of Use.\n
+As a condition of your use of the Site, you warrant to TradeTips that you will not use the
+Site for any purpose that is unlawful or prohibited by these Terms. You may not use the
+Site in any manner which could damage, disable, overburden, or impair the Site or
+interfere with any other party&#39;s use and enjoyment of the Site. You may not obtain or
+attempt to obtain any materials or information through any means not intentionally made
+\n
+available or provided for through the Site.\n
+All content included as part of the Service, such as text, graphics, logos, images,
+methodologies, as well as the compilation thereof, and any software used on the Site, is
+the property of TradeTips or its suppliers and protected by copyright and other laws that
+protect intellectual property and proprietary rights. You agree to observe and abide by all
+copyright and other proprietary notices, legends or other restrictions contained in any
+such content and will not make any changes thereto.\n
+You will not modify, publish, transmit, reverse engineer, participate in the transfer or
+sale, create derivative works, or in any way exploit any of the content, in whole or in part,
+found on the Site. TradeTips content is not for resale. Your use of the Site does not entitle
+you to make any unauthorized use of any protected content, and in particular you will not
+delete or alter any proprietary rights or attribution notices in any content. You will use
+protected content solely for your personal use, and will make no other use of the content
+without the express written permission of TradeTips and the copyright owner. You agree
+that you do not acquire any ownership rights in any protected content. We do not grant
+you any license, express or implied, to the intellectual property of TradeTips or our
+licensors except as expressly authorized by these Terms.
+<b>International Users</b>\n
+The Service is controlled, operated and administered by TradeTips from our offices
+within the USA. If you access the Service from a location outside the USA, you are
+responsible for compliance with all local laws. You agree that you will not use any
+content accessed through TradeTips.com or any related application in any country or in
+any manner prohibited by any applicable laws, restrictions or regulations.
+<b>Indemnification</b>\n
+You agree to indemnify, defend and hold harmless TradeTips, and its officers, directors,
+employees, and agents for any losses, costs, liabilities and expenses (including
+reasonable attorneys&#39; fees) relating to or arising out of your use of or inability to use the
+Site or Services, any user postings made by you, your violation of any terms of this
+Agreement or your violation of any rights of a third party, or your violation of any
+applicable laws, rules or regulations. TradeTips reserves the right, at its own cost, to
+assume the exclusive defense and control of any matter otherwise subject to
+indemnification by you, in which event you will fully cooperate with TradeTips in
+asserting any available defenses.
+<b>Liability Disclaimer</b>\n
+THE INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN
+OR AVAILABLE THROUGH THE SITE MAY INCLUDE INACCURACIES OR
+TYPOGRAPHICAL ERRORS. TRADETIPS AND/OR ITS SUPPLIERS MAY MAKE
+IMPROVEMENTS AND/OR CHANGES IN THE SITE AT ANY TIME WITHOUT
+NOTICE.\n
+TRADETIPS AND/OR ITS SUPPLIERS MAKE NO REPRESENTATIONS ABOUT
+THE SUITABILITY, RELIABILITY, AVAILABILITY, TIMELINESS, OR
+\n
+ACCURACY OF THE INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND
+RELATED GRAPHICS CONTAINED ON THE SITE FOR ANY PURPOSE. TO THE
+MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALL SUCH
+INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED
+GRAPHICS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OR CONDITION OF
+ANY KIND. TRADETIPS COMPANY AND/OR ITS SUPPLIERS HEREBY
+DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THIS
+INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED
+GRAPHICS, INCLUDING ALL IMPLIED WARRANTIES OR CONDITIONS OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+NON-INFRINGEMENT.\n
+IN NO EVENT SHALL TRADETIPS OR ITS OFFICERS, DIRECTORS,
+EMPLOYEES, OR AGENTS BE LIABLE FOR ANY DIRECT, INDIRECT,
+PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES OR ANY
+DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES
+FOR LOSS OF USE, DATA OR PROFITS, ARISING OUT OF OR IN ANY WAY
+CONNECTED WITH THE USE OR PERFORMANCE OF THE SITE, WITH THE
+DELAY OR INABILITY TO USE THE SITE OR RELATED SERVICES, THE
+PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY
+INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED
+GRAPHICS OBTAINED THROUGH THE SITE, OR OTHERWISE ARISING OUT
+OF THE USE OF THE SITE, WHETHER BASED ON CONTRACT, TORT,
+NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF TRADETIPS HAS
+BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. IF YOU ARE
+DISSATISFIED WITH ANY PORTION OF THE SITE, OR WITH ANY OF THESE
+TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE
+USING THE SITE.\n
+<b>Termination/Access Restriction</b>\n
+TradeTips reserves the right, in its sole discretion, to terminate your access to the Site and
+the related services or any portion thereof at any time, without notice. The laws of the
+State of California govern this agreement, and you hereby consent to the exclusive
+jurisdiction and venue of courts in California in all disputes arising out of or relating to
+the use of the Site. Use of the Site is unauthorized in any jurisdiction that does not give
+effect to all provisions of these Terms, including, without limitation, this section.
+You agree that no joint venture, partnership, employment, or agency relationship exists
+between you and TradeTips as a result of these Terms or use of the Site. TradeTips&#39;
+performance of this agreement is subject to existing laws and legal process, and nothing
+contained in this agreement is in derogation of TradeTips&#39; right to comply with
+governmental, court and law enforcement requests or requirements relating to your use of
+the Site or information provided to or gathered by TradeTips with respect to such use.
+If any part of these Terms is determined to be invalid or unenforceable pursuant to
+applicable law including, but not limited to, the warranty disclaimers and liability
+limitations set forth above, then the invalid or unenforceable provision will be deemed
+\n
+superseded by a valid, enforceable provision that most closely matches the intent of the
+original provision and the remainder of these Terms shall continue in effect.
+Unless otherwise specified herein, these Terms constitute the entire agreement between
+the user and TradeTips and supersede all prior or contemporaneous communications and
+proposals, whether electronic, oral or written, between the user and TradeTips. A printed
+version of this agreement and of any notice given in electronic form shall be admissible
+in judicial or administrative proceedings based upon or relating to this agreement to the
+same extent and subject to the same conditions as other business documents and records
+originally generated and maintained in printed form.
+<b>Changes to Terms</b>\n
+TradeTips reserves the right, in its sole discretion, to change the Terms under which
+TradeTips.com and other TradeTips Applications are offered. The most current version
+of the Terms will supersede all previous versions. TradeTips encourages you to
+periodically review the Terms to stay informed of our updates.
+<b>Contact Us</b> \n
+Please send questions or comments regarding the Terms to:
+TermsOfUse@TradeTips.com>]]></string>
+    <!--<string name="action_settings">SPY</string>-->
+
+    <string name="term_accept">ACCEPT</string>
+    <string name="term_cancel">CANCEL</string>
+    <string name="term_data"><![CDATA[<p>These Terms of Use constitute a legally binding agreement between TradeTips, Inc.<br />(;TradeTips) and you, and sets forth the terms and conditions that govern your use of<br />the TradeTips.com websites and other TradeTips applications (collectively known as the<br />&amp;quot;Site&amp;quot; or Application or App;). TradeTips.com and TradeTips Applications are<br />offered to you upon the condition of your acceptance, without modification, of these<br />Terms of Use (the &amp;quot;Terms&amp;quot;). Your use of TradeTips.com and TradeTips applications<br />constitutes your agreement to all such Terms. Please read these Terms carefully, and keep<br />a copy of them for your reference. <br />TradeTips is a Technical Financial Data News Service <br />TradeTips is a subscription-based service (the &amp;quot;Service&amp;quot;) where members may have<br />access to our proprietary system, which generates predictive forecasts of financial market<br />behaviors over various time periods. The Service also allows commentary related to stock<br />market forecasts from live experienced investors as well as public users. The system<br />focuses on stock market equities, ETFs, and other financial instruments. TradeTips<br />utilizes machine learning and other techniques to publish probabilistic results. All data<br />generated by our system or Service are for educational purposes only. Neither TradeTips,<br />nor its employees or agents are financial or investment advisors, do not provide financial<br />or investment advice, and make no claims or guarantee of accuracy of any forecasts or<br />predictions derived from the TradeTips Site, websites or applications. Any investments<br />you make, whether based on information from the Site or otherwise, are your sole<br />responsibility.<br />You acknowledge and understand that the Site is not intended to supply investment,<br />financial, tax or legal advice, and any prediction or observation concerning any security,<br />trading algorithm, market or investment strategy is not a recommendation to buy, sell,<br />avoid or hold such investment or security or to make any other investment decisions. We<br />offer no advice regarding the nature, potential value, risk, position or suitability of any<br />particular investment strategy, trading algorithm, transaction, security, news or<br />investment. You acknowledge and agree that any use of the Site, any decisions made in<br />reliance on the Site, including any trading or investment decisions or strategies, are made<br />at your own risk. If investment, trading or other professional advice is required, the<br />services of a competent, licensed professional should be sought. No employee, agent or<br />representative of TradeTips is authorized to provide any such advice pursuant to this<br />Agreement, and any such advice, if given, is in violation of TradeTips; policies,<br />is unauthorized and may not be relied upon.<br />Privacy<br />Your use of TradeTips.com and other TradeTips applications is subject to TradeTips&amp;#39;<br />Privacy Policy. Please review our Privacy Policy, which also governs the Site and<br />informs users of our data collection practices. For more information please see<br />TradeTips.com for details.</p>
+<p>Electronic Communications You consent to receive electronic communications and you<br />agree that all agreements, notices, disclosures and other communications that we provide<br />to you electronically, via email, application and on the Site, satisfy any legal requirement<br />that such communications be in writing.<br />Your Account<br />If you use the Site, you are responsible for maintaining the confidentiality of your<br />account and password and for restricting access to any computer or other device used by<br />you, and you agree to accept responsibility for all activities that occur under your account<br />or password. You may not assign or otherwise transfer your account to any other person<br />or entity or authorize any other person to utilize your login information or password.<br />Notwithstanding the foregoing, you are entirely responsible for any and all activities and<br />conduct, whether by you or anyone else, that are conducted through your account. You<br />acknowledge that TradeTips is not responsible for third party access to your account that<br />results in or from theft or misappropriation of your account information. TradeTips and<br />its associates reserve the right to refuse or cancel service, terminate accounts, or remove<br />or edit content in our sole discretion. <br />TradeTips does not knowingly collect, either online or offline, personal information from<br />persons under the age of thirteen. If you are under 18, you may use TradeTips.com only<br />with permission of a parent or guardian.<br />Links to Third Party Sites/Third Party Services<br />TradeTips.com, and the Site may contain links to other apps, websites and services<br />(&amp;quot;Linked Sites&amp;quot;). The Linked Sites are not under the control of TradeTips and TradeTips<br />is not responsible for the contents of any Linked Site, including without limitation any<br />link contained in a Linked Site, or any changes or updates to a Linked Site. TradeTips<br />provides these links to you only as a convenience, and the inclusion of any link does not<br />imply endorsement by TradeTips of the site or any association with its operators.<br />Third party sites and organizations deliver certain services made available via<br />TradeTips.com. By using any product, service or functionality originating from the<br />TradeTips.com domain, or Applications you hereby acknowledge and consent that<br />TradeTips may share such information and data with any third party with whom<br />TradeTips has a contractual relationship to provide the requested product, service or<br />functionality on behalf of TradeTips users and customers.<br />No unlawful or prohibited use/Intellectual Property<br />You are granted a non-exclusive, non-transferable, revocable license to access and<br />use TradeTips.com and TradeTips Applications strictly in accordance with these<br />Terms of Use.<br />As a condition of your use of the Site, you warrant to TradeTips that you will not use the<br />Site for any purpose that is unlawful or prohibited by these Terms. You may not use the<br />Site in any manner which could damage, disable, overburden, or impair the Site or<br />interfere with any other party&amp;#39;s use and enjoyment of the Site. You may not obtain or<br />attempt to obtain any materials or information through any means not intentionally made</p>
+<p>available or provided for through the Site.<br />All content included as part of the Service, such as text, graphics, logos, images,<br />methodologies, as well as the compilation thereof, and any software used on the Site, is<br />the property of TradeTips or its suppliers and protected by copyright and other laws that<br />protect intellectual property and proprietary rights. You agree to observe and abide by all<br />copyright and other proprietary notices, legends or other restrictions contained in any<br />such content and will not make any changes thereto.<br />You will not modify, publish, transmit, reverse engineer, participate in the transfer or<br />sale, create derivative works, or in any way exploit any of the content, in whole or in part,<br />found on the Site. TradeTips content is not for resale. Your use of the Site does not entitle<br />you to make any unauthorized use of any protected content, and in particular you will not<br />delete or alter any proprietary rights or attribution notices in any content. You will use<br />protected content solely for your personal use, and will make no other use of the content<br />without the express written permission of TradeTips and the copyright owner. You agree<br />that you do not acquire any ownership rights in any protected content. We do not grant<br />you any license, express or implied, to the intellectual property of TradeTips or our<br />licensors except as expressly authorized by these Terms.<br />International Users<br />The Service is controlled, operated and administered by TradeTips from our offices<br />within the USA. If you access the Service from a location outside the USA, you are<br />responsible for compliance with all local laws. You agree that you will not use any<br />content accessed through TradeTips.com or any related application in any country or in<br />any manner prohibited by any applicable laws, restrictions or regulations.<br />Indemnification<br />You agree to indemnify, defend and hold harmless TradeTips, and its officers, directors,<br />employees, and agents for any losses, costs, liabilities and expenses (including<br />reasonable attorneys&amp;#39; fees) relating to or arising out of your use of or inability to use the<br />Site or Services, any user postings made by you, your violation of any terms of this<br />Agreement or your violation of any rights of a third party, or your violation of any<br />applicable laws, rules or regulations. TradeTips reserves the right, at its own cost, to<br />assume the exclusive defense and control of any matter otherwise subject to<br />indemnification by you, in which event you will fully cooperate with TradeTips in<br />asserting any available defenses.<br />Liability Disclaimer<br />THE INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN<br />OR AVAILABLE THROUGH THE SITE MAY INCLUDE INACCURACIES OR<br />TYPOGRAPHICAL ERRORS. TRADETIPS AND/OR ITS SUPPLIERS MAY MAKE<br />IMPROVEMENTS AND/OR CHANGES IN THE SITE AT ANY TIME WITHOUT<br />NOTICE.<br />TRADETIPS AND/OR ITS SUPPLIERS MAKE NO REPRESENTATIONS ABOUT<br />THE SUITABILITY, RELIABILITY, AVAILABILITY, TIMELINESS, OR</p>
+<p>ACCURACY OF THE INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND<br />RELATED GRAPHICS CONTAINED ON THE SITE FOR ANY PURPOSE. TO THE<br />MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALL SUCH<br />INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED<br />GRAPHICS ARE PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OR CONDITION OF<br />ANY KIND. TRADETIPS COMPANY AND/OR ITS SUPPLIERS HEREBY<br />DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THIS<br />INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED<br />GRAPHICS, INCLUDING ALL IMPLIED WARRANTIES OR CONDITIONS OF<br />MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND<br />NON-INFRINGEMENT.<br />IN NO EVENT SHALL TRADETIPS OR ITS OFFICERS, DIRECTORS,<br />EMPLOYEES, OR AGENTS BE LIABLE FOR ANY DIRECT, INDIRECT,<br />PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES OR ANY<br />DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES<br />FOR LOSS OF USE, DATA OR PROFITS, ARISING OUT OF OR IN ANY WAY<br />CONNECTED WITH THE USE OR PERFORMANCE OF THE SITE, WITH THE<br />DELAY OR INABILITY TO USE THE SITE OR RELATED SERVICES, THE<br />PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY<br />INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED<br />GRAPHICS OBTAINED THROUGH THE SITE, OR OTHERWISE ARISING OUT<br />OF THE USE OF THE SITE, WHETHER BASED ON CONTRACT, TORT,<br />NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF TRADETIPS HAS<br />BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. IF YOU ARE<br />DISSATISFIED WITH ANY PORTION OF THE SITE, OR WITH ANY OF THESE<br />TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE<br />USING THE SITE.<br />Termination/Access Restriction<br />TradeTips reserves the right, in its sole discretion, to terminate your access to the Site and<br />the related services or any portion thereof at any time, without notice. The laws of the<br />State of California govern this agreement, and you hereby consent to the exclusive<br />jurisdiction and venue of courts in California in all disputes arising out of or relating to<br />the use of the Site. Use of the Site is unauthorized in any jurisdiction that does not give<br />effect to all provisions of these Terms, including, without limitation, this section.<br />You agree that no joint venture, partnership, employment, or agency relationship exists<br />between you and TradeTips as a result of these Terms or use of the Site. TradeTips&amp;#39;<br />performance of this agreement is subject to existing laws and legal process, and nothing<br />contained in this agreement is in derogation of TradeTips&amp;#39; right to comply with<br />governmental, court and law enforcement requests or requirements relating to your use of<br />the Site or information provided to or gathered by TradeTips with respect to such use.<br />If any part of these Terms is determined to be invalid or unenforceable pursuant to<br />applicable law including, but not limited to, the warranty disclaimers and liability<br />limitations set forth above, then the invalid or unenforceable provision will be deemed</p>
+<p>superseded by a valid, enforceable provision that most closely matches the intent of the<br />original provision and the remainder of these Terms shall continue in effect.<br />Unless otherwise specified herein, these Terms constitute the entire agreement between<br />the user and TradeTips and supersede all prior or contemporaneous communications and<br />proposals, whether electronic, oral or written, between the user and TradeTips. A printed<br />version of this agreement and of any notice given in electronic form shall be admissible<br />in judicial or administrative proceedings based upon or relating to this agreement to the<br />same extent and subject to the same conditions as other business documents and records<br />originally generated and maintained in printed form.<br />Changes to Terms<br />TradeTips reserves the right, in its sole discretion, to change the Terms under which<br />TradeTips.com and other TradeTips Applications are offered. The most current version<br />of the Terms will supersede all previous versions. TradeTips encourages you to<br />periodically review the Terms to stay informed of our updates.<br />Contact Us<br />Please send questions or comments regarding the Terms to:<br />TermsOfUse@TradeTips.com</p> >]]></string>
+
+
+    <string name="dummy_stock_name">AMD</string>
+    <string name="stock_company">Advanced Micro Devices</string>
+    <string name="performingstatus">Moving Averages</string>
+    <string name="noOfDays">10 Day</string>
+    <string name="tenDayValueApprox">$255.04</string>
+    <string name="fiftyDayValueApprox">$258.70</string>
+    <string name="twoHundredDayValueApprox"> $288.53</string>
+    <string name="TradeWyseAI">TradeTips AI</string>
+    <string name="momentsAgo">Moments ago</string>
+
+    <string name="currentValue">$256.45</string>
+    <string name="changeValue">+0.89%</string>
+    <string name="sectorNews">Sector News : </string>
+    <string name="newSources">84 News sources</string>
+    <string name="veryPositive">Very Positive</string>
+    <string name="bloomburg">Bloomburg - </string>
+
+    <string name="hed2">MarketWatch - </string>
+    <string name="hed3">BARRON\'S -  </string>
+    <string name="news1">Apple beats estimate in another strong showing</string>
+    <string name="news2">The new google pixel 3a shows us high-end phones.</string>
+    <string name="news3">Watch Jeff Bezos big pitch for establishing a space..</string>
+    <string name="buy">BUY</string>
+    <string name="oct14">Oct 14</string>
+    <string name="verypositive">Very Positive</string>
+    <string name="time">10:50 am NYT</string>
+    <string name="news">News</string>
+    <string name="sma">SMAs</string>
+    <string name="recommends">Recommends</string>
+    <string name="closeText">Close this news summary</string>
+    <string name="news1Description">Apple beats estimate in another strong showing.Apple beats estimate in another strong showing.Apple beats estimate in another strong showing.</string>
+    <string name="make_a_tip">Make A Tip</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_option">Select Option</string>
+    <string name="tipDetails">Tip Details</string>
+    <string name="newsDetails">News Details</string>
+    <string name="sentimentBasedOnNewSources">(Sentiment Based On %1$s News Sources)</string>
+    <string name="timelineSeeHistory">See your entire history on the app.</string>
+    <string name="timelineWorkingOnThis">We\'re still working on this.</string>
+
+    <string name="ChatRoomJoinChatRoom">Join investing related chat rooms.</string>
+    <string name="ChatRoomWorkingOnThis">We\'re still working on this.</string>
+
+    <string name="FollwingConnectWithMentors">Connect with Mentors + Followers.</string>
+    <string name="FollwoingWorkingOnThis">We\'re still working on this.</string>
+
+    <string name="Tab1">Timeline</string>
+    <string name="Tab2">Chat Rooms</string>
+    <string name="Tab3">Following</string>
+    <string name="error">Error!</string>
+    <string name="invalid_promo_code">Invalid Promo Code</string>
+    <string name="please_enter_a_valid_promo_code">That promo code is not working.\nPlease check the spelling and try again.</string>
+    <string name="retry">Retry</string>
+    <string name="alert">Alert</string>
+    <string name="messageAlert">Message</string>
+    <string name="deleteAlert">Delete</string>
+    <string name="deleteAlertMessage">Are you sure you want to delete this message?</string>
+    <string name="required">Required</string>
+    <string name="Success_title">Success</string>
+    <string name="alertcongrats">Congratulations</string>
+    <string name="InternalServerError">Internal server failed! Please try again later.</string>
+
+    <string name="notification_channel1">TradeTips_channel1</string>
+    <string name="notification_channel1_desc">TradeTips_channel1_desc</string>
+
+    <string name="tour1_desc1">Stock Trading Tips for Everyone</string>
+    <string name="tour1_desc2">You start with 8 stocks that you can delete anytime.</string>
+
+    <string name="tour2_desc1">Investment Bank Artificial Intelligence</string>
+    <string name="tour2_desc2">Get automatic BUY or SELL signals for any stock.</string>
+
+    <string name="tour3_desc1">Live Mentors Help You Set Up Trades</string>
+    <string name="tour3_desc2">Learn directly from successful Investors.</string>
+
+
+    <string name="flag_comment">Reason For Flag</string>
+    <string name="flag_select_reason">Please select a reason for flag</string>
+    <string name="flag_Offensive">Offensive</string>
+    <string name="flag_Irrelavent">Irrelavent</string>
+    <string name="flag_Other">Other</string>
+    <string name="flag_success">Successfully flagged the tip. Administrator will review the flag and act accordingly.</string>
+    <string name="flag_success_chat">This comment has been sent for review to the chat room moderator. Thank you.</string>
+    <string name="flag_already_submitted">This user has already submitted flag for this tip!!!</string>
+
+
+    <string name="flag_success_comment">Successfully flagged the comment. Administrator will review the flag and act accordingly.</string>
+    <string name="flag_already_submitted_for_comment">This user has already submitted flag for this comment!!!</string>
+
+    <string name="predection_Not_Availablea">This process takes a little time. We’ll send you a notification in a few minutes.</string>
+
+    <string name="information">Information</string>
+
+    <string name="dashDash">--</string>
+
+    <!-- validation and error messages-->
+    <string name="EnterEmailTitle">Enter Email</string>
+    <string name="EnterValidEmail">Please enter a valid email address.</string>
+    <string name="EmailPasswordCantBeBlank">Email / Password fields can’t be left blank.</string>
+    <string name="EnterUsername">Please enter a valid username.</string>
+    <string name="EnterValidPwd">Please enter a valid password.</string>
+    <string name="EnterValidPassword">Please enter your password.</string>
+    <string name="UserNameCanNotEmpty">Email/Password fields can\'t be left blank.</string>
+    <string name="invalidUsernamePassword">Invalid username/password.</string>
+    <string name="emailAuthNotDone">email Authentication is not done.</string>
+    <string name="enterUsername">Enter email address</string>
+    <string name="enterName">Please input a valid name..</string>
+    <string name="enterEmail">Please input native deta email</string>
+    <string name="enterCard">Enter your card details</string>
+    <string name="termsAndCondition">Terms and Conditions</string>
+    <string name="PleaseClickAccept">Please click accept to continue.</string>
+    <string name="enterValidEmails">Please input a valid email.</string>
+    <string name="Accept">Accept</string>
+    <string name="Cancel">Cancel</string>
+    <string name="enterValidEmail">Please input a valid email.</string>
+    <string name="somethingWentWrong">Something went wrong!</string>
+
+    <string name="we_are_making_prediction">We\'re Making Your Prediction</string>
+    <string name="prediction_error_message">This process takes a little time. We\'ll send you a notification in a few minutes.</string>
+
+    <string name="alertTitleSignupSuccess">Check Your Email</string>
+    <string name="alertMsgSignupSuccess">You\’re All Set\n\nGo ahead and log in on the next screen.\n\nWe\’ve also sent you an email. If you can\’t find it, please check your Promotions, Spam or Junk folders.</string>
+
+    <string name="welcome1_text_new">Stock Trading Tips for Everyone</string>
+    <string name="welcome2_text_new">A.I. Generated Buy and Sell Signals</string>
+    <string name="welcome3_text_new">Live Mentors Help You Trade</string>
+    <string name="TipRuleTitle">Tip Rule!</string>
+    <string name="validateTipPiceMessage">Only 50% of the current stock price is allowed. Range for the selected stock is %1$s to %2$s</string>
+
+    <string name="JustLetYouKnow">Just Letting You Know</string>
+    <string name="NoHistoricalDataErrorMsg">There\'s no historical stock data from the exchange at the moment.</string>
+    <string name="memeMsg">We’re seeing a weird network issue right now. Restarting the app may fix it.\nWe also recommend you enjoy a bunch of memes before you do.</string>
+    <!--<string name="memeMsg">We\'re waiting for data. Until you reconnect, enjoy a meme in the memetime.</string>-->
+    <string name="memeMe">Meme me</string>
+    <string name="NextMeme">Next MEME</string>
+    <string name="Follow">Follow</string>
+    <string name="Follows">Follows</string>
+    <string name="Unfollow">Unfollow</string>
+    <string name="Following">Following</string>
+    <string name="MessageUnfollow">Successfully unfollowed</string>
+    <string name="Messagefollow">You started following</string>
+
+    <string name="MEME_Me_Title">MEME Me</string>
+    <string name="app_plans">App plans</string>
+    <string name="tradetips_membership">TradeTips Membership</string>
+    <string name="we_created_trade_tips_to_help_average_investors_just_like_you_make_money_from_stock_markets_that_have_been_taken_over_by_computer_algorithms">We created trade tips to help average investors just like you, make money from stock markets that have been taken over by computer algorithms</string>
+    <string name="feature_one">Full access to all stock forecasting tools.</string>
+    <string name="feature_two">Private group and mentor chat rooms.</string>
+    <string name="feature_three">Unlocked exclusive offers and more.</string>
+    <string name="time_to_become_a_member">Hi, %1$s it\'s your time to become a member.</string>
+    <string name="your_name_on_credit_card">Name on Credit Card</string>
+    <string name="credit_card_information">Credit card information</string>
+    <string name="confirm_your_tradetips_email">Confirm your TradeTips email</string>
+    <string name="subscribtion">Subscribtion</string>
+    <string name="securedBy">Secured by</string>
+    <string name="stripe">stripe</string>
+    <string name="star">*</string>
+    <string name="btnUnlockSubs">Login to unlock subscription.</string>
+    <string name="MembershipProcessed">You\'re membership has been processed.</string>
+    <string name="sendYouBillInfo">We will send billing information to your email account.</string>
+    <string name="beatMarket">Now let\'s go beat the market.</string>
+
+    <string name="ValidUsername">Usernames have a 16 characters limit and symbols are not allowed. (~#^|$&amp;*._!@\'").</string>
+    <string name="thank_you_user">Thank you %1$s.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="subscription">Subscription</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="know_more">Know More</string>
+    <string name="see_more">See More</string>
+    <string name="see_less">See Less</string>
+    see_less
+    <string name="faqs">FAQs</string>
+    <string name="contact_us">Contact us</string>
+    <string name="mentors_tips">Mentor Tips</string>
+    <string name="ai_tips">AI Tips</string>
+    <string name="tips_filter">Tips Filter</string>
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+    <string name="optSubscription">Subscription</string>
+    <string name="optYourSubscription">Plan Subscriptions</string>
+    <string name="bookTimeWithMentor">Book time with a Mentor</string>
+    <string name="AppDemo">Play App Overview Demo</string>
+    <string name="FAQ">FAQ\'s</string>
+    <string name="Suggetion">Suggest an App Improvement</string>
+    <string name="ContactUs">Contact Us</string>
+    <string name="BecomeMentor">Become a Mentor</string>
+    <string name="VisitProfile">Visit %s\'s Profile</string>
+    <string name="TweetTip">Tweet tip</string>
+    <string name="RemoveTip">Remove Tip</string>
+
+    <string name="create_room">Create Room</string>
+    <string name="room_name">Room Name</string>
+    <string name="you_can">You can</string>
+    <string name="you_are">You are</string>
+    <string name="tweeted">Tweeted</string>
+    <string name="saved_tip">Saved Tip</string>
+    <string name="get_the_most_out_nof_tradetips_ntoday">Get the most out \nof TradeTips \ntoday!</string>
+    <string name="_1_post_comments_on_mentor_tips_and_then_track_the_response_here">1. Post comments on Mentor tips and then track the response here.</string>
+    <string name="_2_save_tips_and_we_we_ll_list_all_of_them_here_for_you">2. Save tips and we we\'ll list all of them here for you.</string>
+    <string name="_3_tweet_tips_and_get_advice_from_your_twitter_followers_here">3. Tweet tips and get advice from your Twitter followers here.</string>
+    <string name="chat_room_one_rules">Chat Room One</string>
+    <string name="_1_we_believe_in_personal_rights_and_freedom">1. We believe in personal rights and freedom.</string>
+    <string name="_2_this_space_is_for_sharing_winning_trades_and_investing_strategies">2. This space is for sharing winning trades and investing strategies.</string>
+    <string name="_3_the_app_was_designed_">3. The app is here to help anyone make money in the market … so come on in.</string>
+
+    <string name="faq1">Can you trade on TradeTips?</string>
+    <string name="faq1_answer">No, you cannot trade on TradeTips today. We are far more interested in giving you the tools to help you become a successful investor, than getting you access to the stock market.\n\nUse TradeTips as a companion to your favorite (hopefully $0 fees) trading app</string>
+
+    <string name="faq2">What is a TradeTips Mentor?</string>
+    <string name="faq2_answer">TradeTips is a technology platform that allows the aggregation of investing coaches and trading experts, we call them and “Mentors”.\n\nThey all must go through a strong vetting process before being allowed to join TradeTips as a Mentor, and are the only ones allowed to create and post stock tips on the app.</string>
+
+    <string name="faq3">Can I talk directly to a Mentor?</string>
+    <string name="faq3_answer">Yes, we strongly encourage you to reach out to Mentors with your questions and comments.\n\nThere are several ways to communicate with a Mentor:\n\n1. Click on a Mentor’s Tip and leave a comment for them on the Tip Detail.\n\n2. Ask them a question in the Public Chat Room.\n\n3. Take a Mentor’s group class in a their own chat room.\n\n4. Book time with a Mentor in 1-on-1 training sessions.</string>
+
+    <string name="faq4">Can I become a TradeTips Mentor?</string>
+    <string name="faq4_answer">Yes, we would like our members who are serious about investing and who have a great track record to reach out to us: Click Here.</string>
+
+    <string name="faq5">Can I communicate with friends on the app?</string>
+    <string name="faq5_answer">Yes, you can connect with friends on TradeTips.\n\n1. Click on a Mentor’s Tip and leave a comment for them on the Tip Detail.\n\n2. Communicate with them in the Public Chat Room.\n\n3. Take a Mentor’s group class together with your friends.\n\n4. Tweet a mentor tip to your own Twitter feed and get advice on the stock tip from friends there.\n\n5. Follow friends who are on the app and share ideas on tips.</string>
+
+    <string name="faq5_1">Can I learn to invest on the app?</string>
+    <string name="faq5_1_answer">Yes, we designed the app to help people who do not know much about investing, get started and take charge of their financial lives.\n\nYou can begin to learn by asking questions in the Chat Room One and on Mentor Tips. Then we recommend taking a class with a Mentor or sign up for a 1-on-1 session with a mentor.</string>
+
+    <string name="faq6">What do I get for my subscription?</string>
+    <string name="faq6_answer">1. Continued access to all the Mentor tips and AI generated Tips.\n\n2. Access to Mentor’s 1-on-1 sessions and classes.\n\n3. Access to other chat rooms and exclusive app only events.\n\n4. Automatic track and notify you when the stocks you choose are in a position to buy or sell.\n\n5. Access to 5-Day AI Predictions for all stocks.\n\nMost importantly, you get a community of members and Mentors who are dedicated to helping you make money from the stock market … we want you to make money … you … yes you, specifically. That’s our goal.</string>
+
+    <string name="faq7">What if I want a refund?</string>
+    <string name="faq7_answer">Get ALL your money back on all subscription plans up to 7 days after becoming a member. No question asked. Special Offers, Discount Deals and Promo Codes are not included.\nSimple and straightforward.\nContact us here.</string>
+
+    <string name="faq8">Can I start a chat room?</string>
+    <string name="faq8_answer">Nope, only Mentors can start chat rooms. You can ask a Mentor to start a chat room with a topic for you though.</string>
+
+    <string name="faq9">Can I follow someone on the app?</string>
+    <string name="faq9_answer">Yes. Click on any user’s profile icon or photo or their name. Then on their profile screen click the button that says “Follow”. If the button says “Following” you are then following that user.\n\nYou can also look at their Following tab on their profile and see who they are Following … if you would like to expand your network.</string>
+
+    <string name="faq10">Can I change my username?</string>
+    <string name="faq10_answer">No, your username is set once you create the account. Please reach out to us on TradeTipsApp.com if you have an issue with your username.</string>
+
+    <string name="faq11">Can I change my user photo?</string>
+    <string name="faq11_answer">Yes. Click on the profile icon or the edit text on your profile screen.\n\nThen give TradeTips access to your camera and photos to provide us with a photo of you.</string>
+
+    <string name="faq12">What about sharing on social media?</string>
+    <string name="faq12_answer">We currently allow sharing of Mentor Tips on Twitter through the app.\nWe would like to expand this to other social media applications. If you would like us to share information on a specific platform, let us know which ones by contacting us at sayhello@tradetipsapp.com.</string>
+    <string name="datetxt">Date</string>
+    <string name="prediction_msg1">Currently  5-day predictions are only available for 8 symbols:</string>
+    <string name="prediction_msg2">SPY, QQQ, DIA, IWM, AAPL, GOOG, MSFT and JPM</string>
+    <string name="prediction_msg3">In a few weeks we will be opening up predictions for all stocks.</string>
+    <string name="prediction_msg4">Until then...</string>
+    <string name="prediction_msg5">Try out these 8 symbols now and see how our AI predictions do over time.</string>
+    <string name="coming_soon">Coming Soon ...</string>
+    <string name="hint_visit_other_people_s_profiles_to_connect_and_learn_from_them">Hint: Visit other people\'s profiles to connect and learn from them.</string>
+    <string name="_1_click_on_any_user_s_profile_icon_photo_or_name_then_click_on_the_user_s_follow_button_that_looks_like">1. Click on any user\'s profile icon / photo or name, then click on the user\'s follow button that looks like:</string>
+    <string name="_2_see_stocks_and_mentors_that_other_user_follow_and_learn_from_their_successes">2. See stocks and mentors that other user follow, and learn from their successes.</string>
+    <string name="_3_get_invitations_to_exclusive_chat_rooms_and_special_app_event_by_growing_your_network">3. Get invitations to exclusive chat rooms and special app event by growing your network.</string>
+    <string name="hint_find_new_winning_stocks_and_strategies_by_following_other_on_the_app_today">Hint: Find new winning stocks and strategies by following other on the app today.</string>
+
+    <string name="deleteConfirmmsg">It’ll be gone forever.</string>
+    <string name="continues">Continue</string>
+    <string name="ok">Ok</string>
+    <string name="remove_tip">Remove Tip</string>
+    <string name="share_tip">Share Tip</string>
+    <string name="request_for_delete">Request for Delete</string>
+    <string name="email_address">Email Address</string>
+    <string name="followers">Followers</string>
+    <string name="people_following_you">People Following you</string>
+    <string name="people_you_follow">People you Follow</string>
+
+    <string name="_1_track_the_comments_you_ve_made_on_mentor_tips">1. Track the comments you\'ve made on Mentor tips.</string>
+    <string name="_2_save_tips_and_see_their_progress_here">2. Save tips and see their progress here.</string>
+    <string name="_3_share_tips_and_chat_with_your_mentors_followers"><![CDATA[3. Share tips and chat with your Mentors & followers.]]></string>
+    <string name="_1_tradetips_was_designed_to_help_anyone_beat_the_market">1. TradeTips was designed to help anyone beat the market.</string>
+    <string name="_2_we_believe_in_personal_rights_and_freedom">2. We believe in personal rights and freedom.</string>
+    <string name="_3_this_is_a_space_to_speak_your_mind_share_winning_strategies_get_feedback_from_mentors_and_make_money">3. This is a space to speak your mind, share winning strategies, get feedback from Mentors, and make money.\n\nSound good? Come on in!</string>
+    <string name="_1_click_on_any_user_s_profile_icon_or_name_then_click_the_follow_button_that_looks_like">1. Click on any user\'s profile\nicon or name, then click the\nfollow button that looks like.</string>
+    <string name="_2_grow_your_network_and_learn_from_others">2. Grow your network and learn from others.</string>
+    <string name="_3_get_invited_to_exclusive_chat_rooms_and_special_events">3. Get invited to exclusive chat rooms and special events.</string>
+    <string name="hint_follow_others_to_find_winning_stocks_and_strategies">Hint: Follow others to find winning stocks and strategies!</string>
+    <string name="search_user">Search User</string>
+    <string name="select_subscription">Select Subscription:</string>
+    <string name="enterReason">Please enter the reason:</string>
+
+    <string name="cancelRequest">Cancellation Request</string>
+    <string name="InputRequired">Input Required</string>
+
+    <string name="invalid_details">Invalid details</string>
+
+    <string name="enter_promo_code">Please enter a discount promo code.</string>
+
+    <string name="enterReasonHint"><font size="15">Enter Reason</font></string>
+
+    <string name="SelectSubscription">Select Subscription</string>
+    <string name="SelectSubscriptionForCancel">Please select a subscription for cancellation.</string>
+    <string name="cancelRequestReason">Please enter the reason for cancellation. This will be reviewed by the admin.</string>
+    <string name="invitations">Invitations</string>
+    <string name="chat_rooms">Chat Rooms</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="user_search">User search</string>
+    <string name="ai_stock_prediction">AI stock prediction</string>
+    <string name="become_a_mentor">Become a Mentor</string>
+
+
+    <string name="for_subscriber">Hi, %1$s \nBecome a TradeTips Member</string>
+    <string name="for_prediction">Hi, %1$s \nGet Unlimited Stock Predictions\nWith TradeTips Membership</string>
+    <string name="for_chat_room">%1$s \nGet Unlimited Chat Room Access\nWith TradeTips Membership</string>
+    <string name="for_service">Hi, %1$s\nYou Must Subscribe To Purchase Premium Services</string>
+    <string name="become_a_trade_tips_member">Become A TradeTips \nMember For  24 Hours</string>
+    <string name="unlock_all_the_features_now_for_just">Unlock All Features Now For Just</string>
+    <string name="money_back_guarantee"><u>Money Back Guarantee</u></string>
+    <string name="special_offer_dialog_msg">Get ALL of your money back on all subscription plans up to 7 days after signing up. No questions asked.
+        \n\nSpecial Offers, Discount Deals and Promo Codes are not included.
+        \n\nSimple and straightforward.</string>
+
+
+    <string name="open_channel_chat_content_desc_profile">Profile image</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="please_enter_valid_card_number">Please enter valid card number</string>
+    <string name="please_enter_valid_date">Please enter valid date</string>
+    <string name="please_enter_credit_card_security">Please enter the credit card security code</string>
+    <string name="please_enter_valid_postal_code">Please enter valid postal code</string>
+    <string name="postal_code_should_be_5digit_or_less">Postal code should be 5 digits or less</string>
+    <string name="security_code">Security code</string>
+    <string name="click_here_for_special_offer">Click Here For A Special Offer</string>
+    <string name="send">Send</string>
+    <string name="well_that_didn_t_work">Well That Didn\'t Work</string>
+    <string name="try_entering_your_information_again">Try Entering Your Info Again</string>
+    <string name="your_card_was_not_processed">Your card was not processed.</string>
+    <string name="if_you_believe_you_have_a_problem_please_contact_your_bank">If you believe you have a problem please contact your bank</string>
+    <string name="your_purchase_was_flagged_as_fraud">Your purchase was flagged as fraud</string>
+    <string name="you_ve_reached_your_credit_limit">You\'ve reached your credit limit</string>
+    <string name="you_have_a_large_pending_transaction">You have a large pending transaction</string>
+    <string name="your_credit_card_is_expired">Your credit card is expired</string>
+    <string name="you_ve_entered_the_wrong_information">You\'ve entered the wrong information</string>
+    <string name="some_possible_issues">Some Possible issues</string>
+    <string name="data_not_found">Data not found!</string>
+    <string name="service">Service</string>
+    <string name="services">Services</string>
+
+
+    <string name="just_letting_you_know">Just Letting You Know</string>
+    <string name="become_a_member">Become a Member</string>
+    <string name="just_letting_you_know_description">You’ve got to be a TradeTips subscriber to purchase Mentor products and services.\n\n
+        Click “Next” and sign up today!
+    </string>
+
+
+    <string name="mentor_service_description">You haven’t made a service that your followers can buy yet.\n\n
+    This is how you make more money with TradeTips. The Services tab is your storefront for users to buy your products and services.\n\n
+    Starting is easy. Post your first Service today.
+    </string>
+    <string name="share">Share</string>
+    <string name="purchase">Purchase</string>
+    <string name="notifications">Notifications</string>
+    <string name="no_new_notifications">No New Notifications</string>
+
+
+    <string name="stock_changes_header_text">AI Tips Watchlist Update</string>
+    <string name="stock_changes_description_text">See which signals have changed for stocks in your watchlist today.</string>
+    <string name="stock_changes_description_in_error_case">There are no AI Tip signal changes for your watchlist currently.\n\n*AI Tips can change from day to day, and you may have clicked on an expired notification.\nNo problem, you’re all caught up now.</string>
+    <string name="stock">STOCK</string>
+    <string name="yesterday">YESTERDAY</string>
+    <string name="price">PRICE</string>
+    <string name="ad_banner_channel_name">TradeTips Banner Notifications</string>
+    <string name="ad_banner_channel_description">TradeTips Banners</string>
+    <string name="stock_prediction_channel_name">TradeTips Stock Prediction Notifications</string>
+    <string name="stock_prediction_channel_description">TradeTips Stock Prediction</string>
+    <string name="general_notification_channel_name">TradeTips Notifications</string>
+    <string name="general_notification_channel_description">TradeTips Notifications</string>
+    <string name="social_chat_reply_channel_name">SocialChat Reply Notifications</string>
+    <string name="social_chat_reply_channel_description">SocialChat Reply </string>
+    <string name="default_notification_channel_id">TradeTips Default Notification</string>
+    <string name="your_purchase_was_successful">Your purchase was \nsuccessful</string>
+    <string name="special_offer_description">You may need to check your junk or spam folder.</string>
+    <string name="special_offer">Special Offer</string>
+    <string name="confirm_and_pay">Confirm And Pay</string>
+    <string name="you_have_to_pay">You Have To Pay</string>
+    <string name="company">Company</string>
+    <string name="credit_card_details">Credit Card Details</string>
+    <string name="full_name">Full Name</string>
+    <string name="are_you_sure_want_to_logout">Are you sure want to logout ?</string>
+    <string name="confirm_detail">Confirm Details</string>
+    <string name="card_holder_info">Credit Card Information</string>
+    <string name="card_detail">Card Detail</string>
+    <string name="transaction_error">Transaction failed</string>
+    <string name="these_are_some_possible_issues">These are some possible issues</string>
+    <string name="see_all"><u>See All</u></string>
+    <string name="make_payment">Make Payment</string>
+    <string name="view_details"><u>View Details</u></string>
+    <string name="what_is_macd_description">MACD is a mathematical indicator for stock investors that uses the average closing prices of a stock in 2 timeframes, a short-term (past 9 days) and a longer-term (past 26 days).\n\nWhen the short-term average closing prices (called a moving average) crosses over the longer-term moving average from below heading up, that is a sign to investors to buy the stock.\n\nThe reverse is true when the short-term moving average crosses the longer-term moving average from above heading down. That is a sign to sell the stock.\n\nTradeTips makes knowing when a MACD signal happens by just sending you the list all S&amp;P500 and Nasdaq100 stocks that just had a buy or sell crossover event the day before.</string>
+    <string name="macd_blank_title">Click here to see the gif of the day anyway.</string>
+    <string name="please_select_any_plan">Please select any plan.</string>
+    <string name="services_filter">Services Filter</string>
+    <string name="all_services">All Services</string>
+    <string name="my_services">My Services</string>
+
+    <string name="expiry_date_hint">Ex. Date MM/YY</string>
+    <string name="cvv_hint">CVV (Sec. Code)</string>
+    <string name="fullname_hint">Full Name</string>
+    <string name="cardno_hint">Card Number</string>
+    <string name="zipcode_hint">Zip Code</string>
+    <string name="confirmemail_hint">Confirm Email</string>
+    <string name="add_your_first_service">Add Your First Premium Service</string>
+    <string name="choose_your_first_service">Choose Your First Service</string>
+    <string name="my_service_empty_text">What is a Service?\n\nServices are special deals and offers from TradeTips that help you become a \nbetter investor.
+                                    Services give you access to exclusive stock market newsletters, classes, videos and much, much more.\n\n
+                                    Don’t delay, make better trades today!</string>
+    <string name="click_here_to_see_all_services_again"><u>Click here to see all Services again.</u></string>
+    <string name="your_orders">Your Orders</string>
+    <string name="tradetips_subscription">Tradetips Subscription</string>
+    <string name="tradetips_incorporate">Tradetips Incorporated</string>
+    <string name="continuepayment">Continue</string>
+    <string name="pay">Pay</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="discount_applied">Discount Applied</string>
+    <string name="discount_promo_code">Discount Promo Code</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="contact">Contact</string>
+    <string name="document">Document</string>
+    <string name="image">Image</string>
+    <string name="location">Location</string>
+    <string name="none_text">Text</string>
+    <string name="none_typing">Typing</string>
+    <string name="recording">Recording</string>
+    <string name="notification">Notification</string>
+    <string name="none">None</string>
+    <string name="click_here"><u>Click here</u></string>
+    <string name="last_4_digits">Last 4 Digits of Card:</string>
+    <string name="exp">Exp:</string>
+    <string name="billing_zip">Billing Zip:</string>
+    <string name="close_replies">Close Replies</string>
+    <string name="replies">Replies</string>
+    <string name="we_will_notify_you_when_this_room_becomes_open">We’ll notify you when this room opens\nfor new members.</string>
+    <string name="no_data_chart_text">No chart data available.</string>
+    <string name="please_enter_room_code">Please enter room code</string>
+    <string name="this_post_has_been_deleted">This post has been deleted.</string>
+    <string name="this_message_has_been_deleted">This message has been deleted.</string>
+    <string name="try_again_no_list_available">This list is not available right now.\nPlease try again later.</string>
+    <string name="coffee_break">Coffee Break</string>
+    <string name="if_you_enjoy_using_please_take_a_moment_to_rate_it_thanks_for_your_support">If you enjoy using Tradetips please take a moment to rate it.\nThanks for your support!</string>
+    <string name="check_this_section_for_all_updates_and_general_announcements">Check this section for all updates and\ngeneral announcements.</string>
+</resources>

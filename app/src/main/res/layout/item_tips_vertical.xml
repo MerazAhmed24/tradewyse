@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="@dimen/_2sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/confNewPwdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentPwdLayout"
+            android:paddingLeft="@dimen/common_paddng_2dp"
+            android:paddingTop="@dimen/common_paddng_1dp"
+            android:paddingRight="@dimen/common_paddng_2dp"
+            android:paddingBottom="@dimen/common_paddng_2dp">
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/today"
+                android:textColor="@color/text_color_light_grey"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/common_paddng_3dp"
+                android:text="@string/date"
+                android:textColor="@color/text_color_light_grey"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tipDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confNewPwdLayout"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/mentor_list_item_bg_rounded">
+
+            <RelativeLayout
+                android:id="@+id/profileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_paddng_8dp"
+                android:paddingTop="@dimen/common_paddng_5dp"
+                android:paddingRight="@dimen/common_paddng_3dp"
+                android:paddingBottom="@dimen/common_paddng_5dp"
+
+                >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/profile_image_height_vsmall"
+                    android:layout_height="@dimen/profile_image_weidth_vsmall"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/common_paddng_5dp"
+                    android:layout_marginTop="@dimen/common_paddng_2dp"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="@dimen/common_paddng_3dp"
+                    android:scaleType="centerCrop"
+                    app:placeholderImage="@drawable/ic_user_default"
+                    app:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_toRightOf="@id/imgProfile"
+                    android:ems="11"
+                    android:paddingBottom="@dimen/common_paddng_2dp"
+                    android:singleLine="true"
+                    android:text="Tyrone Jackson"
+                    android:textColor="@color/text_color_username"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTimeAgo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgProfile"
+                    android:text="10 hr Ago"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/txtBuySell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/common_paddng_3dp"
+                    android:layout_marginRight="@dimen/common_paddng_10dp"
+                    android:background="@color/text_color_black"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:text="@string/buy"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@id/flagIcon"
+                    android:layout_width="@dimen/flag_icon_size"
+                    android:layout_height="@dimen/flag_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_paddng_5dp"
+                    android:layout_toLeftOf="@+id/txtBuySell"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/flag_icon_new" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/seperator"
+                style="@style/item_separator"
+                android:layout_below="@+id/profileLayout"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/tipRootLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seperator"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_paddng_7dp"
+                android:paddingRight="@dimen/common_paddng_7dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/common_paddng_5dp">
+
+                    <TextView
+                        android:id="@+id/txtStockName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="SPY"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtStockCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtStockName"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/common_paddng_2dp"
+                        android:layout_toLeftOf="@+id/txtStockPrice"
+                        android:text="SPDR S&amp;P 500"
+                        android:textColor="@color/text_color_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <!-- price row start-->
+                    <RelativeLayout
+                        android:id="@+id/layoutpricerelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtStockCompany"
+                        android:layout_marginTop="@dimen/common_paddng_7dp">
+
+                        <LinearLayout
+                            android:id="@+id/rootPricelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_paddng_7dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/entryLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/common_paddng_2dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingRight="@dimen/common_paddng_7dp">
+
+                                <TextView
+                                    android:id="@+id/labelEntry"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ENTRY"
+                                    android:textColor="@color/text_color_dark_grey"
+                                    android:textSize="@dimen/text_size_small" />
+
+
+                                <TextView
+                                    android:id="@+id/txtEntryPoint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:maxWidth="@dimen/max_min_width_65"
+                                    android:singleLine="true"
+                                    android:text="$ 1259.05"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/text_size_xlarge"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/exitLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/common_paddng_2dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingRight="@dimen/common_paddng_7dp">
+
+                                <TextView
+                                    android:id="@+id/labelExit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingLeft="@dimen/common_paddng_3dp"
+                                    android:text="EXIT"
+
+                                    android:textColor="@color/text_color_dark_grey"
+                                    android:textSize="@dimen/text_size_small" />
+
+                                <TextView
+                                    android:id="@+id/txtExitPoint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:maxWidth="@dimen/max_min_width_65"
+                                    android:singleLine="true"
+                                    android:text="$ 1223.23"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/text_size_xlarge"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/stopLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/labelStop"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="STOP"
+
+                                    android:textColor="@color/text_color_dark_grey"
+                                    android:textSize="@dimen/text_size_small" />
+
+                                <TextView
+                                    android:id="@+id/txtStopPoint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:maxWidth="@dimen/max_min_width_65"
+                                    android:singleLine="true"
+                                    android:text="$ 1259.05"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/text_size_xlarge"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--price row end -->
+
+                    <TextView
+                        android:id="@+id/txtComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutpricerelative"
+                        android:layout_marginTop="@dimen/common_paddng_7dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Good day to keep an eye on SPY."
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_small" />
+                </RelativeLayout>
+
+                <!--second last vertical column-->
+                <RelativeLayout
+                    android:id="@+id/layoutPricesMiddel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_paddng_5dp"
+                    android:minWidth="@dimen/margin_top_80dp"
+                    android:paddingLeft="@dimen/common_paddng_3dp">
+
+                    <TextView
+                        android:id="@+id/labelCurrentPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/common_paddng_3dp"
+                        android:text="CURRENT PRICE"
+                        android:textColor="@color/text_color_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/txtCurrentPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/labelCurrentPrice"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/common_paddng_5dp"
+                        android:gravity="center"
+                        android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
+                        android:minWidth="@dimen/min_width_value_mtt_vertiacl"
+                        android:text="--"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/labelAtTimeOfTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtCurrentPrice"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="AT TIME OF TIP"
+                        android:textColor="@color/text_color_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/txtCreateTipPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/labelAtTimeOfTip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/common_paddng_5dp"
+                        android:gravity="center"
+                        android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
+                        android:minWidth="@dimen/min_width_value_mtt_vertiacl"
+                        android:text="$ 259.05"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/labelChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtCreateTipPrice"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="CHANGE"
+                        android:textColor="@color/text_color_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/txtChangeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/labelChange"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/common_paddng_5dp"
+                        android:gravity="center"
+                        android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
+                        android:minWidth="@dimen/min_width_value_mtt_vertiacl"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/text_color_dark_grey"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgMedia"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/tipRootLayout"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/common_paddng_7dp"
+                android:layout_marginTop="@dimen/common_paddng_3dp"
+                android:layout_marginRight="@dimen/common_paddng_7dp"
+                android:layout_marginBottom="@dimen/common_paddng_7dp"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+                app:actualImageResource="@drawable/placeholder"
+                fresco:actualImageScaleType="fitXY"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundedCornerRadius="5dp"
+                fresco:viewAspectRatio="1.8" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/like_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipDetail" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

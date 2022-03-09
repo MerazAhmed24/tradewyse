@@ -1,0 +1,123 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="common_margin">10dp</dimen>
+
+    <!-- text sizes -->
+    <dimen name="publish_news_time_size">10dp</dimen>
+    <dimen name="text_size_vsmall">11dp</dimen>
+    <dimen name="text_size_small">12dp</dimen>
+    <dimen name="text_size_small_plus">13dp</dimen>
+    <dimen name="text_size_medium">14dp</dimen>
+    <dimen name="text_size_large">16dp</dimen>
+    <dimen name="text_size_xlarge">17dp</dimen>
+    <dimen name="text_size_xxlarge">19dp</dimen>
+    <dimen name="text_size_xxxlarge">20dp</dimen>
+    <dimen name="text_size_xxxxlarge">22dp</dimen>
+    <dimen name="text_size_23">23dp</dimen>
+    <dimen name="text_size_addTipValuesLarge">21dp</dimen>
+    <dimen name="text_size_large_heading">27dp</dimen>
+    <!-- text sizes -->
+    <dimen name="common_paddng13">14dp</dimen>
+    <dimen name="common_paddng_top">10dp</dimen>
+    <dimen name="common_paddng_2dp">2dp</dimen>
+    <dimen name="common_paddng_3dp">3dp</dimen>
+    <dimen name="common_paddng_5dp">5dp</dimen>
+    <dimen name="common_paddng_4dp">4dp</dimen>
+    <dimen name="common_paddng_7dp">7dp</dimen>
+    <dimen name="common_paddng_8dp">8dp</dimen>
+    <dimen name="common_paddng_10dp">10dp</dimen>
+    <dimen name="common_paddng_12dp">12dp</dimen>
+    <dimen name="common_paddng_15dp">15dp</dimen>
+    <dimen name="common_paddng_18dp">20dp</dimen>
+    <dimen name="common_paddng_20dp">20dp</dimen>
+    <dimen name="common_paddng_25dp">25dp</dimen>
+    <dimen name="common_paddng_30dp">30dp</dimen>
+    <dimen name="common_paddng_40dp">40dp</dimen>
+    <dimen name="common_paddng_50dp">50dp</dimen>
+    <dimen name="common_paddng_70dp">70dp</dimen>
+    <dimen name="margin_top_80dp">87dp</dimen>
+    <dimen name="margin_top_100dp">100dp</dimen>
+
+    <dimen name="flag_icon_size">21dp</dimen>
+    <dimen name="buy_sell_vertical_label_margin">23dp</dimen>
+
+    <dimen name="diamond_icon_height">210dp</dimen>
+    <dimen name="diamond_icon_weidth">210dp</dimen>
+
+    <dimen name="common_paddng_1dp">1dp</dimen>
+
+    <dimen name="list_item_graph_image_height">45dp</dimen>
+    <dimen name="list_item_graph_image_width">85dp</dimen>
+
+    <dimen name="profile_image_height">85dp</dimen>
+    <dimen name="profile_image_weidth">85dp</dimen>
+
+    <dimen name="profile_image_height_setting">70dp</dimen>
+    <dimen name="profile_image_width_setting">70dp</dimen>
+    <dimen name="profile_image_height_medium">55dp</dimen>
+    <dimen name="profile_image_width_medium">55dp</dimen>
+
+    <dimen name="ai_image_height_small">35dp</dimen>
+    <dimen name="ai_image_weidth_small">35dp</dimen>
+
+    <dimen name="profile_image_height_small">45dp</dimen>
+    <dimen name="profile_image_weidth_small">45dp</dimen>
+
+    <dimen name="profile_image_height_vsmall">29dp</dimen>
+    <dimen name="profile_image_weidth_vsmall">29dp</dimen>
+
+    <dimen name="drawable_icon_height">40dp</dimen>
+    <dimen name="drawable_icon_weidth">40dp</dimen>
+    <dimen name="swipe_refresh_layout_height">80dp</dimen>
+
+    <dimen name="dots_height">35dp</dimen>
+    <dimen name="dots_margin_bottom">50dp</dimen>
+
+    <dimen name="login_root_layout_margin_top">30dp</dimen>
+
+    <dimen name="login_btn_height">36dp</dimen>
+
+    <dimen name="signup_root_layout_margin_top">10dp</dimen>
+    <dimen name="signup_heading_margin_top">15dp</dimen>
+    <dimen name="login_heading_margin_top">20dp</dimen>
+    <dimen name="tour_heading_margin_top">35dp</dimen>
+    <dimen name="list_margin">10dp</dimen>
+    <dimen name="list_margin_small">1dp</dimen>
+    <dimen name="list_margin_andsand">105dp</dimen>
+    <dimen name="stock_list_dashboar_vertical_margin">1dp</dimen>
+    <dimen name="list_margin_bottom">7dp</dimen>
+    <dimen name="stock_list_item_width">150dp</dimen>
+    <dimen name="stock_list_item_height">70dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="min_width_value">62dp</dimen>
+    <dimen name="max_min_width_65">100dp</dimen>
+
+    <dimen name="min_width_value_mtt_vertiacl">80dp</dimen>
+
+    <dimen name="margin_top_to_default_msg">18dp</dimen>
+
+    <dimen name="max_animation_height">355dp</dimen>
+    <dimen name="mar_top_tour">23dp</dimen>
+
+    <dimen name="welcome_screen_layout_margin_bottom">87dp</dimen>
+
+    <dimen name="white_seperator_line_height">2dp</dimen>
+    <dimen name="tab_text_size">14dp</dimen>
+    <dimen name="slidetoact_default_area_margin">8dp</dimen>
+    <dimen name="slidetoact_default_icon_margin">16dp</dimen>
+    <dimen name="slidetoact_default_text_size">16sp</dimen>
+
+    <dimen name="like_pin_btn_margin">15dp</dimen>
+
+
+    <dimen name="pin_btn_margin_right">15dp</dimen>
+    <dimen name="pin_btn_margin_left">2dp</dimen>
+    <dimen name="like_btn_margin">28dp</dimen>
+</resources>

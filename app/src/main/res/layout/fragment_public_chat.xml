@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_frag_parent_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_dark_bg">
+
+    <TextView
+        android:id="@+id/create_room_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:background="@drawable/bg_with_white_rounded_border"
+        android:drawableRight="@drawable/ic_add_circle_outline"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/create_room"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/create_room_tv">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/diamondIconRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/diamondIcon"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/chat_icon" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toLeftOf="@id/diamondIcon"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/chat_room_one_rules"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/_17ssp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diamondIconRl"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/common_paddng_10dp"
+                android:paddingRight="@dimen/common_paddng_10dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/_1_we_believe_in_personal_rights_and_freedom"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/_2_this_space_is_for_sharing_winning_trades_and_investing_strategies"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/_3_the_app_was_designed_"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/connecting_chat_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_15sdp" android:background="@drawable/bg_with_white_rounded_border"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Connecting Room Please Wait..."
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/start_chat_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/bg_with_white_rounded_border"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Enter Room"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/_15sdp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

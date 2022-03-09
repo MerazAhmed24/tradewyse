@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="footerModel"
+            type="com.info.model.FooterModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/parent_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_app_dark_bg"
+        android:orientation="vertical"
+        tools:context="com.info.tradewyse.FollowersFollowingActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/toolbar_bg_new">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="?android:attr/actionBarSize">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:text="@string/Follows"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/bg_with_white_rounded_border"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/tv_followers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_fill_white_round_border"
+                android:gravity="center"
+                android:text="@string/followers"
+                android:textColor="@color/color_app_dark_bg"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Following"
+                android:textColor="@color/text_color_white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab_bar"
+            android:layout_above="@+id/dividerView"
+            android:layout_marginTop="5dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/progress_dialog"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/noDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_bar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_above="@id/dividerView"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/diamondIconRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/diamondIcon"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/following_icon" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toLeftOf="@id/diamondIcon"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Follow the Money!"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/_19sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diamondIconRl"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/common_paddng_10dp"
+                android:paddingRight="@dimen/common_paddng_10dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="@string/_1_click_on_any_user_s_profile_icon_or_name_then_click_the_follow_button_that_looks_like"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/light_follow_light_white_broder_btn_bg"
+                    android:padding="5dp"
+                    android:text="Follow"
+                    android:textColor="@android:color/white"
+                    android:textIsSelectable="true"
+                    android:textStyle="normal"></Button>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/_2_grow_your_network_and_learn_from_others"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/_3_get_invited_to_exclusive_chat_rooms_and_special_events"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/hint_follow_others_to_find_winning_stocks_and_strategies"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottomView"
+            android:background="@drawable/divider_shape" />
+        <include
+            layout="@layout/footer_layout"
+            bind:footerModel="@{footerModel}" />
+    </RelativeLayout>
+</layout>

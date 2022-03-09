@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_primary_dark_list_bg">
+
+    <TextView
+        android:id="@+id/list_item_artist_name"
+        style="android.text.style.ClickableSpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_toLeftOf="@id/list_item_genre_arrow"
+        android:layout_toRightOf="@id/list_item_genre_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal"
+        tools:text="Artist Name" />
+</FrameLayout>

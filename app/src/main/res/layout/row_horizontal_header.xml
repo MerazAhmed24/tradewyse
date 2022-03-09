@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_paddng_5dp"
+    android:id="@+id/layoutRootLayout"
+    android:visibility="visible">
+
+    <!--Make a tip layout for mentor-->
+    <LinearLayout
+        android:id="@+id/layoutMakeATip"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/common_paddng_10dp"
+        android:background="@drawable/bg_with_white_rounded_border"
+        android:gravity="center"
+        android:minHeight="@dimen/_96sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/common_paddng_10dp"
+            android:text="@string/make_a_tip"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_add_circle_outline" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHorizontalTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Buy layout -->
+    <LinearLayout
+        android:id="@+id/tipBuyRootLayoutRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_paddng_5dp"
+        android:layout_marginEnd="@dimen/common_paddng_15dp"
+        android:minWidth="@dimen/_179sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtBuyTimeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="5dp"
+            android:gravity="end"
+            android:minWidth="@dimen/_179sdp"
+            android:paddingBottom="@dimen/common_paddng_2dp"
+            android:text=""
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mentor_list_item_bg_rounded"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/common_paddng_5dp"
+            android:paddingBottom="@dimen/common_paddng_5dp"
+            android:visibility="visible">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:paddingStart="@dimen/common_paddng_10dp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingEnd="@dimen/common_paddng_5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBuy"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/buy_icon" />
+
+                <TextView
+                    android:id="@+id/txtBuyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toEndOf="@+id/imageViewBuy"
+                    android:paddingBottom="@dimen/common_paddng_2dp"
+                    android:singleLine="true"
+                    android:text="MACD Tips"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtBuySignals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/txtMACDBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/text_backgroud_green"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="Buy"
+                        android:textAlignment="center"
+                        android:textColor="#1e841c"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                style="@style/item_separator" />
+
+            <TextView
+                android:id="@+id/textViewBuyStockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:gravity="start"
+                android:maxLines="2"
+                android:minLines="2"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:text=""
+                android:textColor="@color/dark_black_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Sell layout -->
+    <LinearLayout
+        android:id="@+id/tipSellRootLayoutRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_paddng_5dp"
+        android:minWidth="@dimen/_179sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtSellTimeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="5dp"
+            android:gravity="end"
+            android:minWidth="@dimen/_179sdp"
+            android:paddingBottom="@dimen/common_paddng_2dp"
+            android:text=""
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mentor_list_item_bg_rounded"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/common_paddng_5dp"
+            android:paddingBottom="@dimen/common_paddng_5dp"
+            android:visibility="visible">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:paddingStart="@dimen/common_paddng_10dp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingEnd="@dimen/common_paddng_5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewSell"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/sell_icon" />
+
+                <TextView
+                    android:id="@+id/txtSellTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toEndOf="@+id/imageViewSell"
+                    android:paddingBottom="@dimen/common_paddng_2dp"
+                    android:singleLine="true"
+                    android:text="MACD Tips"
+                    android:textColor="@color/dark_black_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSellSignals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/txtMACDSell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_backgroud_red"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Sell"
+                        android:textAlignment="center"
+                        android:textColor="#a94018"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/item_separator" />
+
+            <TextView
+                android:id="@+id/textViewSellStockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:gravity="start"
+                android:maxLines="2"
+                android:minLines="2"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:text=""
+                android:textColor="@color/dark_black_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

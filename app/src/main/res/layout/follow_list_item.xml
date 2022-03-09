@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_dark_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/common_paddng_8dp"
+        android:paddingTop="@dimen/common_paddng_10dp"
+        android:paddingRight="@dimen/common_paddng_8dp"
+        android:paddingBottom="@dimen/common_paddng_10dp"
+        android:visibility="visible">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProfile"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="@dimen/common_paddng_2dp"
+            android:layout_marginRight="@dimen/common_paddng_15dp"
+            android:layout_marginBottom="@dimen/common_paddng_2dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/drawable_circle_white"
+            android:scaleType="centerCrop"
+            app:placeholderImage="@drawable/ic_user_default_45"
+            app:roundAsCircle="true" />
+
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/common_paddng_2dp"
+            android:layout_marginBottom="@dimen/common_paddng_2dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:maxLength="36"
+            android:singleLine="true"
+            android:text="dfdf "
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_large" />
+
+
+        <TextView
+            android:id="@+id/txtFollowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/common_paddng_2dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/common_paddng_2dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/common_paddng_15dp"
+            android:paddingTop="@dimen/common_paddng_5dp"
+            android:paddingRight="@dimen/common_paddng_15dp"
+            android:paddingBottom="@dimen/common_paddng_5dp"
+            android:text="@string/Follow"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/abcLine"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgProfile"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/text_color_white"/>
+
+</LinearLayout>

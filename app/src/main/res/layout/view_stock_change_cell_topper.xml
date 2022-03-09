@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/stockImage"
+        android:layout_width="105dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_stock_graph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/sfbold"
+        android:text="@string/stock_changes_header_text"
+        android:textAlignment="center"
+        android:textColor="@color/dark_black_color"
+        android:textFontWeight="700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stockImage" />
+
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="15dp"
+        tools:text="@string/stock_changes_description_text"
+        android:textAlignment="center"
+        android:textColor="#4D4D4D"
+        android:textFontWeight="400"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/header"
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+        android:id="@+id/dateText"
+        tools:text="AI Tip Changes - April 21, 2021"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_black_color"
+        android:textFontWeight="700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/subHeading"
+        app:layout_constraintStart_toStartOf="@id/subHeading"
+        app:layout_constraintTop_toBottomOf="@id/subHeading"
+        android:paddingBottom="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

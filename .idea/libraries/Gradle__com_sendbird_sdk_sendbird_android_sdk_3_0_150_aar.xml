@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sendbird.sdk:sendbird-android-sdk:3.0.150@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9b0df12af9cb9022b5d0647e36c7c2c/jetified-sendbird-android-sdk-3.0.150/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9b0df12af9cb9022b5d0647e36c7c2c/jetified-sendbird-android-sdk-3.0.150/jars/libs/sendbird-shadow.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9b0df12af9cb9022b5d0647e36c7c2c/jetified-sendbird-android-sdk-3.0.150/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9b0df12af9cb9022b5d0647e36c7c2c/jetified-sendbird-android-sdk-3.0.150/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sendbird.sdk/sendbird-android-sdk/3.0.150/b92637faf29a4468e35c78ae89fafde96746e09f/sendbird-android-sdk-3.0.150-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

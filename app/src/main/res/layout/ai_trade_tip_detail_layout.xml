@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_dark_bg"
+    android:orientation="vertical"
+    tools:context="com.info.tradewyse.AITradeTipDetailActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_paddng_5dp"
+            android:paddingTop="@dimen/common_paddng_5dp"
+            android:layout_marginRight="@dimen/common_paddng_5dp"
+            android:layout_marginBottom="@dimen/common_paddng_10dp"
+            android:paddingLeft="@dimen/common_paddng_8dp"
+            android:paddingRight="@dimen/common_paddng_8dp">
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sectorNews"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_paddng_2dp"
+                android:text="Thu, 18 Jul 2019 20:08:02 GMT"
+                android:textColor="@color/text_color_light_grey"
+                android:textSize="@dimen/text_size_small"
+                android:paddingBottom="@dimen/common_paddng_2dp"
+                android:visibility="visible" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_paddng_3dp"
+                android:layout_marginBottom="@dimen/common_paddng_15dp"
+                android:layout_below="@+id/txtDay"
+                app:contentPadding="@dimen/common_paddng_5dp"
+                app:cardCornerRadius="@dimen/common_paddng_10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rootLayoutRoundedBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDay"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/bottomLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_paddng_3dp"
+                        android:layout_marginRight="@dimen/common_paddng_3dp"
+                        android:paddingLeft="@dimen/common_paddng_5dp"
+                        android:paddingTop="@dimen/common_paddng_3dp"
+                        android:paddingRight="@dimen/common_paddng_5dp"
+                        android:paddingBottom="@dimen/common_paddng_3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/profileLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/txtStatus1"
+                            android:gravity="left|center_vertical"
+                            android:paddingTop="@dimen/common_paddng_3dp"
+                            android:paddingBottom="@dimen/common_paddng_3dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/imgProfile1"
+                                android:layout_width="@dimen/profile_image_height_vsmall"
+                                android:layout_height="@dimen/profile_image_height_vsmall"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/common_paddng_5dp"
+                                android:layout_marginTop="@dimen/common_paddng_3dp"
+                                android:padding="@dimen/common_paddng_2dp"
+                                app:srcCompat="@drawable/tradetip_ai_icon" />
+
+                            <TextView
+                                android:id="@+id/txtName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:layout_toRightOf="@+id/imgProfile1"
+                                android:paddingTop="@dimen/common_paddng_5dp"
+                                android:text="@string/TradeWyseAI"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_username"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <TextView
+                                android:id="@+id/txtTimeAgo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtName1"
+                                android:layout_toRightOf="@+id/imgProfile1"
+                                android:text="@string/momentsAgo"
+                                android:textColor="@color/text_color_dark_grey"
+                                android:textSize="@dimen/text_size_small"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/txtStatus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/common_paddng_2dp"
+                            android:layout_marginLeft="@dimen/common_paddng_5dp"
+                            android:paddingLeft="@dimen/common_paddng_5dp"
+                            android:gravity="center"
+                            android:layout_marginRight="@dimen/common_paddng_10dp"
+                            android:text="@string/buy"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text_size_large"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <!-- <View
+                         android:id="@+id/view1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="0.5dp"
+                         android:layout_below="@+id/bottomLayout"
+                         android:layout_marginTop="@dimen/common_paddng_2dp"
+                         android:background="@color/text_color_grey"
+                         android:textColor="@color/text_color_dark_grey"
+                         android:textSize="@dimen/text_size_medium" />-->
+
+                    <View
+                        android:id="@+id/view1"
+                        style="@style/item_separator"
+                        android:layout_below="@+id/bottomLayout"
+                        android:layout_marginLeft="@dimen/common_paddng_2dp"
+                        android:layout_marginTop="@dimen/common_paddng_3dp"
+                        android:layout_marginRight="@dimen/common_paddng_2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/common_paddng_5dp">
+
+                        <LinearLayout
+                            android:id="@+id/firstLayout11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/firstPartLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/innerLayoutFirst"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                    android:layout_toLeftOf="@+id/secondPartLayout"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtStockName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/dummy_stock_name"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_large" />
+
+                                    <TextView
+                                        android:id="@+id/txtStockCompany"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/common_paddng_2dp"
+                                        android:maxWidth="185dp"
+                                        android:text="@string/stock_company"
+                                        android:textColor="@color/text_color_username"
+                                        android:textSize="@dimen/text_size_small" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/innerLayoutSecond"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:minWidth="120dp"
+                                    android:layout_alignParentRight="true"
+                                    android:gravity="end"
+                                    android:orientation="vertical"
+                                    android:paddingRight="@dimen/common_paddng_10dp">
+
+                                    <TextView
+                                        android:id="@+id/txtCurrentValue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="end"
+                                        android:gravity="end"
+                                        android:text="@string/currentValue"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_xlarge" />
+
+                                    <TextView
+                                        android:id="@+id/txtChange"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="end"
+                                        android:minWidth="@dimen/common_paddng_70dp"
+                                        android:text="@string/changeValue"
+                                        android:textColor="@color/text_color_green"
+                                        android:textSize="@dimen/text_size_medium"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtMovingAvgLbl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="@dimen/common_paddng_3dp"
+                                android:text="@string/performingstatus"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_color_dark_grey"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <LinearLayout
+                                android:id="@+id/rootPricelayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_paddng_1dp"
+                                android:gravity="left"
+                                android:layout_marginBottom="@dimen/common_paddng_1dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/tenDayLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/common_paddng_3dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtTenDays11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                                        android:gravity="center"
+                                        android:text="@string/noOfDays"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTenDaysValue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                                        android:gravity="center"
+                                        android:text="@string/tenDayValueApprox"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_xlarge" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/fiftyDayLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/common_paddng_3dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtFiftyDays"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                                        android:gravity="center"
+                                        android:text="50 Day"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtFiftyDaysValue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/common_paddng_10dp"
+                                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                                        android:gravity="center"
+                                        android:text="@string/tenDayValueApprox"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_xlarge" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/twoHundredDayLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/common_paddng_3dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtTwoHundredDays"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/txtFiftyDaysValue"
+                                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                                        android:gravity="center"
+                                        android:text="200 Day"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTwoHundredDaysValue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/txtTwoHundredDays"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/common_paddng_10dp"
+                                        android:layout_marginTop="@dimen/common_paddng_1dp"
+                                        android:layout_marginRight="@dimen/common_paddng_5dp"
+                                        android:gravity="center"
+                                        android:text="@string/tenDayValueApprox"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_xlarge" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--               <View
+                                               android:id="@+id/view2"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="0.5dp"
+                                               android:layout_below="@+id/bottomLayout"
+                                               android:layout_marginTop="@dimen/common_paddng_5dp"
+                                               android:background="@color/text_color_grey"
+                                               android:textColor="@color/text_color_dark_grey"
+                                               android:textSize="@dimen/text_size_medium" />-->
+                            <View
+                                android:id="@+id/view2"
+                                style="@style/item_separator"
+                                android:layout_below="@+id/bottomLayout"
+                                android:layout_marginTop="@dimen/common_paddng_7dp" />
+
+                            <LinearLayout
+                                android:id="@+id/rowSectorNewsAndStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_paddng_5dp"
+                                android:layout_marginRight="@dimen/common_paddng_10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Technology"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text_color_dark_grey"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <TextView
+                                    android:id="@+id/txtNoOfNewSources"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/common_paddng_1dp"
+                                    android:text=" 70"
+                                    android:textColor="@color/text_color_username"
+                                    android:textSize="@dimen/text_size_vsmall" />
+
+                                <TextView
+                                    android:id="@+id/txtStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/common_paddng_7dp"
+                                    android:text="@string/veryPositive"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/text_size_xlarge"
+                                     />
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/secondBelowLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                               >
+
+
+                                <!-- ======================== NEWS 1 Start ========================!-->
+                                <RelativeLayout
+                                    android:id="@+id/newsRootLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/common_paddng_5dp"
+                                    android:paddingBottom="@dimen/common_paddng_20dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/txtHeading1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/bloomburg"
+                                        android:textColor="@color/text_color_username"
+                                        android:layout_marginTop="@dimen/common_paddng_10dp"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTime1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="--"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/text_color_username"
+                                        android:textSize="@dimen/publish_news_time_size"
+                                        android:layout_marginTop="@dimen/common_paddng13"
+                                        android:maxLines="1"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtHeading1"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:maxLines="3"
+                                        android:textStyle="bold"
+                                        android:text="@string/news1"
+                                        android:textColor="@color/button_dark_bg"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone"/>
+
+                                    <TextView
+                                        android:id="@+id/txtNews1Detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews1"
+                                        android:maxLines="5"
+                                        android:text="@string/news1Description"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone"/>
+
+                                    <!-- ======================== NEWS 1 END ========================!-->
+                                    <!-- ======================== NEWS 2 Start ========================!-->
+
+                                    <TextView
+                                        android:id="@+id/txtHeding2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews1Detail"
+                                        android:text="@string/hed2"
+                                        android:textColor="@color/text_color_username"
+                                        android:layout_marginTop="@dimen/common_paddng_10dp"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTime2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews1Detail"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/text_color_username"
+                                        android:text="--"
+
+                                        android:textSize="@dimen/publish_news_time_size"
+                                        android:layout_marginTop="@dimen/common_paddng13"
+                                        android:maxLines="1"
+                                        android:visibility="gone" />
+                                  <!--  <TextView
+                                        android:id="@+id/txtTime2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:text="10:35 am"
+                                        android:layout_below="@+id/txtNews1Detail"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/text_color_username"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="visible" />-->
+
+                                    <TextView
+                                        android:id="@+id/txtNews2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtHeding2"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:maxLines="3"
+                                        android:textStyle="bold"
+                                        android:text="@string/news2"
+                                        android:textColor="@color/button_dark_bg"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews2Detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews2"
+                                        android:maxLines="5"
+                                        android:text="@string/news1Description"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+                                    <!-- ======================== NEWS 2 END ========================!-->
+                                    <!-- ======================== NEWS 3 Start ========================!-->
+                                    <TextView
+                                        android:id="@+id/txtHeding3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews2Detail"
+                                        android:text="@string/hed3"
+                                        android:textColor="@color/text_color_username"
+                                        android:layout_marginTop="@dimen/common_paddng_10dp"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTime3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="--"
+                                        android:layout_below="@+id/txtNews2Detail"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/text_color_username"
+
+                                        android:textSize="@dimen/publish_news_time_size"
+                                        android:layout_marginTop="@dimen/common_paddng13"
+                                        android:maxLines="1"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtHeding3"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:maxLines="3"
+                                        android:textStyle="bold"
+                                        android:text="@string/news3"
+                                        android:textColor="@color/button_dark_bg"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews3Detail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews3"
+                                        android:text="@string/news1Description"
+                                        android:maxLines="5"
+                                        android:visibility="gone"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <!-- ======================== NEWS 3 END ========================!-->
+                                    <!-- ======================== NEWS 4 Start ========================!-->
+
+                                    <TextView
+                                        android:id="@+id/txtHeading4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews3Detail"
+                                        android:layout_marginTop="@dimen/common_paddng_10dp"
+                                        android:text="@string/bloomburg"
+                                        android:textColor="@color/text_color_username"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTime4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews3Detail"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/text_color_username"
+                                        android:text="--"
+                                        android:textSize="@dimen/publish_news_time_size"
+                                        android:layout_marginTop="@dimen/common_paddng13"
+                                        android:maxLines="1"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtHeading4"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:maxLines="3"
+                                        android:textStyle="bold"
+                                        android:text="@string/news1"
+                                        android:textColor="@color/button_dark_bg"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews4Detail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews4"
+                                        android:maxLines="5"
+                                        android:text="@string/news1Description"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+                                    <!-- ======================== NEWS 4 END ========================!-->
+
+
+                                    <TextView
+                                        android:id="@+id/txtHeading5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews4Detail"
+                                        android:layout_marginTop="@dimen/common_paddng_10dp"
+                                        android:text="@string/bloomburg"
+                                        android:textColor="@color/text_color_username"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtTime5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews4Detail"
+                                        android:text="--"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/text_color_username"
+                                        android:textSize="@dimen/publish_news_time_size"
+                                        android:layout_marginTop="@dimen/common_paddng13"
+                                        android:maxLines="1"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtHeading5"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:maxLines="3"
+                                        android:textStyle="bold"
+                                        android:text="@string/news1"
+                                        android:textColor="@color/button_dark_bg"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtNews5Detail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtNews5"
+                                        android:maxLines="5"
+                                        android:text="@string/news1Description"
+                                        android:textColor="@color/text_color_dark_grey"
+                                        android:visibility="gone"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/detailLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/txtSubTitleDetail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/common_paddng_7dp"
+                                        android:layout_marginBottom="@dimen/common_paddng_3dp"
+                                        android:maxLines="5"
+                                        android:text="@string/news1"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDescriptionDetail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtSubTitleDetail"
+                                        android:layout_marginTop="@dimen/common_paddng_7dp"
+                                        android:layout_marginBottom="@dimen/common_paddng_3dp"
+                                        android:text="@string/news1Description"
+                                        android:textColor="@color/text_color_black"
+                                        android:textSize="@dimen/text_size_small" />
+
+                                    <TextView
+                                        android:id="@+id/txtCloseDetail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtDescriptionDetail"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginTop="@dimen/common_paddng_7dp"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:maxLines="1"
+                                        android:text="@string/closeText"
+                                        android:textColor="@color/button_dark_bg"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/view"
+        style="@style/item_separator"
+        android:layout_below="@+id/bottomLayout"
+        android:layout_marginTop="@dimen/common_paddng_2dp" />
+
+
+</LinearLayout>

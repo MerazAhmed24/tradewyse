@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_margin="@dimen/_2sdp"
+    android:background="@drawable/background_white_black_stroc"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgViewReplyClose"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/tvReplyUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/imgViewReplyClose"
+            android:fontFamily="@font/sfbold"
+            android:maxLines="3"
+            android:text="UserName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvReplyUserTextAndType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_toLeftOf="@id/layoutReplyAttachment"
+            android:fontFamily="@font/sfregular"
+            android:maxLines="3"
+            android:text="Reply text will be here and attachment type will also contain this text view"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/layoutReplyAttachment"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgTypeReplyImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_0148"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgTypeReplyVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/play_button_video"
+                android:background="@drawable/video_view_border_current_user"
+                app:tint="@color/white"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgTypeReplyDoc"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_file"
+                app:tint="@color/colorPrimary"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

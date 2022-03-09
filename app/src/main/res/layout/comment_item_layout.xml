@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_dark_bg"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:paddingLeft="@dimen/common_paddng_2dp"
+        android:layout_height="wrap_content">
+
+
+       <!-- <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/ai_image_height_small"
+            android:layout_height="@dimen/ai_image_height_small"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:roundAsCircle="true"
+            app:placeholderImage="@drawable/ic_user_default" />-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProfile"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:roundAsCircle="true"
+            android:layout_marginTop="@dimen/common_paddng_3dp"
+            android:background="@drawable/drawable_circle_white"
+            app:placeholderImage="@drawable/ic_user_default" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_paddng_5dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:text="@string/user_name"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/txtTimeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_marginLeft="@dimen/common_paddng_5dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:text="@string/hr_ago"
+
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="@dimen/text_size_small_plus" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/flag_icon_size"
+            android:layout_height="@dimen/flag_icon_size"
+            android:id="@+id/flagIcon"
+            android:layout_marginTop="@dimen/common_paddng_3dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="@dimen/common_paddng_4dp"
+            android:paddingRight="@dimen/common_paddng_4dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/flag_icon_new"
+            android:background="@android:color/transparent"
+         />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileLayout"
+        android:padding="@dimen/common_paddng_2dp"
+        android:layout_marginBottom="@dimen/common_paddng_3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/common_paddng_2dp"
+        android:text="@string/stock_detail"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size_medium" />`
+</RelativeLayout>

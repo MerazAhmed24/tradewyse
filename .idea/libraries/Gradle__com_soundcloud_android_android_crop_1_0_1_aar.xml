@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soundcloud.android:android-crop:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d7969644989c8ccf757995a579b57a5a/jetified-android-crop-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d7969644989c8ccf757995a579b57a5a/jetified-android-crop-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d7969644989c8ccf757995a579b57a5a/jetified-android-crop-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

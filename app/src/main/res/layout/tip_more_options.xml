@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tip_bg_color"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:contentPaddingTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_paddng_10dp">
+
+                <ImageView
+                    android:id="@+id/otherAction1"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:srcCompat="@drawable/user"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtVisitProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/VisitProfile"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_large"/>
+
+                <ImageView
+                    android:id="@+id/otherAction6"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/delete_red"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color_light_grey"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xlarge"/>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_paddng_10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/otherAction2"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:srcCompat="@drawable/share" />
+
+                <TextView
+                    android:id="@+id/txtTweetTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/share_tip"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xlarge"/>
+
+                <ImageView
+                    android:id="@+id/otherAction5"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/delete_red" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color_light_grey"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xlarge"/>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_paddng_10dp">
+
+                <ImageView
+                    android:id="@+id/otherAction3"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:srcCompat="@drawable/dustbin"
+                    app:tint="@color/text_color_red"/>
+
+                <TextView
+                    android:id="@+id/txtRemoveTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/RemoveTip"
+                    android:textColor="@color/text_color_red"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/otherAction4"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/delete_red" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/optionCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/common_paddng_10dp"
+            android:text="Cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_xlarge" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

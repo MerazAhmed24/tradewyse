@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_paddng_3dp"
+    android:paddingTop="@dimen/common_paddng_10dp"
+    android:paddingBottom="@dimen/common_paddng_10dp"
+    android:background="#2B3654"
+    android:paddingLeft="@dimen/common_paddng_10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/checkImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_unchecked"
+        android:layout_gravity="center|end"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/checkImage"
+        android:textColor="@color/text_color_white"
+        android:id="@+id/txtStockName"
+        android:visibility="visible"
+        android:text="BA"
+        android:paddingLeft="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom|center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_xlarge"></TextView>
+    <TextView
+        android:layout_toRightOf="@+id/checkImage"
+        android:textColor="@color/text_color_light_grey"
+        android:id="@+id/txtStockCompany"
+        android:layout_below="@+id/txtStockName"
+        android:visibility="visible"
+        android:paddingLeft="2dp"
+        android:text="Boeing Company (The)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom|center"
+        android:textSize="@dimen/text_size_large"></TextView>
+
+</RelativeLayout>

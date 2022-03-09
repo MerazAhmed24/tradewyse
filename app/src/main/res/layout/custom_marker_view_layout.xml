@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:layout_marginTop="@dimen/common_paddng_12dp"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:minWidth="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_paddng_5dp"
+        android:background="@drawable/marker_bg"
+        >
+
+        <TextView
+            android:id="@+id/tvLabelContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/common_paddng_10dp"
+            android:layout_marginRight="@dimen/common_paddng_10dp"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:layout_below="@+id/tvLabelContent"
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Test"
+            android:layout_marginLeft="@dimen/common_paddng_10dp"
+            android:layout_marginRight="@dimen/common_paddng_10dp"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_below="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/common_paddng_10dp"
+            android:layout_marginRight="@dimen/common_paddng_10dp"
+            android:text="Test"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_marginTop="@dimen/common_paddng_2dp"
+        android:adjustViewBounds="true"
+        android:layout_height="12dp"
+        android:src="@drawable/circle_with_border"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

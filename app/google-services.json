@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "592114858590",
+    "firebase_url": "https://tradetips-9baa3.firebaseio.com",
+    "project_id": "tradetips-9baa3",
+    "storage_bucket": "tradetips-9baa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592114858590:android:38ae7663540f2e5cfb52cf",
+        "android_client_info": {
+          "package_name": "com.info.tradetips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592114858590-1jnpqv56a6978ama7bhsngrbac6r2aq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.info.tradetips",
+            "certificate_hash": "1ca61cfd920a6abaee799e3b0f184966d84e4d46"
+          }
+        },
+        {
+          "client_id": "592114858590-0cnfrbv5hemn0fqdnanigucj573e1qv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUF9Q1Nh6uxU9YcesUUar4ZugICgOfxIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592114858590-0cnfrbv5hemn0fqdnanigucj573e1qv1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "592114858590-lq6vtlkfeoloc4pcbkuj5n9kuln4nrr0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tradetips.tradetips"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
