@@ -92,19 +92,20 @@
                     android:layout_toEndOf="@+id/imageViewBuy"
                     android:singleLine="true"
                     android:text="MACD Tips"
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/txtBuyTimeAgo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txtBuyTitle"
-                    android:layout_toRightOf="@+id/imageViewBuy"
                     android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imageViewBuy"
                     android:minWidth="@dimen/_179sdp"
                     android:text=""
-                    android:textColor="@color/text_color_light_grey"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_small"
                     android:visibility="visible" />
 
@@ -125,7 +126,7 @@
                     android:paddingStart="@dimen/_8sdp"
                     android:paddingEnd="@dimen/_8sdp"
                     android:text=""
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="14sp" />
 
                 <RelativeLayout
@@ -147,7 +148,7 @@
                         android:paddingEnd="5dp"
                         android:text="Buy"
                         android:textAlignment="center"
-                        android:textColor="#1e841c"
+                        android:textColor="@color/color_text_buy"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -171,7 +172,7 @@
                 android:paddingStart="@dimen/_8sdp"
                 android:paddingEnd="@dimen/_8sdp"
                 android:text=""
-                android:textColor="@color/dark_black_color"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="13sp" />
 
         </LinearLayout>
@@ -222,7 +223,7 @@
                     android:layout_toEndOf="@+id/imageViewSell"
                     android:singleLine="true"
                     android:text="MACD Tips"
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -235,7 +236,7 @@
                     android:layout_toRightOf="@+id/imageViewSell"
                     android:minWidth="@dimen/_179sdp"
                     android:text=""
-                    android:textColor="@color/text_color_light_grey"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_small"
                     android:visibility="visible" />
 
@@ -256,7 +257,7 @@
                     android:paddingStart="@dimen/_8sdp"
                     android:paddingEnd="@dimen/_8sdp"
                     android:text=""
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="14sp" />
 
                 <RelativeLayout
@@ -274,13 +275,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
                         android:text="Sell"
                         android:textAlignment="center"
-                        android:textColor="#a94018"
+                        android:textColor="@color/color_text_sell"
                         android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:paddingStart="@dimen/_10sdp"
-                        android:paddingEnd="@dimen/_10sdp"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
@@ -300,7 +301,7 @@
                 android:paddingStart="@dimen/_8sdp"
                 android:paddingEnd="@dimen/_8sdp"
                 android:text=""
-                android:textColor="@color/dark_black_color"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="13sp" />
 
         </LinearLayout>

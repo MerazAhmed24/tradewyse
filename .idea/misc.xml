@@ -3,19 +3,46 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/activity_aitrade_tip_detail.xml" value="0.20018115942028986" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/ai_trade_tip_detail_layout.xml" value="0.1" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/ai_tradetip_item_horizontal.xml" value="0.33" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/item_add_tips_horizontal.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/item_tips_horizontal.xml" value="0.33" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/item_tips_vertical.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_horizontal_header.xml" value="0.25" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_macd_alert.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_social_chat_stock.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/row_vertical_header.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/service_filter_option.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/stok_expand_list_item.xml" value="0.20416666666666666" />
-        <entry key="..\:/Android_Tradetips_India/tradewyse/app/src/main/res/layout/stok_list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/bg_rounded_background_blue.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/bg_social_background.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/bg_white_rounded.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/bg_with_white_rounded_border.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/home_icon_disable.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/home_icon_enable.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/ic_add_circle_outline.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/ic_arrow_upward.xml" value="0.2203125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22135416666666666" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/mentor_list_item_bg_rounded.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/rounded_corner_dark.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/splash_gradient_bg.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/swipe_btn_bg.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/text_backgroud_black.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/text_backgroud_green.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/drawable/text_backgroud_red.xml" value="0.3828125" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/activity_aitrade_tip_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/activity_dash_board.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/activity_tip_detail.xml" value="0.33" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/ai_trade_tip_detail_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/ai_tradetip_item_horizontal.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/app_bar_dash_board.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/content_dash_board.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/footer_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/fragment_dash_board.xml" value="0.16" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/item_add_tips_horizontal.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/item_add_tips_vertical.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/item_tips_horizontal.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/item_tips_vertical.xml" value="0.5" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/like_view.xml" value="0.33" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/mentor_list_item.xml" value="0.5" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/nav_drawer_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/nav_header_dash_board.xml" value="0.20520833333333333" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/row_horizontal_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/row_macd_alert.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/row_new_ad_banner.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/row_vertical_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/tradewyse/app/src/main/res/layout/stok_expand_list_item.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

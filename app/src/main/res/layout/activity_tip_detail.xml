@@ -31,7 +31,7 @@
             android:layout_below="@id/header_layout"
             android:background="@color/color_app_dark_bg"
             tools:context="com.info.tradewyse.TipDetailActivity"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -67,22 +67,10 @@
                         android:layout_marginBottom="@dimen/common_paddng_3dp"
                         android:descendantFocusability="blocksDescendants"
                         android:visibility="visible">
-
-                        <TextView
-                            android:id="@+id/txtTimeAgo"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentRight="true"
-                            android:paddingBottom="@dimen/common_paddng_3dp"
-                            android:textColor="@color/text_color_light_grey"
-                            android:textSize="@dimen/text_size_small" />
-
                         <RelativeLayout
                             android:id="@+id/rootLayout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/txtTimeAgo"
                             android:background="@drawable/mentor_list_item_bg_rounded"
                             android:padding="@dimen/common_paddng_2dp">
 
@@ -97,9 +85,11 @@
                                     android:id="@+id/imgProfile"
                                     android:layout_width="@dimen/profile_image_height_small"
                                     android:layout_height="@dimen/profile_image_weidth_small"
-                                    android:layout_margin="@dimen/common_paddng_5dp"
-                                    android:layout_marginTop="@dimen/common_paddng_3dp"
+                                    android:layout_marginStart="@dimen/common_paddng_5dp"
+                                    android:layout_marginTop="@dimen/common_paddng_5dp"
+                                    android:layout_marginEnd="@dimen/common_paddng_5dp"
                                     android:layout_marginRight="@dimen/common_paddng_10dp"
+                                    android:layout_marginBottom="@dimen/common_paddng_5dp"
                                     app:placeholderImage="@drawable/ic_user_default"
                                     app:roundAsCircle="true" />
 
@@ -107,12 +97,21 @@
                                     android:id="@+id/txtName"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_centerVertical="true"
                                     android:layout_marginLeft="@dimen/common_paddng_5dp"
+                                    android:layout_marginTop="@dimen/_10sdp"
                                     android:layout_toRightOf="@+id/imgProfile"
                                     android:textColor="@color/text_color_username"
                                     android:textSize="@dimen/text_size_large"
                                     android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtTimeAgo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txtName"
+                                    android:layout_toRightOf="@+id/imgProfile"
+                                    android:textColor="@color/text_color_light_grey"
+                                    android:textSize="@dimen/text_size_small" />
 
                                 <TextView
                                     android:id="@+id/txtTimeAgo1"
@@ -127,23 +126,6 @@
                                     android:textSize="@dimen/text_size_small"
                                     android:visibility="gone" />
 
-                                <TextView
-                                    android:id="@+id/txtBuySellText"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_marginTop="@dimen/common_paddng_3dp"
-                                    android:layout_marginRight="@dimen/buy_sell_vertical_label_margin"
-                                    android:ems="3"
-                                    android:gravity="center"
-                                    android:paddingLeft="@dimen/common_paddng_5dp"
-                                    android:paddingRight="@dimen/common_paddng_5dp"
-                                    android:text="@string/buy"
-                                    android:textColor="@color/text_color_white"
-                                    android:textSize="@dimen/text_size_large"
-                                    android:textStyle="bold" />
-
                                 <androidx.appcompat.widget.AppCompatImageButton
                                     android:id="@id/flagIcon"
                                     android:layout_width="@dimen/flag_icon_size"
@@ -152,266 +134,322 @@
                                     android:layout_marginLeft="@dimen/common_paddng_5dp"
                                     android:layout_marginTop="@dimen/common_paddng_4dp"
                                     android:layout_marginRight="@dimen/common_paddng_5dp"
-                                    android:layout_toLeftOf="@+id/txtBuySellText"
                                     android:background="@android:color/transparent" />
                             </RelativeLayout>
 
                             <LinearLayout
                                 android:id="@+id/tipRootLayout"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/profileLayout"
                                 android:layout_alignParentStart="true"
                                 android:orientation="horizontal"
                                 android:paddingLeft="@dimen/common_paddng_5dp"
-                                android:paddingRight="@dimen/common_paddng_5dp">
+                                android:paddingRight="@dimen/common_paddng_5dp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:weightSum="3">
 
                                 <RelativeLayout
-                                    android:id="@+id/layout1"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/common_paddng_3dp"
-                                    android:layout_weight="1"
-                                    android:paddingLeft="@dimen/common_paddng_5dp">
+                                    android:layout_weight="1.4">
 
-                                    <TextView
-                                        android:id="@+id/txtStockName"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentLeft="true"
-                                        android:text=""
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_xlarge"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/txtStockCompany"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/txtStockName"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_marginRight="@dimen/common_paddng_2dp"
-                                        android:text=""
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
-
-                                    <!-- price row start-->
                                     <RelativeLayout
-                                        android:id="@+id/layoutpricerelative"
-                                        android:layout_width="match_parent"
+                                        android:id="@+id/layout1"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/txtStockCompany">
+                                        android:layout_marginTop="@dimen/common_paddng_3dp"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="@dimen/common_paddng_5dp">
 
-                                        <TableLayout
-                                            android:id="@+id/rootPricelayout"
-                                            android:layout_width="match_parent"
+                                        <TextView
+                                            android:id="@+id/txtStockName"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:text="APL"
+                                            android:textColor="@color/text_color_black"
+                                            android:textSize="@dimen/text_size_xxlarge"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/txtStockCompany"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtStockName"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_marginRight="@dimen/common_paddng_2dp"
+                                            android:maxLines="2"
+                                            android:text=""
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <TextView
+                                            android:id="@+id/txtBuySellText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtStockCompany"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginTop="@dimen/common_paddng_3dp"
+                                            android:layout_marginRight="@dimen/buy_sell_vertical_label_margin"
+                                            android:ems="3"
+                                            android:gravity="center"
+                                            android:paddingLeft="@dimen/common_paddng_5dp"
+                                            android:paddingRight="@dimen/common_paddng_5dp"
+                                            android:text="@string/buy"
+                                            android:textColor="@color/text_color_white"
+                                            android:textSize="@dimen/text_size_large"
+                                            android:textStyle="bold" />
+
+                                        <!-- price row start-->
+
+                                        <!--price row end -->
+
+                                        <TextView
+                                            android:id="@+id/txtComment"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_marginTop="@dimen/common_paddng_7dp"
-                                            android:gravity="left"
-                                            android:orientation="horizontal">
-
-                                            <TableRow
-                                                android:id="@+id/entryLayout"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/labelEntry"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:gravity="center"
-                                                    android:text="ENTRY"
-                                                    android:textColor="@color/text_color_dark_grey"
-                                                    android:textSize="@dimen/text_size_small" />
-
-                                                <TextView
-                                                    android:id="@+id/labelExit"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:gravity="center"
-                                                    android:text="EXIT"
-                                                    android:textColor="@color/text_color_dark_grey"
-                                                    android:textSize="@dimen/text_size_small" />
-
-                                                <TextView
-                                                    android:id="@+id/labelStop"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:gravity="center"
-                                                    android:text="STOP"
-                                                    android:textColor="@color/text_color_dark_grey"
-                                                    android:textSize="@dimen/text_size_small" />
-                                            </TableRow>
-
-                                            <TableRow
-                                                android:id="@+id/exitLayout"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_below="@+id/entryLayout"
-                                                android:orientation="vertical">
-
-
-                                                <TextView
-                                                    android:id="@+id/txtEntryPoint"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_vertical"
-                                                    android:layout_marginRight="3dp"
-                                                    android:maxLines="1"
-                                                    android:paddingTop="@dimen/common_paddng_3dp"
-                                                    android:paddingRight="@dimen/common_paddng_3dp"
-                                                    android:paddingBottom="@dimen/common_paddng_3dp"
-                                                    android:text="$ 0.00"
-                                                    android:textColor="@color/text_color_black"
-                                                    android:textSize="@dimen/text_size_xlarge"
-                                                    android:textStyle="bold" />
-
-                                                <TextView
-                                                    android:id="@+id/txtExitPoint"
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_vertical"
-                                                    android:layout_marginRight="3dp"
-                                                    android:gravity="center"
-                                                    android:maxLines="1"
-                                                    android:padding="@dimen/common_paddng_3dp"
-                                                    android:text="$ 0.00"
-                                                    android:textColor="@color/text_color_black"
-                                                    android:textSize="@dimen/text_size_xlarge"
-                                                    android:textStyle="bold" />
-
-                                                <TextView
-                                                    android:id="@+id/txtStopPoint"
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_vertical"
-                                                    android:gravity="center"
-                                                    android:maxLines="1"
-                                                    android:padding="@dimen/common_paddng_3dp"
-                                                    android:text="$ 0.00"
-                                                    android:textColor="@color/text_color_black"
-                                                    android:textSize="@dimen/text_size_xlarge"
-                                                    android:textStyle="bold" />
-                                            </TableRow>
-
-                                        </TableLayout>
+                                            android:paddingBottom="@dimen/common_paddng_10dp"
+                                            android:text=""
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
                                     </RelativeLayout>
-                                    <!--price row end -->
+                                </RelativeLayout>
 
-                                    <TextView
-                                        android:id="@+id/txtComment"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/layoutpricerelative"
-                                        android:layout_marginTop="@dimen/common_paddng_7dp"
-                                        android:paddingBottom="@dimen/common_paddng_10dp"
-                                        android:text=""
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2">
+
+                                    <View
+                                        style="@style/item_separator_straight"
+                                        android:layout_width="0.5dp"
+                                        android:layout_centerInParent="true"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginVertical="@dimen/_2sdp" />
                                 </RelativeLayout>
 
                                 <!--second last vertical column-->
                                 <RelativeLayout
-                                    android:id="@+id/layoutPricesMiddel"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_gravity="right"
-                                    android:layout_marginTop="@dimen/common_paddng_2dp"
-                                    android:minWidth="@dimen/margin_top_80dp">
+                                    android:layout_weight="1.4">
 
-
-                                    <TextView
-                                        android:id="@+id/labelAtTimeOfTip"
-                                        android:layout_width="wrap_content"
+                                    <RelativeLayout
+                                        android:id="@+id/layoutPricesMiddel"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/txtCurrentPrice"
-                                        android:layout_centerHorizontal="true"
-                                        android:gravity="center"
-                                        android:text="AT TIME OF TIP"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
-
-                                    <TextView
-                                        android:id="@+id/txtCreateTipPrice"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/labelAtTimeOfTip"
-                                        android:layout_centerHorizontal="true"
-                                        android:gravity="center"
-                                        android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
-                                        android:minWidth="@dimen/min_width_value_mtt_vertiacl"
-                                        android:paddingBottom="@dimen/common_paddng_5dp"
-                                        android:text="$ 0.00"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_medium"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/labelCurrentPrice"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_centerHorizontal="true"
-                                        android:gravity="center"
-                                        android:paddingLeft="@dimen/common_paddng_3dp"
-                                        android:paddingTop="@dimen/common_paddng_2dp"
-                                        android:text="CURRENT PRICE"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
-
-                                    <TextView
-                                        android:id="@+id/txtCurrentPrice"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/labelCurrentPrice"
-                                        android:layout_centerHorizontal="true"
-                                        android:gravity="center"
-                                        android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
-                                        android:minWidth="@dimen/min_width_value_mtt_vertiacl"
-                                        android:paddingBottom="@dimen/common_paddng_5dp"
-                                        android:text="--"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_medium"
-                                        android:textStyle="bold" />
+                                        android:layout_marginTop="@dimen/common_paddng_2dp"
+                                        android:minWidth="@dimen/margin_top_80dp">
 
 
-                                    <TextView
-                                        android:id="@+id/labelChange"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/txtCreateTipPrice"
-                                        android:layout_centerHorizontal="true"
-                                        android:gravity="center"
-                                        android:text="CHANGE"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
+                                        <TextView
+                                            android:id="@+id/labelAtTimeOfTip"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtCurrentPrice"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:gravity="center"
+                                            android:text="AT TIME OF TIP"
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
 
-                                    <TextView
-                                        android:id="@+id/txtChangeValue"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/labelChange"
-                                        android:layout_centerHorizontal="true"
-                                        android:gravity="center"
-                                        android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
-                                        android:minWidth="@dimen/min_width_value_mtt_vertiacl"
-                                        android:singleLine="true"
-                                        android:text="--"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_medium"
-                                        android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/txtCreateTipPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtCurrentPrice"
+                                            android:layout_marginBottom="@dimen/common_paddng_5dp"
+                                            android:layout_toRightOf="@+id/labelAtTimeOfTip"
+                                            android:gravity="center"
+                                            android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
+                                            android:minWidth="@dimen/min_width_value_mtt_vertiacl"
+                                            android:text="$ 0.00"
+                                            android:textColor="@color/text_color_black"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
 
+                                        <TextView
+                                            android:id="@+id/labelCurrentPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:gravity="center"
+                                            android:paddingLeft="@dimen/common_paddng_3dp"
+                                            android:paddingTop="@dimen/common_paddng_2dp"
+                                            android:text="CURRENT PRICE"
+                                            android:visibility="gone"
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <TextView
+                                            android:id="@+id/txtCurrentPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/labelCurrentPrice"
+                                            android:layout_alignParentRight="true"
+                                            android:gravity="center"
+                                            android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
+                                            android:minWidth="@dimen/min_width_value_mtt_vertiacl"
+                                            android:paddingBottom="@dimen/common_paddng_5dp"
+                                            android:text="--"
+                                            android:textColor="@color/text_color_black"
+                                            android:textSize="@dimen/text_size_xxlarge"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/labelChange"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtCreateTipPrice"
+                                            android:layout_alignParentLeft="true"
+                                            android:text="Change"
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_xlarge" />
+
+                                        <TextView
+                                            android:id="@+id/txtChangeValue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtCreateTipPrice"
+                                            android:layout_alignParentRight="true"
+                                            android:gravity="center"
+                                            android:maxWidth="@dimen/min_width_value_mtt_vertiacl"
+                                            android:minWidth="@dimen/min_width_value_mtt_vertiacl"
+                                            android:singleLine="true"
+                                            android:text="--"
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_medium"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
                                 </RelativeLayout>
 
 
                             </LinearLayout>
+                            <RelativeLayout
+                                android:id="@+id/layoutpricerelative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tipRootLayout">
+
+                                <LinearLayout
+                                    android:id="@+id/rootPricelayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+                                    <LinearLayout
+                                        android:id="@+id/entryLayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="@dimen/common_paddng_2dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingRight="@dimen/common_paddng_7dp">
+
+                                        <TextView
+                                            android:id="@+id/labelEntry"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Entry"
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtEntryPoint"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:maxWidth="@dimen/max_min_width_65"
+                                            android:singleLine="true"
+                                            android:text="₹ 1259.05"
+                                            android:textColor="@color/text_color_black"
+                                            android:textSize="@dimen/text_size_xlarge"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/exitLayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/common_paddng_2dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingRight="@dimen/common_paddng_7dp">
+
+                                        <TextView
+                                            android:id="@+id/labelExit"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:paddingLeft="@dimen/common_paddng_3dp"
+                                            android:text="Exit"
+
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <TextView
+                                            android:id="@+id/txtExitPoint"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:maxWidth="@dimen/max_min_width_65"
+                                            android:singleLine="true"
+                                            android:text="₹ 1223.23"
+                                            android:textColor="@color/text_color_black"
+                                            android:textSize="@dimen/text_size_xlarge"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/stopLayout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/labelStop"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Stop"
+
+                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textSize="@dimen/text_size_small" />
+
+                                        <TextView
+                                            android:id="@+id/txtStopPoint"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:maxWidth="@dimen/max_min_width_65"
+                                            android:singleLine="true"
+                                            android:text="₹ 1259.05"
+                                            android:textColor="@color/text_color_black"
+                                            android:textSize="@dimen/text_size_xlarge"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </RelativeLayout>
 
 
                             <FrameLayout
                                 android:id="@+id/imageFrame"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/tipRootLayout"
+                                android:layout_below="@id/layoutpricerelative"
                                 android:layout_marginLeft="@dimen/common_paddng_5dp"
                                 android:layout_marginRight="@dimen/common_paddng_5dp">
 
@@ -440,32 +478,32 @@
 
                             </FrameLayout>
 
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/imageFrame"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@color/text_color_grey" />
+
+                            <include
+                                android:id="@+id/likeview"
+                                layout="@layout/like_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/view1" />
+
 
                         </RelativeLayout>
-
-                        <include
-                            android:id="@+id/likeview"
-                            layout="@layout/like_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/rootLayout" />
-
-                        <View
-                            android:id="@+id/view1"
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_below="@+id/likeview"
-                            android:layout_marginLeft="@dimen/_5sdp"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginRight="@dimen/_5sdp"
-                            android:layout_marginBottom="@dimen/_5sdp"
-                            android:background="@color/text_color_grey" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/recCommentsList"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/view1"
+                            android:layout_below="@id/rootLayout"
                             android:layout_marginLeft="@dimen/common_paddng_2dp" />
                     </RelativeLayout>
 
@@ -562,6 +600,7 @@
         <ProgressBar
             android:id="@+id/progressBar"
             style="@style/progress_dialog"
+            android:visibility="gone"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_centerInParent="true" />

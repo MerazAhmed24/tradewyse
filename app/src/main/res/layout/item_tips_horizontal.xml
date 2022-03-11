@@ -36,7 +36,7 @@
                 android:adjustViewBounds="true"
                 android:paddingTop="@dimen/common_paddng_3dp"
                 android:scaleType="centerCrop"
-                app:placeholderImage="@drawable/ic_user_default"
+                app:placeholderImage="@drawable/ic_baseline_account_circle_24"
                 app:roundAsCircle="true" />
 
             <TextView
@@ -46,7 +46,7 @@
                 android:layout_toRightOf="@+id/imgProfile"
                 android:singleLine="true"
                 android:text="Tyrone Jackson"
-                android:textColor="@color/black"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_large"
                 android:textStyle="bold" />
 
@@ -106,7 +106,7 @@
                     android:maxLines="1"
                     android:paddingBottom="@dimen/common_paddng_7dp"
                     android:text="SPY"
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/text_size_large"
                     android:textStyle="bold" />
                 <TextView
@@ -117,7 +117,6 @@
                     android:background="@color/text_color_black"
                     android:gravity="center"
                     android:layout_weight="0.8"
-                    android:maxWidth="@dimen/_53sdp"
                     android:singleLine="true"
                     android:text="BUY"
                     android:textColor="@color/text_color_white"
@@ -139,7 +138,7 @@
                         android:maxLines="1"
                         android:paddingBottom="@dimen/common_paddng_7dp"
                         android:text="SP asdaY"
-                        android:textColor="@color/text_color_black"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_large"
                         android:textStyle="bold" />
 
@@ -172,7 +171,7 @@
                         android:layout_below="@id/txtExitPoint"
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                         android:text="Entry"
-                        android:textColor="@color/text_color_dark_grey"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="@dimen/text_size_small" />
 
                     <TextView
@@ -185,7 +184,7 @@
                         android:maxLines="1"
                         android:minWidth="@dimen/min_width_value"
                         android:text="$ 944.3"
-                        android:textColor="@color/text_color_black"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -208,7 +207,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                         android:text="Exit"
-                        android:textColor="@color/text_color_dark_grey"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="@dimen/text_size_small" />
 
                     <TextView
@@ -221,7 +220,7 @@
                         android:maxLines="1"
                         android:minWidth="@dimen/min_width_value"
                         android:text="$ 3434"
-                        android:textColor="@color/text_color_black"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -244,7 +243,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                         android:text="Stop"
-                        android:textColor="@color/text_color_dark_grey"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="@dimen/text_size_small" />
 
                     <TextView
@@ -257,7 +256,7 @@
                         android:maxLines="1"
                         android:minWidth="@dimen/min_width_value"
                         android:text="$ 3434"
-                        android:textColor="@color/text_color_black"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
                 </LinearLayout>

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#203257"
+        android:background="@color/color_app_dark_bg_india"
         android:orientation="horizontal"
         android:paddingVertical="@dimen/_10sdp"
         android:weightSum="5">
@@ -20,7 +20,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/home_btn"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="homeTabClicked"
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="@{footerModel.isHome? @color/text_color_white : @color/text_color_disable_footer}"
+                android:textColor="@{footerModel.isHome? @color/text_color_white : @color/color_text_dark_layout}"
                 android:textSize="@dimen/_11sdp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Services"
-                android:textColor="@{footerModel.isServices? @color/text_color_white : @color/text_color_disable_footer}"
+                android:textColor="@{footerModel.isServices? @color/text_color_white : @color/color_text_dark_layout}"
                 android:textSize="@dimen/_11sdp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chat"
-                android:textColor="@{footerModel.isChat? @color/text_color_white : @color/text_color_disable_footer}"
+                android:textColor="@{footerModel.isChat? @color/text_color_white : @color/color_text_dark_layout}"
                 android:textSize="@dimen/_11sdp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Notifications"
-                android:textColor="@{footerModel.isNotification? @color/text_color_white : @color/text_color_disable_footer}"
+                android:textColor="@{footerModel.isNotification? @color/text_color_white : @color/color_text_dark_layout}"
                 android:textSize="@dimen/_11sdp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="More"
-                android:textColor="@{footerModel.isMore? @color/text_color_white : @color/text_color_disable_footer}"
+                android:textColor="@{footerModel.isMore? @color/text_color_white : @color/color_text_dark_layout}"
                 android:textSize="@dimen/_11sdp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>

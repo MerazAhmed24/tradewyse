@@ -759,4 +759,7 @@ TermsOfUse@TradeTips.com>]]></string>
     <string name="coffee_break">Coffee Break</string>
     <string name="if_you_enjoy_using_please_take_a_moment_to_rate_it_thanks_for_your_support">If you enjoy using Tradetips please take a moment to rate it.\nThanks for your support!</string>
     <string name="check_this_section_for_all_updates_and_general_announcements">Check this section for all updates and\ngeneral announcements.</string>
+    <string name="unlimited_ai_tips">Unlimited\nAi Tips</string>
+    <string name="save_ai_tips">Save Ai\nTips</string>
+    <string name="personalized_updates">Personalized\nUpdates</string>
 </resources>

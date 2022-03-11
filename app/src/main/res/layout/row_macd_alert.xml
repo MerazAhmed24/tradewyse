@@ -23,7 +23,7 @@
             android:layout_gravity="center"
             android:layout_weight="0.7"
             android:text=""
-            android:textColor="@color/text_color_black"
+            android:textColor="@color/color_small_text__dark_layout"
             android:textSize="14sp"
             android:paddingEnd="@dimen/_2sdp"/>
 
@@ -35,7 +35,7 @@
             android:layout_weight="1.2"
             android:text=""
             android:gravity="start"
-            android:textColor="@color/text_color_black"
+            android:textColor="@color/color_small_text__dark_layout"
             android:textSize="14sp"
             android:paddingEnd="@dimen/_2sdp"/>
 
@@ -47,7 +47,7 @@
             android:layout_weight="1.1"
             android:text=""
             android:gravity="start"
-            android:textColor="@color/text_color_black"
+            android:textColor="@color/color_small_text__dark_layout"
             android:textSize="14sp"
             android:paddingStart="@dimen/_8sdp"/>
 

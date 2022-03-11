@@ -7,16 +7,135 @@
     android:layout_marginHorizontal="5dp"
     android:layout_marginBottom="@dimen/_5sdp"
     android:id="@+id/layoutRootLayout"
-    android:visibility="gone">
+    android:visibility="visible">
 
+    <RelativeLayout
+        android:id="@+id/layoutPramotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvtextpremium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Premium"
+            android:textColor="@color/color_text_dark_layout"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <ImageView
+            android:id="@+id/imgGoldDiamond"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_toRightOf="@+id/tvtextpremium"
+            app:srcCompat="@drawable/diamond_golden_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgGoldDiamond"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_2ssp"
+            android:paddingVertical="@dimen/_10ssp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_background_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:srcCompat="@drawable/diamond_icon_pramotion"
+                    app:tint="@color/color_icon_tint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:text="@string/unlimited_ai_tips"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_small_text__dark_layout"
+                    android:textSize="@dimen/_8sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_background_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:srcCompat="@drawable/save_icon_pramotion"
+                    app:tint="@color/color_icon_tint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:text="@string/save_ai_tips"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_small_text__dark_layout"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_background_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:srcCompat="@drawable/bell_icon"
+                    app:tint="@color/color_icon_tint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:text="@string/personalized_updates"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_small_text__dark_layout"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
     <!--Make a tip layout for mentor-->
     <RelativeLayout
         android:id="@+id/layoutMakeATip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/common_paddng_5dp"
-        android:layout_marginTop="@dimen/common_paddng_15dp"
-        android:layout_marginRight="@dimen/common_paddng_5dp"
+        android:layout_below="@id/layoutPramotion"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
         android:layout_marginBottom="@dimen/common_paddng_5dp"
         android:background="@drawable/bg_with_white_rounded_border"
         android:visibility="gone">
@@ -46,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutMakeATip"
         android:layout_marginStart="-5dp"
-        android:layout_marginEnd="-5dp"/>
+        android:layout_marginEnd="-5dp" />
 
     <!--Buy Header-->
     <LinearLayout
@@ -55,20 +174,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/recyclerViewVerticalTips"
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10ssp"
         android:visibility="gone">
-
-        <TextView
-            android:id="@+id/txtBuyDateTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:paddingStart="@dimen/common_paddng_5dp"
-            android:paddingTop="@dimen/common_paddng_1dp"
-            android:paddingEnd="@dimen/common_paddng_7dp"
-            android:paddingBottom="@dimen/common_paddng_3dp"
-            android:text=""
-            android:textColor="@color/text_color_light_grey"
-            android:textSize="@dimen/text_size_small" />
 
         <LinearLayout
             android:id="@+id/layoutBuy"
@@ -97,16 +204,25 @@
                     android:id="@+id/txtBuyTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/txtMACDBuy"
                     android:layout_toEndOf="@+id/imageViewBuy"
-                    android:paddingBottom="@dimen/common_paddng_2dp"
                     android:singleLine="true"
                     android:text="MACD Tips"
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtBuyDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtBuyTitle"
+                    android:layout_toRightOf="@+id/imageViewBuy"
+                    android:paddingTop="@dimen/common_paddng_1dp"
+                    android:paddingEnd="@dimen/common_paddng_7dp"
+                    android:text=""
+                    android:textColor="@color/color_small_text__dark_layout"
+                    android:textSize="@dimen/text_size_small" />
 
                 <RelativeLayout
                     android:id="@+id/txtMACDBuy"
@@ -124,7 +240,7 @@
                         android:paddingEnd="7dp"
                         android:text="Buy"
                         android:textAlignment="center"
-                        android:textColor="#1e841c"
+                        android:textColor="@color/color_text_buy"
                         android:textSize="@dimen/text_size_xlarge"
                         android:textStyle="bold" />
 
@@ -143,7 +259,7 @@
                 android:paddingStart="@dimen/common_paddng_15dp"
                 android:paddingEnd="@dimen/common_paddng_10dp"
                 android:text=""
-                android:textColor="@color/text_color_black"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="13sp" />
 
             <RelativeLayout
@@ -160,7 +276,7 @@
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="14sp" />
 
                 <RelativeLayout
@@ -225,7 +341,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="0.7"
                         android:text="Stock"
-                        android:textColor="@color/dark_black_color"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <TextView
@@ -235,7 +351,7 @@
                         android:layout_weight="1.3"
                         android:gravity="start"
                         android:text="Company"
-                        android:textColor="@color/dark_black_color"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <TextView
@@ -244,10 +360,10 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="start"
+                        android:paddingStart="@dimen/_8sdp"
                         android:text="Closing Price"
-                        android:textColor="@color/dark_black_color"
-                        android:textSize="14sp"
-                        android:paddingStart="@dimen/_8sdp"/>
+                        android:textColor="@color/color_small_text__dark_layout"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 
@@ -283,7 +399,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No MACD crossover signals."
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/_10ssp"
                     android:layout_gravity="center"/>
 
@@ -292,7 +408,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/macd_blank_title"
-                    android:textColor="@color/blue_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/_10ssp"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_5sdp"/>
@@ -333,22 +449,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutBuyHeader"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:orientation="vertical"
         android:visibility="gone">
-
-        <TextView
-            android:id="@+id/txtSellDateTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:paddingStart="@dimen/common_paddng_5dp"
-            android:paddingTop="@dimen/common_paddng_1dp"
-            android:paddingEnd="@dimen/common_paddng_7dp"
-            android:paddingBottom="@dimen/common_paddng_3dp"
-            android:text=""
-            android:textColor="@color/text_color_light_grey"
-            android:textSize="@dimen/text_size_small" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -376,16 +479,27 @@
                     android:id="@+id/txtSellTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_toStartOf="@+id/txtMACDSell"
                     android:layout_toEndOf="@+id/imageViewSell"
-                    android:paddingBottom="@dimen/common_paddng_2dp"
                     android:singleLine="true"
                     android:text="MACD Tips"
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSellDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSellTitle"
+                    android:layout_toRightOf="@+id/imageViewSell"
+                    android:paddingTop="@dimen/common_paddng_1dp"
+                    android:paddingEnd="@dimen/common_paddng_7dp"
+                    android:paddingBottom="@dimen/common_paddng_3dp"
+                    android:text=""
+                    android:textColor="@color/color_small_text__dark_layout"
+                    android:textSize="@dimen/text_size_small" />
 
                 <RelativeLayout
                     android:id="@+id/txtMACDSell"
@@ -403,7 +517,7 @@
                         android:paddingEnd="20dp"
                         android:text="Sell"
                         android:textAlignment="center"
-                        android:textColor="#a94018"
+                        android:textColor="@color/color_text_sell"
                         android:textSize="@dimen/text_size_xlarge"
                         android:textStyle="bold" />
 
@@ -422,7 +536,7 @@
                 android:paddingStart="@dimen/common_paddng_15dp"
                 android:paddingEnd="@dimen/common_paddng_10dp"
                 android:text=""
-                android:textColor="@color/text_color_black"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="13sp" />
 
             <RelativeLayout
@@ -439,7 +553,7 @@
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="14sp" />
 
                 <RelativeLayout
@@ -504,7 +618,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="0.7"
                         android:text="Stock"
-                        android:textColor="@color/dark_black_color"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <TextView
@@ -514,7 +628,7 @@
                         android:layout_weight="1.3"
                         android:gravity="start"
                         android:text="Company"
-                        android:textColor="@color/dark_black_color"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <TextView
@@ -524,7 +638,7 @@
                         android:layout_weight="1"
                         android:gravity="start"
                         android:text="Closing Price"
-                        android:textColor="@color/dark_black_color"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp"
                         android:paddingStart="@dimen/_8sdp"/>
 
@@ -562,7 +676,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No MACD crossover signal."
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/_10ssp"
                     android:layout_gravity="center"/>
 
@@ -571,7 +685,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/macd_blank_title"
-                    android:textColor="@color/blue_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/_10ssp"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_5sdp"/>

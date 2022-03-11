@@ -75,13 +75,13 @@ public class StringHelper {
                 }
                 return defaultValue;
             } else {
-                return "$" + textAmount;
+                return "₹" + textAmount;
             }
         }
     }
 
     public static String currencyFormatter(Double number) {
-        String COUNTRY = "US";
+        String COUNTRY = "IN";
         String LANGUAGE = "en";
         String str = NumberFormat.getCurrencyInstance(new Locale(LANGUAGE, COUNTRY)).format(number);
         return str;
@@ -94,7 +94,7 @@ public class StringHelper {
             }
             return defaultValue;
         } else {
-            return "$" + text;
+            return "₹" + text;
         }
     }
 

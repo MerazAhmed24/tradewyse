@@ -72,6 +72,14 @@
         <item name="android:layout_marginBottom">@dimen/common_paddng_3dp</item>
         <item name="android:background">@color/text_color_grey</item>
     </style>
+    <style name="item_separator_straight">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:alpha">0.3</item>
+        <item name="android:layout_marginTop">@dimen/common_paddng_3dp</item>
+        <item name="android:layout_marginBottom">@dimen/common_paddng_3dp</item>
+        <item name="android:background">@color/color_text_dark_layout</item>
+    </style>
 
     <style name="item_separator_white">
         <item name="android:layout_width">match_parent</item>

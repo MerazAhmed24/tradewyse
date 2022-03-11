@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/likeLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,7 +12,8 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="@dimen/common_paddng_7dp">
+        android:paddingVertical="@dimen/common_paddng_7dp"
+        android:paddingHorizontal="@dimen/common_paddng_10dp">
 
         <LinearLayout
             android:id="@+id/layoutComment"
@@ -22,9 +24,10 @@
 
             <ImageView
                 android:id="@+id/imgComment"
-                android:layout_width="@dimen/_21sdp"
-                android:layout_height="@dimen/_21sdp"
-                android:src="@drawable/ic_coment" />
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                app:tint="@color/color_icon_tint"
+                android:src="@drawable/comment_bubble_icon" />
 
             <TextView
                 android:id="@+id/txtNoOfComments"
@@ -32,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/common_paddng_3dp"
-                android:textColor="@color/text_color_white" />
+                android:textColor="@color/color_small_text__dark_layout" />
         </LinearLayout>
 
 
@@ -46,9 +49,10 @@
 
             <ImageView
                 android:id="@+id/imgPin"
-                android:layout_width="@dimen/_22sdp"
-                android:layout_height="@dimen/_23sdp"
-                android:src="@drawable/ic_tag" />
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                app:tint="@color/color_icon_tint"
+                android:src="@drawable/save_tip_icon" />
 
             <TextView
                 android:id="@+id/txtPin"
@@ -56,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/common_paddng_3dp"
-                android:textColor="@color/text_color_white" />
+                android:textColor="@color/color_small_text__dark_layout" />
         </LinearLayout>
 
         <LinearLayout
@@ -68,9 +72,10 @@
 
             <ImageView
                 android:id="@+id/imgLike"
-                android:layout_width="@dimen/_21sdp"
-                android:layout_height="@dimen/_21sdp"
-                android:src="@drawable/ic_like" />
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/like_tip_icon"
+                app:tint="@color/color_icon_tint"/>
 
             <TextView
                 android:id="@+id/txtLikeCount"
@@ -80,7 +85,7 @@
                 android:layout_marginLeft="@dimen/common_paddng_3dp"
                 android:layout_marginTop="@dimen/_1sdp"
                 android:gravity="center"
-                android:textColor="@color/text_color_white" />
+                android:textColor="@color/color_small_text__dark_layout" />
         </LinearLayout>
 
         <LinearLayout
@@ -91,8 +96,9 @@
 
             <ImageView
                 android:id="@+id/imgMore"
-                android:layout_width="@dimen/_21sdp"
-                android:layout_height="@dimen/_21sdp"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                app:tint="@color/color_icon_tint"
                 android:src="@drawable/ic_more_tip">
 
             </ImageView>
@@ -103,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/common_paddng_3dp"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>

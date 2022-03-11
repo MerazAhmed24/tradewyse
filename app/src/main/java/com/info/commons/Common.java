@@ -1527,7 +1527,7 @@ public class Common {
     {
         if (Constants.IS_PRODUCTION == false)
         {
-            bottomView.setBackgroundColor(ContextCompat.getColor(context, R.color.black));
+            bottomView.setBackgroundColor(ContextCompat.getColor(context, R.color.color_app_dark_bg_india));
 
         }
 

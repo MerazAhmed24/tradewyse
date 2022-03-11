@@ -70,7 +70,7 @@
                             android:ems="11"
                             android:maxLines="1"
                             android:text="@string/TradeWyseAI"
-                            android:textColor="@color/black"
+                            android:textColor="@color/color_text_dark_layout"
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
 
@@ -153,7 +153,7 @@
                             android:paddingRight="@dimen/common_paddng_5dp"
                             android:text="@string/dummy_stock_name"
                             android:layout_weight="1"
-                            android:textColor="@color/text_color_black"
+                            android:textColor="@color/color_text_dark_layout"
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
 
@@ -184,7 +184,7 @@
                             android:paddingStart="@dimen/_15ssp"
                             android:layout_weight="1.2"
                             android:textStyle="bold"
-                            android:textColor="@color/text_color_black"
+                            android:textColor="@color/color_text_dark_layout"
                             android:textSize="@dimen/_12ssp"  />
                     </LinearLayout>
 
@@ -248,7 +248,7 @@
                                 android:gravity="center"
                                 android:text="@string/noOfDays"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_dark_grey"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_small" />
 
                             <TextView
@@ -260,7 +260,7 @@
                                 android:gravity="center"
                                 android:text="@string/tenDayValueApprox"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_black"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="@dimen/_12ssp" />
                         </LinearLayout>
 
@@ -279,7 +279,7 @@
                                 android:gravity="center"
                                 android:text="50 Day"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_dark_grey"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_small" />
 
                             <TextView
@@ -292,7 +292,7 @@
                                 android:gravity="center"
                                 android:text="@string/tenDayValueApprox"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_black"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="@dimen/_12ssp" />
                         </LinearLayout>
 
@@ -312,7 +312,7 @@
                                 android:gravity="center"
                                 android:text="200 Day"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_dark_grey"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_small" />
 
                             <TextView
@@ -328,7 +328,7 @@
                                 android:text="@string/tenDayValueApprox"
                                 android:maxLines="1"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_black"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="@dimen/_12ssp" />
                         </LinearLayout>
                     </LinearLayout>

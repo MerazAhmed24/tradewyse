@@ -27,25 +27,11 @@
             android:paddingLeft="@dimen/common_paddng_8dp"
             android:paddingRight="@dimen/common_paddng_8dp">
 
-            <TextView
-                android:id="@+id/txtDay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/sectorNews"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/common_paddng_2dp"
-                android:text="Thu, 18 Jul 2019 20:08:02 GMT"
-                android:textColor="@color/text_color_light_grey"
-                android:textSize="@dimen/text_size_small"
-                android:paddingBottom="@dimen/common_paddng_2dp"
-                android:visibility="visible" />
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/common_paddng_3dp"
                 android:layout_marginBottom="@dimen/common_paddng_15dp"
-                android:layout_below="@+id/txtDay"
                 app:contentPadding="@dimen/common_paddng_5dp"
                 app:cardCornerRadius="@dimen/common_paddng_10dp">
 
@@ -53,9 +39,7 @@
                     android:id="@+id/rootLayoutRoundedBorder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txtDay"
-
-                    >
+                    android:layout_below="@+id/txtDay">
 
                     <RelativeLayout
                         android:id="@+id/bottomLayout"
@@ -72,8 +56,6 @@
                             android:id="@+id/profileLayout1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_toLeftOf="@+id/txtStatus1"
-                            android:gravity="left|center_vertical"
                             android:paddingTop="@dimen/common_paddng_3dp"
                             android:paddingBottom="@dimen/common_paddng_3dp"
                             android:visibility="visible">
@@ -82,7 +64,7 @@
                                 android:id="@+id/imgProfile1"
                                 android:layout_width="@dimen/profile_image_height_vsmall"
                                 android:layout_height="@dimen/profile_image_height_vsmall"
-                                android:layout_centerInParent="true"
+                                android:layout_alignParentLeft="true"
                                 android:layout_marginRight="@dimen/common_paddng_5dp"
                                 android:layout_marginTop="@dimen/common_paddng_3dp"
                                 android:padding="@dimen/common_paddng_2dp"
@@ -101,6 +83,19 @@
                                 android:textSize="@dimen/text_size_large" />
 
                             <TextView
+                                android:id="@+id/txtDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/common_paddng_2dp"
+                                android:paddingBottom="@dimen/common_paddng_2dp"
+                                android:text="Thu, 18 Jul 2019 20:08:02 GMT"
+                                android:textColor="@color/text_color_light_grey"
+                                android:textSize="@dimen/text_size_small"
+                                android:visibility="visible" />
+
+                            <TextView
                                 android:id="@+id/txtTimeAgo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -113,21 +108,7 @@
                         </RelativeLayout>
 
 
-                        <TextView
-                            android:id="@+id/txtStatus1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_margin="@dimen/common_paddng_2dp"
-                            android:layout_marginLeft="@dimen/common_paddng_5dp"
-                            android:paddingLeft="@dimen/common_paddng_5dp"
-                            android:gravity="center"
-                            android:layout_marginRight="@dimen/common_paddng_10dp"
-                            android:text="@string/buy"
-                            android:textColor="@color/text_color_white"
-                            android:textSize="@dimen/text_size_large"
-                            android:textStyle="bold" />
+
                     </RelativeLayout>
 
                     <!-- <View
@@ -158,20 +139,22 @@
 
                         <LinearLayout
                             android:id="@+id/firstLayout11"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <RelativeLayout
+                            <LinearLayout
                                 android:id="@+id/firstPartLayout"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
+                                android:weightSum="3"
+                                android:orientation="horizontal"
                                 android:layout_height="wrap_content">
 
-                                <LinearLayout
+                                <RelativeLayout
                                     android:id="@+id/innerLayoutFirst"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.4"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentLeft="true"
                                     android:layout_marginBottom="@dimen/common_paddng_2dp"
                                     android:orientation="vertical">
 
@@ -188,22 +171,50 @@
                                         android:id="@+id/txtStockCompany"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtStockName"
+                                        android:layout_marginTop="@dimen/_10sdp"
                                         android:layout_marginRight="@dimen/common_paddng_2dp"
                                         android:maxWidth="185dp"
                                         android:text="@string/stock_company"
                                         android:textColor="@color/text_color_username"
                                         android:textSize="@dimen/text_size_small" />
 
+                                    <TextView
+                                        android:id="@+id/txtStatus1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtStockCompany"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="@dimen/common_paddng_2dp"
+                                        android:layout_marginLeft="@dimen/common_paddng_5dp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_marginEnd="@dimen/common_paddng_2dp"
+                                        android:layout_marginRight="@dimen/common_paddng_10dp"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:gravity="center"
+                                        android:paddingLeft="@dimen/common_paddng_5dp"
+                                        android:text="@string/buy"
+                                        android:textColor="@color/text_color_white"
+                                        android:textSize="@dimen/text_size_large"
+                                        android:textStyle="bold" />
 
-                                </LinearLayout>
-
-                                <LinearLayout
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".2"
+                                    android:layout_height="match_parent">
+                                    <View
+                                        style="@style/item_separator_straight"
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginVertical="@dimen/_2sdp" />
+                                </RelativeLayout>
+                                <RelativeLayout
                                     android:id="@+id/innerLayoutSecond"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.4"
                                     android:layout_height="wrap_content"
-                                    android:minWidth="120dp"
-                                    android:layout_alignParentRight="true"
-                                    android:gravity="end"
                                     android:orientation="vertical"
                                     android:paddingRight="@dimen/common_paddng_10dp">
 
@@ -222,15 +233,17 @@
                                         android:id="@+id/txtChange"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtCurrentValue"
                                         android:layout_gravity="center"
                                         android:gravity="end"
+                                        android:layout_marginTop="@dimen/_5sdp"
                                         android:minWidth="@dimen/common_paddng_70dp"
                                         android:text="@string/changeValue"
                                         android:textColor="@color/text_color_green"
                                         android:textSize="@dimen/text_size_medium"
                                         android:textStyle="bold" />
-                                </LinearLayout>
-                            </RelativeLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
 
                             <TextView
                                 android:id="@+id/txtMovingAvgLbl"
@@ -240,21 +253,22 @@
                                 android:layout_marginTop="@dimen/common_paddng_3dp"
                                 android:text="@string/performingstatus"
                                 android:textStyle="bold"
-                                android:textColor="@color/text_color_dark_grey"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="@dimen/text_size_medium" />
 
                             <LinearLayout
                                 android:id="@+id/rootPricelayout"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/common_paddng_1dp"
-                                android:gravity="left"
+                                android:weightSum="3"
                                 android:layout_marginBottom="@dimen/common_paddng_1dp"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
                                     android:id="@+id/tenDayLayout"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/common_paddng_3dp"
                                     android:orientation="vertical">
@@ -285,7 +299,8 @@
 
                                 <LinearLayout
                                     android:id="@+id/fiftyDayLayout"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/common_paddng_3dp"
                                     android:orientation="vertical">
@@ -317,7 +332,8 @@
 
                                 <LinearLayout
                                     android:id="@+id/twoHundredDayLayout"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/common_paddng_3dp"
                                     android:orientation="vertical">
