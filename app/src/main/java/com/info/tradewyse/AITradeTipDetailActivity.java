@@ -138,13 +138,13 @@ public class AITradeTipDetailActivity extends BaseActivity implements View.OnCli
         }
         if (suggestion.equalsIgnoreCase("Avoid")) {
             txtStatus1.setBackgroundResource(R.drawable.text_backgroud_black);
-            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.text_color_avoid));
+            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.color_text_avoid));
         } else if (suggestion.equalsIgnoreCase("Sell")) {
-            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.text_color_sell));
+            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.color_text_sell));
             txtStatus1.setBackgroundResource(R.drawable.text_backgroud_red);
         } else if (suggestion.equalsIgnoreCase("Buy")) {
             txtStatus1.setBackgroundResource(R.drawable.text_backgroud_green);
-           txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.text_color_buy));
+           txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.color_text_buy));
         }
 
     }
@@ -275,13 +275,13 @@ public class AITradeTipDetailActivity extends BaseActivity implements View.OnCli
         txtStatus1.setText(tipsArrayList.get(0).getResult());
         if (tipsArrayList.get(0).getResult().equalsIgnoreCase("Avoid")) {
             txtStatus1.setBackgroundResource(R.drawable.text_backgroud_black);
-            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.text_color_avoid));
+            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.color_text_avoid));
         } else if (tipsArrayList.get(0).getResult().equalsIgnoreCase("Sell")) {
             txtStatus1.setBackgroundResource(R.drawable.text_backgroud_red);
-            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.text_color_sell));
+            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.color_text_sell));
         } else if (tipsArrayList.get(0).getResult().equalsIgnoreCase("Buy")) {
             txtStatus1.setBackgroundResource(R.drawable.text_backgroud_green);
-            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.text_color_buy));
+            txtStatus1.setTextColor(ContextCompat.getColor(context, R.color.color_text_buy));
         }
 
         txtCurrentValue.setText("$" + Common.formatDouble(stockLatestPrice )+ "");
@@ -354,19 +354,19 @@ public class AITradeTipDetailActivity extends BaseActivity implements View.OnCli
             txtTenDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg10days())));
         } else {
             txtTenDaysValue.setText(context.getResources().getString(R.string.dashDash));
-            txtTenDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
+            txtTenDaysValue.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         }
         if (Common.checkStringIsDouble(sectorNews.getAvg50days())) {
             txtFiftyDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg50days())));
         } else {
             txtFiftyDaysValue.setText(context.getResources().getString(R.string.dashDash));
-            txtFiftyDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
+            txtFiftyDaysValue.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         }
         if (Common.checkStringIsDouble(sectorNews.getAvg200days())) {
             txtTwoHundredDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg200days())));
         } else {
             txtTwoHundredDaysValue.setText(context.getResources().getString(R.string.dashDash));
-            txtTwoHundredDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
+            txtTwoHundredDaysValue.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         }
     }
     private void setColorOfNewsTitles(){
@@ -376,35 +376,35 @@ public class AITradeTipDetailActivity extends BaseActivity implements View.OnCli
                     if(!sectorNewsList.get(0).getSectorNewsURL().isEmpty()){
                         txtNews1.setTextColor(getResources().getColor(R.color.button_dark_bg));
                     }else{
-                        txtNews1.setTextColor(getResources().getColor(R.color.text_color_black));
+                        txtNews1.setTextColor(getResources().getColor(R.color.color_small_text__dark_layout));
                     }
                     break;
                 case 1:
                     if(!sectorNewsList.get(1).getSectorNewsURL().isEmpty()){
                         txtNews1.setTextColor(getResources().getColor(R.color.button_dark_bg));
                     }else{
-                        txtNews1.setTextColor(getResources().getColor(R.color.text_color_black));
+                        txtNews1.setTextColor(getResources().getColor(R.color.color_small_text__dark_layout));
                     }
                     break;
                 case 2:
                     if(!sectorNewsList.get(2).getSectorNewsURL().isEmpty()){
                         txtNews1.setTextColor(getResources().getColor(R.color.button_dark_bg));
                     }else{
-                        txtNews1.setTextColor(getResources().getColor(R.color.text_color_black));
+                        txtNews1.setTextColor(getResources().getColor(R.color.color_small_text__dark_layout));
                     }
                     break;
                 case 3:
                     if(!sectorNewsList.get(3).getSectorNewsURL().isEmpty()){
                         txtNews1.setTextColor(getResources().getColor(R.color.button_dark_bg));
                     }else{
-                        txtNews1.setTextColor(getResources().getColor(R.color.text_color_black));
+                        txtNews1.setTextColor(getResources().getColor(R.color.color_small_text__dark_layout));
                     }
                     break;
                 case 4:
                     if(!sectorNewsList.get(4).getSectorNewsURL().isEmpty()){
                         txtNews1.setTextColor(getResources().getColor(R.color.button_dark_bg));
                     }else{
-                        txtNews1.setTextColor(getResources().getColor(R.color.text_color_black));
+                        txtNews1.setTextColor(getResources().getColor(R.color.color_small_text__dark_layout));
                     }
                     break;
 

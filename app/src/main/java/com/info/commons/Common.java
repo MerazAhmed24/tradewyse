@@ -889,13 +889,13 @@ public class Common {
 
         Log.d("stockprice===", currentPrice + "===");
 
-        txtStop.setTextColor(context.getResources().getColor(R.color.text_color_black));
+        txtStop.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         if (isTipPerforming(entryPrice, exitPrice, currentPrice, createTipPrice, suggestion)) {
             txtEntry.setTextColor(context.getResources().getColor(R.color.text_color_green));
             txtExit.setTextColor(context.getResources().getColor(R.color.text_color_green));
         } else {
-            txtEntry.setTextColor(context.getResources().getColor(R.color.text_color_black));
-            txtExit.setTextColor(context.getResources().getColor(R.color.text_color_black));
+            txtEntry.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
+            txtExit.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
             // set stop color.
             if (isLoosingOnStopPrice(entryPrice, exitPrice, stopPrice, currentPrice, createTipPrice, suggestion)) {
                 txtStop.setTextColor(context.getResources().getColor(R.color.text_color_red));

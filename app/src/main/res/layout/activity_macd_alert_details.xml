@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_app_dark_bg"
+        android:background="@color/color_app_dark_bg_india"
         tools:context=".MacdAlertDetailsActivity">
 
         <include
@@ -83,7 +83,7 @@
                         android:paddingBottom="@dimen/common_paddng_2dp"
                         android:singleLine="true"
                         android:text="MACD Tips"
-                        android:textColor="@color/dark_black_color"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
                             android:paddingEnd="@dimen/_6sdp"
                             android:text="Buy"
                             android:textAlignment="center"
-                            android:textColor="#1e841c"
+                            android:textColor="@color/color_text_buy"
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
 
@@ -145,7 +145,7 @@
                     android:paddingStart="@dimen/common_paddng_15dp"
                     android:paddingEnd="@dimen/common_paddng_10dp"
                     android:text=""
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="13sp" />
 
                 <RelativeLayout
@@ -162,7 +162,7 @@
                         android:layout_marginBottom="@dimen/_4sdp"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/text_color_black"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <RelativeLayout
@@ -226,7 +226,7 @@
                             android:layout_gravity="center"
                             android:layout_weight="0.7"
                             android:text="Stock"
-                            android:textColor="@color/dark_black_color"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="14sp" />
 
                         <TextView
@@ -236,7 +236,7 @@
                             android:layout_weight="1.2"
                             android:gravity="start"
                             android:text="Company"
-                            android:textColor="@color/dark_black_color"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="14sp" />
 
                         <TextView
@@ -247,7 +247,7 @@
                             android:gravity="start"
                             android:paddingStart="@dimen/_8sdp"
                             android:text="Closing Price"
-                            android:textColor="@color/dark_black_color"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="14sp" />
 
                     </LinearLayout>
@@ -298,7 +298,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:text="No MACD crossover signals."
-                                android:textColor="@color/dark_black_color"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="@dimen/_10ssp" />
 
                             <TextView
@@ -308,7 +308,7 @@
                                 android:layout_gravity="center"
                                 android:layout_marginTop="@dimen/_5sdp"
                                 android:text=""
-                                android:textColor="@color/dark_black_color"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/_10ssp" />
 
                         </LinearLayout>
