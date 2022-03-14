@@ -44,23 +44,22 @@
     <color name="text_color_username">#69738E</color>
 
     <color name="comment_edit_text_color">#FFF</color>
-    <color name="pramotion_back_blue_color">#5180EA</color>
 
-  <!--<color name="text_color_dark_grey">#565656</color>  ye orignal dark grey tha jo ki bahut jyada dark ho raha h to abhi
-eki place pr text_color_grey ki value dali h-->
+
+    <!--<color name="text_color_dark_grey">#565656</color>  ye orignal dark grey tha jo ki bahut jyada dark ho raha h to abhi
+  eki place pr text_color_grey ki value dali h-->
     <color name="color_primary_dark_list_bg">#203257</color>
     <color name="purple">#7F007F</color>
     <!-- dots inactive colors -->
-   <!-- <color name="dot_dark_screen1">#d1395c</color>
-    <color name="dot_dark_screen2">#14a895</color>
-    <color name="dot_dark_screen3">#2278d4</color>
-    <color name="dot_dark_screen4">#a854d4</color>
-
-    &lt;!&ndash; dots active colors &ndash;&gt;
-    <color name="dot_light_screen1">#f98da5</color>
-    <color name="dot_light_screen2">#8cf9eb</color>
-    <color name="dot_light_screen3">#93c6fd</color>
-    <color name="dot_light_screen4">#e4b5fc</color>-->
+    <!-- <color name="dot_dark_screen1">#d1395c</color>
+     <color name="dot_dark_screen2">#14a895</color>
+     <color name="dot_dark_screen3">#2278d4</color>
+     <color name="dot_dark_screen4">#a854d4</color>
+     &lt;!&ndash; dots active colors &ndash;&gt;
+     <color name="dot_light_screen1">#f98da5</color>
+     <color name="dot_light_screen2">#8cf9eb</color>
+     <color name="dot_light_screen3">#93c6fd</color>
+     <color name="dot_light_screen4">#e4b5fc</color>-->
 
     <!-- dots inactive colors -->
     <color name="dot_dark_screen1">@color/text_color_grey</color>
@@ -149,19 +148,24 @@ eki place pr text_color_grey ki value dali h-->
     <color name="textColor3">#F3F3F3</color>
 
 
-    <!-- New App color for india -->
-    <color name="color_app_dark_bg_india">#19191B</color>
-    <color name="color_app_dark_card_india">#F7090808</color>
-    <color name="color_border_stroke">#2D2E32</color>
-    <color name="color_icon_tint">#9A9A9A</color>
-    <color name="color_text_dark_layout">#F8C8C8C8</color>
-    <color name="color_small_text__dark_layout">#C8CAC9C9</color>
-    <color name="color_bg_buy">#48A14D</color>
-    <color name="color_text_buy">#B4CEB5</color>
-    <color name="color_bg_sell">#B34142</color>
-    <color name="color_text_sell">#E4D1D2</color>
-    <color name="color_bg_avoid">#80837C</color>
-    <color name="color_text_avoid">#DADDD5</color>
+    <color name="color_app_dark_bg_india">#212123</color>
+    <color name="color_app_dark_card_india">#F7131313</color>
+    <color name="color_icon_tint">#66666A</color>
+    <color name="color_border_stroke">#3C3C45</color>
+    <color name="color_text_dark_layout">#96969C</color>
+    <color name="color_small_text__dark_layout">#C681818C</color>
+    <color name="color_text_avoid">#D6D6E1</color>
+    <color name="color_text_sell">#DCB9B9</color>
+    <color name="color_text_buy">#C6D2E4D0</color>
+    <color name="color_bg_buy">#285D34</color>
+    <color name="color_bg_sell">#B33F40</color>
+    <color name="color_bg_avoid">#858484</color>
+
+
+
+
+
+
 
 
 

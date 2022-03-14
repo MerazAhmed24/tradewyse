@@ -12,7 +12,7 @@
 
     <LinearLayout
         android:id="@+id/tipRootLayout"
-        android:layout_width="@dimen/_190sdp"
+        android:layout_width="@dimen/_160sdp"
         android:layout_height="wrap_content"
         android:background="@drawable/mentor_list_item_bg_rounded"
         android:orientation="vertical"
@@ -47,7 +47,7 @@
                 android:singleLine="true"
                 android:text="Tyrone Jackson"
                 android:textColor="@color/color_text_dark_layout"
-                android:textSize="@dimen/text_size_large"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold" />
 
             <TextView
@@ -55,12 +55,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtName"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="-1dp"
                 android:layout_toRightOf="@+id/imgProfile"
                 android:minWidth="@dimen/_179sdp"
                 android:paddingBottom="@dimen/common_paddng_2dp"
                 android:text="10 hr Ago"
                 android:textColor="@color/text_color_light_grey"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/_8ssp"
                 android:visibility="visible" />
 
             <androidx.appcompat.widget.AppCompatImageButton
@@ -107,7 +109,7 @@
                     android:paddingBottom="@dimen/common_paddng_7dp"
                     android:text="SPY"
                     android:textColor="@color/color_text_dark_layout"
-                    android:textSize="@dimen/text_size_large"
+                    android:textSize="@dimen/_10ssp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/txtBuySell"
@@ -120,7 +122,7 @@
                     android:singleLine="true"
                     android:text="BUY"
                     android:textColor="@color/text_color_white"
-                    android:textSize="@dimen/text_size_medium"
+                    android:textSize="@dimen/_10ssp"
                     android:textStyle="bold" />
 
 
@@ -139,7 +141,7 @@
                         android:paddingBottom="@dimen/common_paddng_7dp"
                         android:text="SP asdaY"
                         android:textColor="@color/color_text_dark_layout"
-                        android:textSize="@dimen/text_size_large"
+                        android:textSize="@dimen/_10ssp"
                         android:textStyle="bold" />
 
 
@@ -172,7 +174,7 @@
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                         android:text="Entry"
                         android:textColor="@color/color_small_text__dark_layout"
-                        android:textSize="@dimen/text_size_small" />
+                        android:textSize="@dimen/_8ssp"/>
 
                     <TextView
                         android:id="@+id/txtEntryPoint"
@@ -185,7 +187,7 @@
                         android:minWidth="@dimen/min_width_value"
                         android:text="$ 944.3"
                         android:textColor="@color/color_text_dark_layout"
-                        android:textSize="@dimen/text_size_medium"
+                        android:textSize="@dimen/_10ssp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -208,7 +210,7 @@
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                         android:text="Exit"
                         android:textColor="@color/color_small_text__dark_layout"
-                        android:textSize="@dimen/text_size_small" />
+                        android:textSize="@dimen/_8ssp" />
 
                     <TextView
                         android:id="@+id/txtExitPoint"
@@ -221,7 +223,7 @@
                         android:minWidth="@dimen/min_width_value"
                         android:text="$ 3434"
                         android:textColor="@color/color_text_dark_layout"
-                        android:textSize="@dimen/text_size_medium"
+                        android:textSize="@dimen/_10ssp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -244,7 +246,7 @@
                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                         android:text="Stop"
                         android:textColor="@color/color_small_text__dark_layout"
-                        android:textSize="@dimen/text_size_small" />
+                        android:textSize="@dimen/_8ssp" />
 
                     <TextView
                         android:id="@+id/txtStopPoint"
@@ -257,7 +259,7 @@
                         android:minWidth="@dimen/min_width_value"
                         android:text="$ 3434"
                         android:textColor="@color/color_text_dark_layout"
-                        android:textSize="@dimen/text_size_medium"
+                        android:textSize="@dimen/_10ssp"
                         android:textStyle="bold" />
                 </LinearLayout>
 

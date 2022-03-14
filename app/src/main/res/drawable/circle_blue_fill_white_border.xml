@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="oval">
-            <solid android:color="@color/button_dark_bg"/>
-            <stroke android:color="@color/text_color_white" android:width="2dp"/>
+            <solid android:color="@color/color_icon_tint"/>
+            <stroke android:color="@color/color_border_stroke" android:width="2dp"/>
             <!-- Set the same value for both width and height to get a circular shape -->
             <size android:width="250dp" android:height="250dp"/>
         </shape>

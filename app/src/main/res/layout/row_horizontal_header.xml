@@ -50,7 +50,7 @@
     <!-- Buy layout -->
     <LinearLayout
         android:id="@+id/tipBuyRootLayoutRoot"
-        android:layout_width="@dimen/_190sdp"
+        android:layout_width="@dimen/_160sdp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/common_paddng_5dp"
         android:layout_marginEnd="@dimen/common_paddng_15dp"
@@ -93,7 +93,7 @@
                     android:singleLine="true"
                     android:text="MACD Tips"
                     android:textColor="@color/color_text_dark_layout"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/_10ssp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -106,7 +106,7 @@
                     android:minWidth="@dimen/_179sdp"
                     android:text=""
                     android:textColor="@color/color_small_text__dark_layout"
-                    android:textSize="@dimen/text_size_small"
+                    android:textSize="@dimen/_8ssp"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -127,7 +127,7 @@
                     android:paddingEnd="@dimen/_8sdp"
                     android:text=""
                     android:textColor="@color/color_small_text__dark_layout"
-                    android:textSize="14sp" />
+                    android:textSize="@dimen/_8ssp" />
 
                 <RelativeLayout
                     android:id="@+id/txtMACDBuy"
@@ -173,7 +173,7 @@
                 android:paddingEnd="@dimen/_8sdp"
                 android:text=""
                 android:textColor="@color/color_small_text__dark_layout"
-                android:textSize="13sp" />
+                android:textSize="@dimen/_8ssp" />
 
         </LinearLayout>
 
@@ -182,7 +182,7 @@
     <!-- Sell layout -->
     <LinearLayout
         android:id="@+id/tipSellRootLayoutRoot"
-        android:layout_width="@dimen/_190sdp"
+        android:layout_width="@dimen/_160sdp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/common_paddng_5dp"
         android:minWidth="@dimen/_179sdp"
@@ -224,7 +224,7 @@
                     android:singleLine="true"
                     android:text="MACD Tips"
                     android:textColor="@color/color_text_dark_layout"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/_10ssp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -237,7 +237,7 @@
                     android:minWidth="@dimen/_179sdp"
                     android:text=""
                     android:textColor="@color/color_small_text__dark_layout"
-                    android:textSize="@dimen/text_size_small"
+                    android:textSize="@dimen/_8ssp"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -258,7 +258,7 @@
                     android:paddingEnd="@dimen/_8sdp"
                     android:text=""
                     android:textColor="@color/color_small_text__dark_layout"
-                    android:textSize="14sp" />
+                    android:textSize="@dimen/_8ssp" />
 
                 <RelativeLayout
                     android:id="@+id/txtMACDSell"
@@ -302,7 +302,7 @@
                 android:paddingEnd="@dimen/_8sdp"
                 android:text=""
                 android:textColor="@color/color_small_text__dark_layout"
-                android:textSize="13sp" />
+                android:textSize="@dimen/_8ssp" />
 
         </LinearLayout>
 
