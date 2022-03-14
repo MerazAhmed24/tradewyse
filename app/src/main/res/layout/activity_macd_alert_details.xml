@@ -96,15 +96,14 @@
                         android:background="@drawable/text_backgroud_green">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/_40sdp"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:paddingStart="@dimen/_6sdp"
-                            android:paddingEnd="@dimen/_6sdp"
+                            android:gravity="center"
                             android:text="Buy"
                             android:textAlignment="center"
                             android:textColor="@color/color_text_buy"
-                            android:textSize="@dimen/text_size_large"
+                            android:textSize="@dimen/_12ssp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>

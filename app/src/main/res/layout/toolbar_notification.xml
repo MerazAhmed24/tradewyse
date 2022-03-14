@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="center"
-        android:background="@drawable/toolbar_bg_new"
+        android:background="@color/color_app_dark_bg_india"
         android:contentInsetStart="0dp"
         android:contentInsetLeft="0dp"
         android:contentInsetEnd="0dp"
@@ -35,7 +35,7 @@
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:text="@string/notifications"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="19dp"
                 android:textStyle="bold" />
 
@@ -44,13 +44,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:text="Clear All"
-                android:textColor="@color/next_color"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="@dimen/text_size_large"
-                android:visibility="visible"/>
+                android:visibility="visible" />
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>

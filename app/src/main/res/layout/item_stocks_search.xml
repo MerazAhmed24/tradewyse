@@ -6,7 +6,7 @@
     android:layout_margin="@dimen/common_paddng_3dp"
     android:paddingTop="@dimen/common_paddng_10dp"
     android:paddingBottom="@dimen/common_paddng_10dp"
-    android:background="#2B3654"
+    android:background="@drawable/rounded_corner"
     android:paddingLeft="@dimen/common_paddng_10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -15,37 +15,40 @@
         android:id="@+id/checkImage"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:srcCompat="@drawable/ic_unchecked"
-        android:layout_gravity="center|end"
         android:layout_centerVertical="true"
-        android:layout_margin="2dp"
-        />
+        android:layout_gravity="center|end"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/ic_unchecked" />
 
     <TextView
-        android:layout_toRightOf="@+id/checkImage"
-        android:textColor="@color/text_color_white"
         android:id="@+id/txtStockName"
-        android:visibility="visible"
-        android:text="BA"
-        android:paddingLeft="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
         android:layout_gravity="bottom|center"
-        android:textStyle="bold"
-        android:textSize="@dimen/text_size_xlarge"></TextView>
-    <TextView
         android:layout_toRightOf="@+id/checkImage"
-        android:textColor="@color/text_color_light_grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:text="BA"
+        android:textColor="@color/color_text_dark_layout"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold"
+        android:visibility="visible"></TextView>
+
+    <TextView
         android:id="@+id/txtStockCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/txtStockName"
-        android:visibility="visible"
+        android:layout_gravity="bottom|center"
+        android:layout_toRightOf="@+id/checkImage"
+        android:gravity="center_vertical"
         android:paddingLeft="2dp"
         android:text="Boeing Company (The)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_gravity="bottom|center"
-        android:textSize="@dimen/text_size_large"></TextView>
+        android:textColor="@color/color_small_text__dark_layout"
+        android:textSize="@dimen/text_size_large"
+        android:visibility="visible"></TextView>
 
 </RelativeLayout>

@@ -106,7 +106,7 @@
                     android:paddingTop="@dimen/common_paddng_7dp"
                     android:text=" Tips"
                     android:textColor="@color/color_text_dark_layout"
-                    android:textSize="22dp" />
+                    android:textSize="@dimen/_12ssp" />
 
                 <TextView
                     android:id="@+id/txtSwipe"
@@ -142,7 +142,7 @@
                         android:layout_marginLeft="-1dp"
                         android:text="Filter"
                         android:textColor="@color/color_text_dark_layout"
-                        android:textSize="@dimen/text_size_xxlarge"
+                        android:textSize="@dimen/_12ssp"
                         android:visibility="visible" />
                 </LinearLayout>
             </RelativeLayout>

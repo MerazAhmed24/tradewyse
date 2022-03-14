@@ -181,7 +181,7 @@
 
                                     <TextView
                                         android:id="@+id/txtStatus1"
-                                        android:layout_width="wrap_content"
+                                        android:layout_width="@dimen/_40sdp"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtStockCompany"
                                         android:layout_centerVertical="true"
@@ -195,7 +195,7 @@
                                         android:paddingLeft="@dimen/common_paddng_5dp"
                                         android:text="@string/buy"
                                         android:textColor="@color/text_color_white"
-                                        android:textSize="@dimen/text_size_large"
+                                        android:textSize="@dimen/_12ssp"
                                         android:textStyle="bold" />
 
                                 </RelativeLayout>

@@ -164,7 +164,7 @@
 
                     <TextView
                         android:id="@+id/txtBuySell"
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/_35sdp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtStockCompany"
                         android:layout_marginTop="@dimen/_10sdp"
@@ -174,7 +174,7 @@
                         android:gravity="center"
                         android:text="@string/buy"
                         android:textColor="@color/text_color_white"
-                        android:textSize="@dimen/text_size_xlarge"
+                        android:textSize="@dimen/_12ssp"
                         android:textStyle="bold" />
 
                     <!-- price row start-->
@@ -253,7 +253,7 @@
                         android:maxLines="1"
                         android:minWidth="@dimen/min_width_value_mtt_vertiacl"
                         android:text="₹ 259.05"
-                        android:textColor="@color/text_color_black"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="@dimen/text_size_small"
                         android:textStyle="bold" />
 
