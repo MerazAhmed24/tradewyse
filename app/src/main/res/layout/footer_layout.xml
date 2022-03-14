@@ -12,32 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#203257"
+        android:background="@color/color_app_dark_bg_india"
         android:orientation="horizontal"
-        android:paddingVertical="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingTop="@dimen/_5sdp"
         android:weightSum="5">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/home_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:onClick="homeTabClicked"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="@dimen/_21sdp"
-                android:layout_height="@dimen/_21sdp"
-                android:src="@{footerModel.isHome?@drawable/home_icon_enable : @drawable/home_icon_disable}" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textColor="@{footerModel.isHome? @color/text_color_white : @color/text_color_disable_footer}"
-                android:textSize="@dimen/_11sdp" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/services_btn"
@@ -49,16 +28,16 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_21sdp"
-                android:src="@{footerModel.isServices?@drawable/services_enabled : @drawable/services_disabled}" />
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@{footerModel.isServices?@drawable/rupee_symbol_icon_white : @drawable/rupee_symbol_icon_gray}" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Services"
-                android:textColor="@{footerModel.isServices? @color/text_color_white : @color/text_color_disable_footer}"
-                android:textSize="@dimen/_11sdp" />
+                android:textColor="@{footerModel.isServices? @color/text_color_white : @color/color_text_dark_layout}"
+                android:textSize="@dimen/_8ssp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -72,16 +51,38 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_21sdp"
-                android:layout_height="@dimen/_21sdp"
-                android:src="@{footerModel.isChat?@drawable/chat_icon_enable : @drawable/chat_icon_disable}" />
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@{footerModel.isChat?@drawable/chat_bubble_icon_white : @drawable/chat_bubble_icon_gray}" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chat"
-                android:textColor="@{footerModel.isChat? @color/text_color_white : @color/text_color_disable_footer}"
-                android:textSize="@dimen/_11sdp" />
+                android:textColor="@{footerModel.isChat? @color/text_color_white : @color/color_text_dark_layout}"
+                android:textSize="@dimen/_8ssp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/home_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="homeTabClicked"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@{footerModel.isHome?@drawable/home_icon_white: @drawable/home_icon_gray}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@{footerModel.isHome? @color/text_color_white : @color/color_text_dark_layout}"
+                android:textSize="@dimen/_8ssp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -94,20 +95,20 @@
 
             <RelativeLayout
                 android:id="@+id/imgMenu"
-                android:layout_marginLeft="@dimen/_7sdp"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true">
 
                 <ImageView
-                    android:layout_width="@dimen/_21sdp"
-                    android:layout_height="@dimen/_21sdp"
-                    android:src="@{footerModel.isNotification?@drawable/notification_icon_enable : @drawable/notification_icon_disable}" />
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@{footerModel.isNotification?@drawable/notification_icon_white : @drawable/notification_icon_gray}" />
 
                 <ImageView
                     android:id="@+id/nav_unread_badge"
-                    android:layout_width="@dimen/_9sdp"
-                    android:layout_height="@dimen/_9sdp"
+                    android:layout_width="@dimen/_7sdp"
+                    android:layout_height="@dimen/_7sdp"
                     android:layout_marginLeft="@dimen/_18sdp"
                     android:background="@drawable/ic_notification_badge"
                     android:visibility="invisible" />
@@ -118,8 +119,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Notifications"
-                android:textColor="@{footerModel.isNotification? @color/text_color_white : @color/text_color_disable_footer}"
-                android:textSize="@dimen/_11sdp" />
+                android:gravity="center"
+                android:textColor="@{footerModel.isNotification? @color/text_color_white : @color/color_text_dark_layout}"
+                android:textSize="@dimen/_8ssp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -131,16 +133,16 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_21sdp"
-                android:layout_height="@dimen/_21sdp"
-                android:src="@{footerModel.isMore?@drawable/humberger_enabled : @drawable/humberger_disabled}" />
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@{footerModel.isMore?@drawable/menu_icon_white : @drawable/menu_icon_gray}" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="More"
-                android:textColor="@{footerModel.isMore? @color/text_color_white : @color/text_color_disable_footer}"
-                android:textSize="@dimen/_11sdp" />
+                android:textColor="@{footerModel.isMore? @color/text_color_white : @color/color_text_dark_layout}"
+                android:textSize="@dimen/_8ssp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>
 </layout>

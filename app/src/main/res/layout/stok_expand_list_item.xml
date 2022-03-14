@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SPY"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -155,7 +155,7 @@
                     android:paddingRight="@dimen/_2sdp"
                     android:text="$4.28994"
                     android:maxLines="1"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -167,8 +167,7 @@
                     android:layout_marginTop="@dimen/_3sdp"
                     android:text="-24.28"
                     android:textColor="#fff"
-                    android:textSize="14sp"
-                    app:drawableRightCompat="@drawable/ic_arrow_downward_red" />
+                    android:textSize="14sp"/>
 
             </LinearLayout>
 

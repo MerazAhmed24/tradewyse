@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/color_app_dark_bg_india"
     tools:context="com.info.fragment.DashBoardFragment">
 
 
@@ -11,12 +11,12 @@
         android:id="@+id/txtLabelStock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_paddng_7dp"
         android:paddingTop="@dimen/common_paddng_5dp"
         android:paddingEnd="@dimen/common_paddng_5dp"
-        android:paddingStart="@dimen/common_paddng_7dp"
         android:paddingBottom="@dimen/common_paddng_7dp"
         android:text="@string/stocks"
-        android:textColor="@color/text_color_white"
+        android:textColor="@color/color_text_dark_layout"
         android:textSize="22dp" />
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:layout_weight="1"
             android:visibility="visible"
             android:gravity="center"
-            android:background="@color/colorPrimary"
+            android:background="@color/color_app_dark_bg_india"
             android:orientation="vertical">
 
             <com.info.commons.OnlyVerticalSwipeRefreshLayout
@@ -86,7 +86,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/color_app_dark_bg_india"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -105,7 +105,7 @@
                     android:layout_marginBottom="@dimen/common_paddng_5dp"
                     android:paddingTop="@dimen/common_paddng_7dp"
                     android:text=" Tips"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="22dp" />
 
                 <TextView
@@ -141,21 +141,20 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="-1dp"
                         android:text="Filter"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_xxlarge"
                         android:visibility="visible" />
                 </LinearLayout>
             </RelativeLayout>
-
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/tipsList"
-                android:minHeight="@dimen/_120sdp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/common_paddng_10dp"
-                android:paddingRight="@dimen/common_paddng_10dp"
-                android:paddingBottom="@dimen/common_paddng_5dp"
-                android:background="#203257"/>
+                    android:id="@+id/tipsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_app_dark_bg_india"
+                    android:minHeight="@dimen/_90sdp"
+                    android:paddingLeft="@dimen/common_paddng_10dp"
+                    android:paddingRight="@dimen/common_paddng_10dp"
+                    android:paddingBottom="@dimen/common_paddng_5dp" />
 
             <TextView
                 android:id="@+id/textViewNoData"
@@ -168,7 +167,6 @@
                 android:textSize="@dimen/_14ssp"
                 android:background="#203257"
                 android:visibility="gone"/>
-
         </LinearLayout>
 
     </LinearLayout>

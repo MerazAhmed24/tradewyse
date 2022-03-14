@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="center"
-        android:background="@drawable/toolbar_bg_new"
+        android:background="@color/color_app_dark_bg_india"
         android:contentInsetStart="0dp"
         android:contentInsetLeft="0dp"
         android:contentInsetEnd="0dp"
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="@string/app_name"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="19dp"
                 android:textStyle="bold" />
 

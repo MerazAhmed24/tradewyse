@@ -554,10 +554,10 @@ public class TipsAfterMacDAdapter extends RecyclerView.Adapter<RecyclerView.View
             String change = Common.formatDouble(Math.abs(sectorNews.getStockChange()));
             viewHolder.txtChange.setText(change);
             if (sectorNews.getStockChange() < 0.0) {
-                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_downward, 0);
+                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_low, 0);
                 viewHolder.txtChange.setTextColor(ContextCompat.getColor(context, R.color.text_color_red));
             } else {
-                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_upward, 0);
+                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_high, 0);
                 viewHolder.txtChange.setTextColor(ContextCompat.getColor(context, R.color.text_color_green));
             }
             if (newsList.size() > 1) {

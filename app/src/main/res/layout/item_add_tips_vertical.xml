@@ -18,11 +18,11 @@
         app:srcCompat="@drawable/ic_add_circle_outline"/>
 
     <TextView
-        android:textSize="@dimen/text_size_xlarge"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/text_color_white"
+        android:layout_centerInParent="true"
         android:padding="@dimen/common_paddng_20dp"
-        android:text="@string/make_a_tip"/>
+        android:text="@string/make_a_tip"
+        android:textColor="@color/color_text_dark_layout"
+        android:textSize="@dimen/text_size_xlarge" />
 </RelativeLayout>

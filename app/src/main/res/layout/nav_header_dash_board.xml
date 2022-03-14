@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_130sdp"
-        android:background="#203257"
+        android:background="@color/color_app_dark_bg_india"
         android:gravity="top"
         android:orientation="vertical"
         android:paddingLeft="8dp"
@@ -66,7 +66,7 @@
                 android:layout_height="75dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/place_holder_profile_icon"
+                android:background="@drawable/ic_baseline_account_circle_24"
                 app:roundAsCircle="true"
                 fresco:actualImageScaleType="centerCrop"
                 fresco:viewAspectRatio="1.33" />
@@ -100,6 +100,7 @@
             android:layout_gravity="center"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:text="Visit Profile"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="16sp"
             android:textStyle="bold" />
 

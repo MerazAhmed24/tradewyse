@@ -532,15 +532,15 @@ public class TipDetailActivity extends BaseActivity implements View.OnClickListe
         if (tips.getEntryPoint() < tips.getExitpoint()) {
             stockSuggestion = "Buy";
             txtBuySellText.setBackgroundResource(R.drawable.text_backgroud_green);
-            txtBuySellText.setTextColor(ContextCompat.getColor(context, R.color.text_color_buy));
+            txtBuySellText.setTextColor(ContextCompat.getColor(context, R.color.color_text_buy));
         } else if (tips.getEntryPoint() > tips.getExitpoint()) {
             stockSuggestion = "Sell";
             txtBuySellText.setBackgroundResource(R.drawable.text_backgroud_red);
-            txtBuySellText.setTextColor(ContextCompat.getColor(context, R.color.text_color_sell));
+            txtBuySellText.setTextColor(ContextCompat.getColor(context, R.color.color_text_sell));
         } else {
             stockSuggestion = "Avoid";
             txtBuySellText.setBackgroundResource(R.drawable.text_backgroud_black);
-            txtBuySellText.setTextColor(ContextCompat.getColor(context, R.color.text_color_avoid));
+            txtBuySellText.setTextColor(ContextCompat.getColor(context, R.color.color_text_avoid));
         }
         if (stockSuggestion.length() >= 4)
             txtBuySellText.setEms(4);
@@ -577,12 +577,12 @@ public class TipDetailActivity extends BaseActivity implements View.OnClickListe
     public void setStockChange() {
         double change = tips.getStockPrice() - tips.getCreateTipPrice();
         if (change > 0) {
-            txtChangeValue.setTextColor(context.getResources().getColor(R.color.text_color_green));
+            txtChangeValue.setTextColor(context.getResources().getColor(R.color.color_text_buy));
         } else {
             if (change == 0) {
-                txtChangeValue.setTextColor(context.getResources().getColor(R.color.text_color_green));
+                txtChangeValue.setTextColor(context.getResources().getColor(R.color.color_text_buy));
             } else {
-                txtChangeValue.setTextColor(context.getResources().getColor(R.color.text_color_red));
+                txtChangeValue.setTextColor(context.getResources().getColor(R.color.color_text_sell));
             }
         }
 

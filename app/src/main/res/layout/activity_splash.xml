@@ -31,6 +31,5 @@
         android:layout_height="match_parent"
         app:lottie_autoPlay="true"
         app:lottie_fileName="splash_logo_animation_without_bg.json"
-        app:lottie_loop="true"
-        />
+        app:lottie_loop="true" />
 </RelativeLayout>

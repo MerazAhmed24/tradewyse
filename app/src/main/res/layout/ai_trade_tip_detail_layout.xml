@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_app_dark_bg"
+    android:background="@color/color_app_dark_bg_india"
     android:orientation="vertical"
     tools:context="com.info.tradewyse.AITradeTipDetailActivity">
 
@@ -27,35 +27,20 @@
             android:paddingLeft="@dimen/common_paddng_8dp"
             android:paddingRight="@dimen/common_paddng_8dp">
 
-            <TextView
-                android:id="@+id/txtDay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/sectorNews"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/common_paddng_2dp"
-                android:text="Thu, 18 Jul 2019 20:08:02 GMT"
-                android:textColor="@color/text_color_light_grey"
-                android:textSize="@dimen/text_size_small"
-                android:paddingBottom="@dimen/common_paddng_2dp"
-                android:visibility="visible" />
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/common_paddng_3dp"
+                android:backgroundTint="@color/color_app_dark_card_india"
                 android:layout_marginBottom="@dimen/common_paddng_15dp"
-                android:layout_below="@+id/txtDay"
-                app:contentPadding="@dimen/common_paddng_5dp"
-                app:cardCornerRadius="@dimen/common_paddng_10dp">
+                app:cardCornerRadius="@dimen/common_paddng_10dp"
+                app:contentPadding="@dimen/common_paddng_5dp">
 
                 <RelativeLayout
                     android:id="@+id/rootLayoutRoundedBorder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txtDay"
-
-                    >
+                    android:layout_below="@+id/txtDay">
 
                     <RelativeLayout
                         android:id="@+id/bottomLayout"
@@ -72,8 +57,6 @@
                             android:id="@+id/profileLayout1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_toLeftOf="@+id/txtStatus1"
-                            android:gravity="left|center_vertical"
                             android:paddingTop="@dimen/common_paddng_3dp"
                             android:paddingBottom="@dimen/common_paddng_3dp"
                             android:visibility="visible">
@@ -82,9 +65,9 @@
                                 android:id="@+id/imgProfile1"
                                 android:layout_width="@dimen/profile_image_height_vsmall"
                                 android:layout_height="@dimen/profile_image_height_vsmall"
-                                android:layout_centerInParent="true"
-                                android:layout_marginRight="@dimen/common_paddng_5dp"
+                                android:layout_alignParentLeft="true"
                                 android:layout_marginTop="@dimen/common_paddng_3dp"
+                                android:layout_marginRight="@dimen/common_paddng_5dp"
                                 android:padding="@dimen/common_paddng_2dp"
                                 app:srcCompat="@drawable/tradetip_ai_icon" />
 
@@ -96,9 +79,22 @@
                                 android:layout_toRightOf="@+id/imgProfile1"
                                 android:paddingTop="@dimen/common_paddng_5dp"
                                 android:text="@string/TradeWyseAI"
-                                android:textStyle="bold"
-                                android:textColor="@color/text_color_username"
-                                android:textSize="@dimen/text_size_large" />
+                                android:textColor="@color/color_text_dark_layout"
+                                android:textSize="@dimen/text_size_large"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/common_paddng_2dp"
+                                android:paddingBottom="@dimen/common_paddng_2dp"
+                                android:text="Thu, 18 Jul 2019 20:08:02 GMT"
+                                android:textColor="@color/color_small_text__dark_layout"
+                                android:textSize="@dimen/text_size_small"
+                                android:visibility="visible" />
 
                             <TextView
                                 android:id="@+id/txtTimeAgo"
@@ -113,21 +109,6 @@
                         </RelativeLayout>
 
 
-                        <TextView
-                            android:id="@+id/txtStatus1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_margin="@dimen/common_paddng_2dp"
-                            android:layout_marginLeft="@dimen/common_paddng_5dp"
-                            android:paddingLeft="@dimen/common_paddng_5dp"
-                            android:gravity="center"
-                            android:layout_marginRight="@dimen/common_paddng_10dp"
-                            android:text="@string/buy"
-                            android:textColor="@color/text_color_white"
-                            android:textSize="@dimen/text_size_large"
-                            android:textStyle="bold" />
                     </RelativeLayout>
 
                     <!-- <View
@@ -158,22 +139,23 @@
 
                         <LinearLayout
                             android:id="@+id/firstLayout11"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <RelativeLayout
+                            <LinearLayout
                                 android:id="@+id/firstPartLayout"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
 
-                                <LinearLayout
+                                <RelativeLayout
                                     android:id="@+id/innerLayoutFirst"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentLeft="true"
                                     android:layout_marginBottom="@dimen/common_paddng_2dp"
-                                    android:layout_toLeftOf="@+id/secondPartLayout"
+                                    android:layout_weight="1.4"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -181,30 +163,61 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/dummy_stock_name"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_large" />
+                                        android:textColor="@color/color_text_dark_layout"
+                                        android:textSize="@dimen/text_size_large"
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/txtStockCompany"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtStockName"
+                                        android:layout_marginTop="@dimen/_10sdp"
                                         android:layout_marginRight="@dimen/common_paddng_2dp"
                                         android:maxWidth="185dp"
                                         android:text="@string/stock_company"
-                                        android:textColor="@color/text_color_username"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small" />
 
+                                    <TextView
+                                        android:id="@+id/txtStatus1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtStockCompany"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="@dimen/common_paddng_2dp"
+                                        android:layout_marginLeft="@dimen/common_paddng_5dp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_marginEnd="@dimen/common_paddng_2dp"
+                                        android:layout_marginRight="@dimen/common_paddng_10dp"
+                                        android:layout_marginBottom="@dimen/common_paddng_2dp"
+                                        android:gravity="center"
+                                        android:paddingLeft="@dimen/common_paddng_5dp"
+                                        android:text="@string/buy"
+                                        android:textColor="@color/text_color_white"
+                                        android:textSize="@dimen/text_size_large"
+                                        android:textStyle="bold" />
 
-                                </LinearLayout>
+                                </RelativeLayout>
 
-                                <LinearLayout
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2">
+
+                                    <View
+                                        style="@style/item_separator_straight"
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginVertical="@dimen/_2sdp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
                                     android:id="@+id/innerLayoutSecond"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:minWidth="120dp"
-                                    android:layout_alignParentRight="true"
-                                    android:gravity="end"
+                                    android:layout_weight="1.4"
                                     android:orientation="vertical"
                                     android:paddingRight="@dimen/common_paddng_10dp">
 
@@ -215,49 +228,52 @@
                                         android:layout_gravity="end"
                                         android:gravity="end"
                                         android:text="@string/currentValue"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_xlarge" />
+                                        android:textColor="@color/color_text_dark_layout"
+                                        android:textSize="@dimen/text_size_xlarge"
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/txtChange"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtCurrentValue"
                                         android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/_5sdp"
                                         android:gravity="end"
                                         android:minWidth="@dimen/common_paddng_70dp"
                                         android:text="@string/changeValue"
                                         android:textColor="@color/text_color_green"
                                         android:textSize="@dimen/text_size_medium"
                                         android:textStyle="bold" />
-                                </LinearLayout>
-                            </RelativeLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
 
                             <TextView
                                 android:id="@+id/txtMovingAvgLbl"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:maxLines="1"
                                 android:layout_marginTop="@dimen/common_paddng_3dp"
+                                android:maxLines="1"
                                 android:text="@string/performingstatus"
-                                android:textStyle="bold"
-                                android:textColor="@color/text_color_dark_grey"
-                                android:textSize="@dimen/text_size_medium" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_medium"
+                                android:textStyle="bold" />
 
                             <LinearLayout
                                 android:id="@+id/rootPricelayout"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/common_paddng_1dp"
-                                android:gravity="left"
                                 android:layout_marginBottom="@dimen/common_paddng_1dp"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="3">
 
                                 <LinearLayout
                                     android:id="@+id/tenDayLayout"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/common_paddng_3dp"
+                                    android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -267,9 +283,9 @@
                                         android:layout_marginTop="@dimen/common_paddng_1dp"
                                         android:gravity="center"
                                         android:text="@string/noOfDays"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/txtTenDaysValue"
@@ -279,16 +295,17 @@
                                         android:layout_marginTop="@dimen/common_paddng_1dp"
                                         android:gravity="center"
                                         android:text="@string/tenDayValueApprox"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_xlarge" />
+                                        android:textColor="@color/color_text_dark_layout"
+                                        android:textSize="@dimen/text_size_xlarge"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
                                     android:id="@+id/fiftyDayLayout"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/common_paddng_3dp"
+                                    android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -298,9 +315,9 @@
                                         android:layout_marginTop="@dimen/common_paddng_1dp"
                                         android:gravity="center"
                                         android:text="50 Day"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/txtFiftyDaysValue"
@@ -311,16 +328,17 @@
                                         android:layout_marginTop="@dimen/common_paddng_1dp"
                                         android:gravity="center"
                                         android:text="@string/tenDayValueApprox"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_xlarge" />
+                                        android:textColor="@color/color_text_dark_layout"
+                                        android:textSize="@dimen/text_size_xlarge"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                                 <LinearLayout
                                     android:id="@+id/twoHundredDayLayout"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="@dimen/common_paddng_3dp"
+                                    android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -331,9 +349,9 @@
                                         android:layout_marginTop="@dimen/common_paddng_1dp"
                                         android:gravity="center"
                                         android:text="200 Day"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/txtTwoHundredDaysValue"
@@ -346,9 +364,9 @@
                                         android:layout_marginRight="@dimen/common_paddng_5dp"
                                         android:gravity="center"
                                         android:text="@string/tenDayValueApprox"
-                                        android:textStyle="bold"
-                                        android:textColor="@color/text_color_black"
-                                        android:textSize="@dimen/text_size_xlarge" />
+                                        android:textColor="@color/color_text_dark_layout"
+                                        android:textSize="@dimen/text_size_xlarge"
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                             </LinearLayout>
                             <!--               <View
@@ -379,9 +397,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Technology"
-                                    android:textStyle="bold"
-                                    android:textColor="@color/text_color_dark_grey"
-                                    android:textSize="@dimen/text_size_medium" />
+                                    android:textColor="@color/color_small_text__dark_layout"
+                                    android:textSize="@dimen/text_size_medium"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/txtNoOfNewSources"
@@ -398,18 +416,16 @@
                                     android:layout_height="wrap_content"
                                     android:paddingRight="@dimen/common_paddng_7dp"
                                     android:text="@string/veryPositive"
-                                    android:textStyle="bold"
-                                    android:textColor="@color/text_color_black"
+                                    android:textColor="@color/color_text_dark_layout"
                                     android:textSize="@dimen/text_size_xlarge"
-                                     />
+                                    android:textStyle="bold" />
                             </LinearLayout>
 
 
                             <RelativeLayout
                                 android:id="@+id/secondBelowLayout"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                               >
+                                android:layout_height="wrap_content">
 
 
                                 <!-- ======================== NEWS 1 Start ========================!-->
@@ -425,22 +441,22 @@
                                         android:id="@+id/txtHeading1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/bloomburg"
-                                        android:textColor="@color/text_color_username"
                                         android:layout_marginTop="@dimen/common_paddng_10dp"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:text="@string/bloomburg"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtTime1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="--"
                                         android:layout_alignParentRight="true"
-                                        android:textColor="@color/text_color_username"
-                                        android:textSize="@dimen/publish_news_time_size"
                                         android:layout_marginTop="@dimen/common_paddng13"
                                         android:maxLines="1"
+                                        android:text="--"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/publish_news_time_size"
                                         android:visibility="gone" />
 
                                     <TextView
@@ -450,11 +466,11 @@
                                         android:layout_below="@+id/txtHeading1"
                                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                                         android:maxLines="3"
-                                        android:textStyle="bold"
                                         android:text="@string/news1"
                                         android:textColor="@color/button_dark_bg"
                                         android:textSize="@dimen/text_size_small"
-                                        android:visibility="gone"/>
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtNews1Detail"
@@ -463,9 +479,9 @@
                                         android:layout_below="@+id/txtNews1"
                                         android:maxLines="5"
                                         android:text="@string/news1Description"
-                                        android:textColor="@color/text_color_dark_grey"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small"
-                                        android:visibility="gone"/>
+                                        android:visibility="gone" />
 
                                     <!-- ======================== NEWS 1 END ========================!-->
                                     <!-- ======================== NEWS 2 Start ========================!-->
@@ -475,11 +491,11 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtNews1Detail"
-                                        android:text="@string/hed2"
-                                        android:textColor="@color/text_color_username"
                                         android:layout_marginTop="@dimen/common_paddng_10dp"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:text="@string/hed2"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtTime2"
@@ -487,14 +503,14 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtNews1Detail"
                                         android:layout_alignParentRight="true"
-                                        android:textColor="@color/text_color_username"
-                                        android:text="--"
-
-                                        android:textSize="@dimen/publish_news_time_size"
                                         android:layout_marginTop="@dimen/common_paddng13"
                                         android:maxLines="1"
+
+                                        android:text="--"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/publish_news_time_size"
                                         android:visibility="gone" />
-                                  <!--  <TextView
+                                    <!--  <TextView
                                         android:id="@+id/txtTime2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -513,11 +529,11 @@
                                         android:layout_below="@+id/txtHeding2"
                                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                                         android:maxLines="3"
-                                        android:textStyle="bold"
                                         android:text="@string/news2"
                                         android:textColor="@color/button_dark_bg"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtNews2Detail"
@@ -526,9 +542,9 @@
                                         android:layout_below="@+id/txtNews2"
                                         android:maxLines="5"
                                         android:text="@string/news1Description"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
                                     <!-- ======================== NEWS 2 END ========================!-->
                                     <!-- ======================== NEWS 3 Start ========================!-->
                                     <TextView
@@ -536,24 +552,24 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtNews2Detail"
-                                        android:text="@string/hed3"
-                                        android:textColor="@color/text_color_username"
                                         android:layout_marginTop="@dimen/common_paddng_10dp"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:text="@string/hed3"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtTime3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="--"
                                         android:layout_below="@+id/txtNews2Detail"
                                         android:layout_alignParentRight="true"
-                                        android:textColor="@color/text_color_username"
-
-                                        android:textSize="@dimen/publish_news_time_size"
                                         android:layout_marginTop="@dimen/common_paddng13"
                                         android:maxLines="1"
+
+                                        android:text="--"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/publish_news_time_size"
                                         android:visibility="gone" />
 
                                     <TextView
@@ -563,22 +579,22 @@
                                         android:layout_below="@+id/txtHeding3"
                                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                                         android:maxLines="3"
-                                        android:textStyle="bold"
                                         android:text="@string/news3"
                                         android:textColor="@color/button_dark_bg"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtNews3Detail"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtNews3"
-                                        android:text="@string/news1Description"
                                         android:maxLines="5"
-                                        android:visibility="gone"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:text="@string/news1Description"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                     <!-- ======================== NEWS 3 END ========================!-->
                                     <!-- ======================== NEWS 4 Start ========================!-->
@@ -590,9 +606,9 @@
                                         android:layout_below="@+id/txtNews3Detail"
                                         android:layout_marginTop="@dimen/common_paddng_10dp"
                                         android:text="@string/bloomburg"
-                                        android:textColor="@color/text_color_username"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtTime4"
@@ -600,11 +616,11 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtNews3Detail"
                                         android:layout_alignParentRight="true"
-                                        android:textColor="@color/text_color_username"
-                                        android:text="--"
-                                        android:textSize="@dimen/publish_news_time_size"
                                         android:layout_marginTop="@dimen/common_paddng13"
                                         android:maxLines="1"
+                                        android:text="--"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/publish_news_time_size"
                                         android:visibility="gone" />
 
                                     <TextView
@@ -614,11 +630,11 @@
                                         android:layout_below="@+id/txtHeading4"
                                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                                         android:maxLines="3"
-                                        android:textStyle="bold"
                                         android:text="@string/news1"
                                         android:textColor="@color/button_dark_bg"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtNews4Detail"
@@ -627,9 +643,9 @@
                                         android:layout_below="@+id/txtNews4"
                                         android:maxLines="5"
                                         android:text="@string/news1Description"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
                                     <!-- ======================== NEWS 4 END ========================!-->
 
 
@@ -640,21 +656,21 @@
                                         android:layout_below="@+id/txtNews4Detail"
                                         android:layout_marginTop="@dimen/common_paddng_10dp"
                                         android:text="@string/bloomburg"
-                                        android:textColor="@color/text_color_username"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtTime5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/txtNews4Detail"
-                                        android:text="--"
                                         android:layout_alignParentRight="true"
-                                        android:textColor="@color/text_color_username"
-                                        android:textSize="@dimen/publish_news_time_size"
                                         android:layout_marginTop="@dimen/common_paddng13"
                                         android:maxLines="1"
+                                        android:text="--"
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/publish_news_time_size"
                                         android:visibility="gone" />
 
                                     <TextView
@@ -664,11 +680,11 @@
                                         android:layout_below="@+id/txtHeading5"
                                         android:layout_marginBottom="@dimen/common_paddng_2dp"
                                         android:maxLines="3"
-                                        android:textStyle="bold"
                                         android:text="@string/news1"
                                         android:textColor="@color/button_dark_bg"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
 
                                     <TextView
                                         android:id="@+id/txtNews5Detail"
@@ -677,9 +693,9 @@
                                         android:layout_below="@+id/txtNews5"
                                         android:maxLines="5"
                                         android:text="@string/news1Description"
-                                        android:textColor="@color/text_color_dark_grey"
-                                        android:visibility="gone"
-                                        android:textSize="@dimen/text_size_small" />
+                                        android:textColor="@color/color_small_text__dark_layout"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:visibility="gone" />
 
                                 </RelativeLayout>
 
@@ -700,7 +716,7 @@
                                         android:layout_marginBottom="@dimen/common_paddng_3dp"
                                         android:maxLines="5"
                                         android:text="@string/news1"
-                                        android:textColor="@color/text_color_black"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small"
                                         android:textStyle="bold" />
 
@@ -712,7 +728,7 @@
                                         android:layout_marginTop="@dimen/common_paddng_7dp"
                                         android:layout_marginBottom="@dimen/common_paddng_3dp"
                                         android:text="@string/news1Description"
-                                        android:textColor="@color/text_color_black"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small" />
 
                                     <TextView

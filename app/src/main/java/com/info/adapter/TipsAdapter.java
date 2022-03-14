@@ -254,16 +254,16 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             if (tips.getEntryPoint() < tips.getExitpoint()) {
                 stockSuggestion = "Buy";
                 viewHolder.txtBuySell.setBackgroundResource(R.drawable.text_backgroud_green);
-                viewHolder.txtBuySell.setTextColor(Color.parseColor("#1e841c"));
+                viewHolder.txtBuySell.setTextColor(Color.parseColor("#B4CEB5"));
 
             } else if (tips.getEntryPoint() > tips.getExitpoint()) {
                 stockSuggestion = "Sell";
                 viewHolder.txtBuySell.setBackgroundResource(R.drawable.text_backgroud_red);
-                viewHolder.txtBuySell.setTextColor(Color.parseColor("#a94018"));
+                viewHolder.txtBuySell.setTextColor(Color.parseColor("#E4D1D2"));
             } else {
                 stockSuggestion = "Avoid";
                 viewHolder.txtBuySell.setBackgroundResource(R.drawable.text_backgroud_black);
-                viewHolder.txtBuySell.setTextColor(Color.parseColor("#707890"));
+                viewHolder.txtBuySell.setTextColor(Color.parseColor("#DADDD5"));
             }
             if (stockSuggestion.length() >= 4)
                 viewHolder.txtBuySell.setEms(4);
@@ -301,18 +301,21 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 if (likeResponse) {
                     tipResponse.setLikeCount(tipResponse.getLikeCount() + 1);
                     viewHolder.txtLikeCount.setText(String.valueOf(tipResponse.getLikeCount()));
-                    viewHolder.imgLike.setImageResource(R.drawable.ic_like_fill);
+                   // viewHolder.imgLike.setImageResource(R.drawable.ic_like_fill);
+                    viewHolder.imgLike.setColorFilter(R.color.dark_black_color);
                 } else {
                     if (tipResponse.getLikeCount() > 0) {
                         tipResponse.setLikeCount(tipResponse.getLikeCount() - 1);
                         viewHolder.txtLikeCount.setText(String.valueOf(tipResponse.getLikeCount()));
                     }
-                    viewHolder.imgLike.setImageResource(R.drawable.ic_like);
+                    //viewHolder.imgLike.setImageResource(R.drawable.ic_like);
+                    viewHolder.imgLike.setColorFilter(R.color.dark_black_color);
                 }
                 tipResponse.setUserLikeStatus(likeResponse);
             };
             if (tipResponse.isUserLikeStatus()) {
-                viewHolder.imgLike.setImageResource(R.drawable.ic_like_fill);
+               // viewHolder.imgLike.setImageResource(R.drawable.ic_like_fill);
+                viewHolder.imgLike.setColorFilter(R.color.dark_black_color);
             } else {
                 viewHolder.imgLike.setImageResource(R.drawable.ic_like);
             }
@@ -341,7 +344,8 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 if (pinResponse) {
                     tipResponse.setPinCount(tipResponse.getPinCount() + 1);
                     viewHolder.txtPin.setText(String.valueOf(tipResponse.getPinCount()));
-                    viewHolder.imgPin.setImageResource(R.drawable.ic_pin_save);
+                   // viewHolder.imgPin.setImageResource(R.drawable.ic_pin_save);
+                    viewHolder.imgPin.setColorFilter(R.color.dark_black_color);
                 } else {
                     if (tipResponse.getPinCount() > 0) {
                         tipResponse.setPinCount(tipResponse.getPinCount() - 1);
@@ -368,7 +372,8 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 
             if (tipResponse.isUserPinStatus()) {
-                viewHolder.imgPin.setImageResource(R.drawable.ic_pin_save);
+               // viewHolder.imgPin.setImageResource(R.drawable.ic_pin_save);
+                viewHolder.imgPin.setColorFilter(R.color.dark_black_color);
             } else {
                 viewHolder.imgPin.setImageResource(R.drawable.ic_tag);
             }
@@ -421,15 +426,15 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             if (tips.getEntryPoint() < tips.getExitpoint()) {
                 stockSuggestion = "Buy";
                 viewHolder.txtBuySell.setBackgroundResource(R.drawable.text_backgroud_green);
-                viewHolder.txtBuySell.setTextColor(Color.parseColor("#1e841c"));
+                viewHolder.txtBuySell.setTextColor(Color.parseColor("#B4CEB5"));
             } else if (tips.getEntryPoint() > tips.getExitpoint()) {
                 stockSuggestion = "Sell";
                 viewHolder.txtBuySell.setBackgroundResource(R.drawable.text_backgroud_red);
-                viewHolder.txtBuySell.setTextColor(Color.parseColor("#a94018"));
+                viewHolder.txtBuySell.setTextColor(Color.parseColor("#E4D1D2"));
             } else {
                 stockSuggestion = "Avoid";
                 viewHolder.txtBuySell.setBackgroundResource(R.drawable.text_backgroud_black);
-                viewHolder.txtBuySell.setTextColor(Color.parseColor("#707890"));
+                viewHolder.txtBuySell.setTextColor(Color.parseColor("#DADDD5"));
             }
             if (stockSuggestion.length() >= 4)
                 viewHolder.txtBuySell.setEms(4);
@@ -502,14 +507,14 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             //-------set Buy Sell or Avoid status of tip---------start
             String suggestion = Common.calculatedSuggestion(sectorNews.getStockPrice(), sectorNews);
             if (suggestion.equalsIgnoreCase("Avoid")) {
-                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#707890"));
+                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#DADDD5"));
                 viewHolder.txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_black);
             } else if (suggestion.equalsIgnoreCase("Sell")) {
-                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#a94018"));
+                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#E4D1D2"));
                 viewHolder.txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_red);
             } else if (suggestion.equalsIgnoreCase("Buy")) {
                 viewHolder.txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_green);
-                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#1e841c"));
+                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#B4CEB5"));
 
             }
             if (suggestion.length() >= 4)
@@ -553,19 +558,19 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             //set value to label
             if (Common.checkStringIsDouble(sectorNews.getAvg10days())) {
-                viewHolder.txtTenDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg10days())));
+                viewHolder.txtTenDaysValue.append("₹" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg10days())));
             } else {
                 viewHolder.txtTenDaysValue.setText(context.getResources().getString(R.string.dashDash));
                 viewHolder.txtTenDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
             }
             if (Common.checkStringIsDouble(sectorNews.getAvg50days())) {
-                viewHolder.txtFiftyDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg50days())));
+                viewHolder.txtFiftyDaysValue.append("₹" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg50days())));
             } else {
                 viewHolder.txtFiftyDaysValue.setText(context.getResources().getString(R.string.dashDash));
                 viewHolder.txtFiftyDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
             }
             if (Common.checkStringIsDouble(sectorNews.getAvg200days())) {
-                viewHolder.txtTwoHundredDaysValue.append("$" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg200days())));
+                viewHolder.txtTwoHundredDaysValue.append("₹" + Common.formatDouble(Double.parseDouble(sectorNews.getAvg200days())));
             } else {
                 viewHolder.txtTwoHundredDaysValue.setText(context.getResources().getString(R.string.dashDash));
                 viewHolder.txtTwoHundredDaysValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
@@ -590,10 +595,10 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             String change = Common.formatDouble(Math.abs(sectorNews.getStockChange()));
             viewHolder.txtChange.setText(change);
             if (sectorNews.getStockChange() < 0.0) {
-                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_downward, 0);
+                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_low, 0);
                 viewHolder.txtChange.setTextColor(ContextCompat.getColor(context, R.color.text_color_red));
             } else {
-                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_upward, 0);
+                viewHolder.txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_high, 0);
                 viewHolder.txtChange.setTextColor(ContextCompat.getColor(context, R.color.text_color_green));
             }
             if (newsList.size() > 1) {
@@ -627,7 +632,7 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             double twoHundredDayVal = Common.getDounbleValuefromStringforPredectionValue(sectorNews.getAvg200days());
             AMDTipsViewHolderHorizontal viewHolder = (AMDTipsViewHolderHorizontal) tipsViewHolder;
             viewHolder.txtStockName.setText(sectorNews.getStockName());
-            viewHolder.txtStockCompanyName.setVisibility(View.VISIBLE);
+            viewHolder.txtStockCompanyName.setVisibility(View.GONE);
             DataRepository.getStockPrice(context, sectorNews.getStockName(), new PriceCallback<StockPrice>() {
                 @Override
                 public void onPriceUpdate(StockPrice data) {
@@ -643,13 +648,13 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             String suggestion = Common.calculatedSuggestion(sectorNews.getStockPrice(), sectorNews);
             if (suggestion.equalsIgnoreCase("Avoid")) {
                 viewHolder.txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_black);
-                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#707890"));
+                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#DADDD5"));
             } else if (suggestion.equalsIgnoreCase("Sell")) {
                 viewHolder.txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_red);
-                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#a94018"));
+                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#E4D1D2"));
 
             } else if (suggestion.equalsIgnoreCase("Buy")) {
-                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#1e841c"));
+                viewHolder.txtStatusBuySellAvoid.setTextColor(Color.parseColor("#B4CEB5"));
                 viewHolder.txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_green);
             }
             if (suggestion.length() >= 4)
@@ -1095,8 +1100,8 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         private RelativeLayout rootLayoutRoundedBorder;
         private LinearLayout firstLayout;
         private LinearLayout firstLayout11;
-        private RelativeLayout firstPartLayout;
-        private LinearLayout innerLayoutFirst;
+        private LinearLayout firstPartLayout;
+        private RelativeLayout innerLayoutFirst;
         private TextView txtStockName;
         private TextView txtStockCompany;
         private TextView txtType;
@@ -1141,8 +1146,8 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             rootLayoutRoundedBorder = (RelativeLayout) view.findViewById(R.id.rootLayoutRoundedBorder);
             firstLayout = (LinearLayout) view.findViewById(R.id.firstLayout);
             firstLayout11 = (LinearLayout) view.findViewById(R.id.firstLayout11);
-            firstPartLayout = (RelativeLayout) view.findViewById(R.id.firstPartLayout);
-            innerLayoutFirst = (LinearLayout) view.findViewById(R.id.innerLayoutFirst);
+            firstPartLayout = (LinearLayout) view.findViewById(R.id.firstPartLayout);
+            innerLayoutFirst = (RelativeLayout) view.findViewById(R.id.innerLayoutFirst);
             txtStockName = (TextView) view.findViewById(R.id.txtStockName);
             txtStockCompany = (TextView) view.findViewById(R.id.txtStockCompany);
             txtType = (TextView) view.findViewById(R.id.txtType);

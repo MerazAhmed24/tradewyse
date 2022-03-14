@@ -109,10 +109,10 @@ class AddTipsActivity : BaseActivity() {
         txtChange.text = change
 
         if (stocks.stockChange < 0.0) {
-            txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_downward, 0)
+            txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_low, 0)
             txtChange.setTextColor(ContextCompat.getColor(this, R.color.text_color_red))
         } else {
-            txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_upward, 0)
+            txtChange.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icon_price_high, 0)
             txtChange.setTextColor(ContextCompat.getColor(this, R.color.green_light))
         }
 

@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/dividerView"
-            android:background="@color/colorPrimary"></FrameLayout>
+            android:background="@color/color_app_dark_bg_india"></FrameLayout>
 
         <View
             android:id="@+id/dividerView"

@@ -3,8 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/color_app_dark_bg"
+    android:background="@drawable/mentor_list_item_bg_rounded"
+    android:layout_marginTop="@dimen/_5sdp"
     android:paddingVertical="10dp"
+    android:paddingHorizontal="@dimen/_5sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
         android:id="@+id/profileLayout"
@@ -26,12 +28,12 @@
             android:id="@+id/imgProfile"
             android:layout_width="29dp"
             android:layout_height="29dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            app:roundAsCircle="true"
             android:layout_marginTop="@dimen/common_paddng_3dp"
+            android:adjustViewBounds="true"
             android:background="@drawable/drawable_circle_white"
-            app:placeholderImage="@drawable/ic_user_default" />
+            android:scaleType="centerCrop"
+            app:placeholderImage="@drawable/ic_baseline_account_circle_24"
+            app:roundAsCircle="true" />
 
         <TextView
             android:id="@+id/txtName"
@@ -40,9 +42,9 @@
             android:layout_marginLeft="@dimen/common_paddng_5dp"
             android:layout_toRightOf="@+id/imgProfile"
             android:text="@string/user_name"
-            android:textStyle="bold"
-            android:textColor="@color/text_color_white"
-            android:textSize="@dimen/text_size_medium" />
+            android:textColor="@color/color_text_dark_layout"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtTimeAgo"
@@ -53,32 +55,33 @@
             android:layout_toRightOf="@+id/imgProfile"
             android:text="@string/hr_ago"
 
-            android:textColor="@color/text_color_light_grey"
+            android:textColor="@color/color_small_text__dark_layout"
             android:textSize="@dimen/text_size_small_plus" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/flagIcon"
             android:layout_width="@dimen/flag_icon_size"
             android:layout_height="@dimen/flag_icon_size"
-            android:id="@+id/flagIcon"
+            android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/common_paddng_3dp"
             android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
             android:paddingTop="@dimen/common_paddng_4dp"
             android:paddingRight="@dimen/common_paddng_4dp"
-            android:layout_alignParentRight="true"
-            app:srcCompat="@drawable/flag_icon_new"
-            android:background="@android:color/transparent"
-         />
+            android:tint="@color/color_icon_tint"
+            app:srcCompat="@drawable/flag_icon_new" />
     </RelativeLayout>
+
     <TextView
         android:id="@+id/txtComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/profileLayout"
-        android:padding="@dimen/common_paddng_2dp"
-        android:layout_marginBottom="@dimen/common_paddng_3dp"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="@dimen/common_paddng_2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/common_paddng_3dp"
+        android:padding="@dimen/common_paddng_2dp"
         android:text="@string/stock_detail"
-        android:textColor="@color/text_color_white"
+        android:textColor="@color/color_small_text__dark_layout"
         android:textSize="@dimen/text_size_medium" />`
 </RelativeLayout>

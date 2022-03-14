@@ -75,7 +75,7 @@ public class DashBoardFragment extends BaseFragment implements TipsAdapter.CallT
 
     private static final String TAG = "DashBoardFragment";
     RecyclerView stockList, tipsList;
-    RelativeLayout swipeView;
+    RelativeLayout swipeView,testlayout;
     LinearLayout llStocks, llNoStocks, filterTipOption;
     TextView txtSwipe;
     LinearLayoutManager stockLayoutManger, tipsLayoutManager;
@@ -169,6 +169,7 @@ public class DashBoardFragment extends BaseFragment implements TipsAdapter.CallT
         Logger.debug("DashboardFragment", "Chat Token:- " + tradWyseSession.getAccessTokenStreamIO());
     }
 
+
     public void swipeListEvent() {
 
         LinearLayout.LayoutParams wrapContentLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, 0F);
@@ -178,6 +179,7 @@ public class DashBoardFragment extends BaseFragment implements TipsAdapter.CallT
             tipsLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
             llStocks.setLayoutParams(wrapContentLayoutParams);
             tipsList.setLayoutParams(matchParentLayoutParmas);
+
 
             int height = getResources().getDimensionPixelSize(R.dimen.swipe_refresh_layout_height);
             LinearLayout.LayoutParams wrapContentSRL = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, height, 0F);

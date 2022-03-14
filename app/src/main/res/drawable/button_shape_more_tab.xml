@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <corners
+        android:radius="14dp"
+        />
+    <gradient
+        android:angle="45"
+        android:centerX="35%"
+        android:centerColor="#484A4A"
+        android:startColor="@color/color_app_dark_bg_india"
+        android:endColor="@color/color_app_dark_card_india"
+        android:type="linear"
+        />
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/color_border_stroke"
+        />
+</shape>
