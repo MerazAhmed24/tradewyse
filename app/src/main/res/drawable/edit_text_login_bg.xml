@@ -7,7 +7,6 @@
         android:bottom="-5dp">
 
         <shape
-
             android:shape="rectangle">
             <solid android:color="@color/edit_text_bg_login"/>
             <stroke
