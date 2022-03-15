@@ -13,7 +13,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#5180EA"
+        android:background="@color/color_app_dark_bg_india"
         tools:context="com.info.tradewyse.NotificationActivity">
 
         <include
@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:background="#5180EA"
+                    android:background="@color/color_app_dark_bg_india"
                     android:visibility="gone" />
 
                 <LinearLayout

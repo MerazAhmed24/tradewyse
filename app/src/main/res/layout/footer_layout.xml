@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable
@@ -28,9 +29,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@{footerModel.isServices?@drawable/rupee_symbol_icon_white : @drawable/rupee_symbol_icon_gray}" />
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@{footerModel.isServices?@drawable/rupee_icon_blue : @drawable/rupee_icon_grey}" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,9 +52,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@{footerModel.isChat?@drawable/chat_bubble_icon_white : @drawable/chat_bubble_icon_gray}" />
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@{footerModel.isChat?@drawable/chat_blue_icon : @drawable/chat_grey_icon}" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -73,9 +74,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@{footerModel.isHome?@drawable/home_icon_white: @drawable/home_icon_gray}" />
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:id="@+id/home_btn_img"
+                android:src="@{footerModel.isHome?@drawable/home_icon_blue: @drawable/home_icon_grey}" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,9 +103,9 @@
                 android:layout_alignParentEnd="true">
 
                 <ImageView
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:src="@{footerModel.isNotification?@drawable/notification_icon_white : @drawable/notification_icon_gray}" />
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@{footerModel.isNotification?@drawable/notification_icon_blue : @drawable/notification_icon_grey}" />
 
                 <ImageView
                     android:id="@+id/nav_unread_badge"
@@ -133,9 +135,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@{footerModel.isMore?@drawable/menu_icon_white : @drawable/menu_icon_gray}" />
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@{footerModel.isMore?@drawable/menu_icon_blue : @drawable/menu_icon_grey}" />
 
             <TextView
                 android:layout_width="wrap_content"

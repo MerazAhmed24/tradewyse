@@ -79,8 +79,8 @@
 
                 <ImageView
                     android:id="@+id/imageViewBuy"
-                    android:layout_width="29dp"
-                    android:layout_height="29dp"
+                    android:layout_width="@dimen/profile_image_height_vsmall"
+                    android:layout_height="@dimen/profile_image_height_vsmall"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:src="@drawable/buy_icon" />
 
@@ -141,15 +141,15 @@
                     android:paddingEnd="@dimen/_8sdp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/_25sdp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="5dp"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
                         android:text="Buy"
                         android:textAlignment="center"
                         android:textColor="@color/color_text_buy"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_10ssp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -210,8 +210,8 @@
 
                 <ImageView
                     android:id="@+id/imageViewSell"
-                    android:layout_width="29dp"
-                    android:layout_height="29dp"
+                    android:layout_width="@dimen/profile_image_height_vsmall"
+                    android:layout_height="@dimen/profile_image_height_vsmall"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:src="@drawable/sell_icon" />
 
@@ -266,22 +266,20 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/text_backgroud_red"
-                    android:paddingStart="@dimen/_8sdp"
-                    android:paddingEnd="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_10sdp">
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/text_backgroud_red">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/_25sdp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:paddingStart="@dimen/_10sdp"
-                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
                         android:text="Sell"
                         android:textAlignment="center"
                         android:textColor="@color/color_text_sell"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"/>
 
                 </RelativeLayout>
 

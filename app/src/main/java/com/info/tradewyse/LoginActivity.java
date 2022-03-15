@@ -69,11 +69,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                     WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
-        if (Constants.IS_PRODUCTION == false)
+        /*if (Constants.IS_PRODUCTION == false)
         {
             layoutLogInbg.setBackground(ContextCompat.getDrawable(this, R.drawable.testloginbg));
         }
-
+*/
     }
 
     @Override

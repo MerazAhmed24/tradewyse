@@ -16,7 +16,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#203258"
+        android:background="@color/color_app_dark_bg_india"
         android:orientation="vertical">
 
         <include layout="@layout/toolbar" />
@@ -43,7 +43,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="#2A3A5E">
+                    android:background="@color/color_text_avoid">
 
                     <EditText
                         android:id="@+id/edtSearchStock"
@@ -52,14 +52,13 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="@dimen/common_paddng_5dp"
                         android:layout_weight="1"
-                        android:background="#2A3A5E"
+                        android:background="@color/color_text_avoid"
                         android:hint="Enter symbol or company name"
                         android:imeOptions="actionSearch"
                         android:inputType="textCapCharacters"
                         android:maxLength="28"
                         android:padding="@dimen/common_paddng_5dp"
-                        android:textColor="@color/text_color_white"
-
+                        android:textColor="@color/black"
                         android:textColorHint="#AAB1B8"
                         android:textSize="@dimen/text_size_medium" />
 
@@ -79,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/common_paddng_10dp"
                     android:text="@string/stocks"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/text_size_medium" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -100,6 +99,7 @@
             <include
                 layout="@layout/footer_layout"
                 bind:footerModel="@{footerModel}" />
+
 
         </RelativeLayout>
 

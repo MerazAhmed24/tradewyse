@@ -71,10 +71,10 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
         }
         context = SignUpActivity.this;
         initialize();
-        if (Constants.IS_PRODUCTION == false)
+       /* if (Constants.IS_PRODUCTION == false)
         {
             layoutSignUpbg.setBackground(ContextCompat.getDrawable(this, R.drawable.testloginbg));
-        }
+        }*/
 
     }
 

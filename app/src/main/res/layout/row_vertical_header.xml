@@ -233,11 +233,10 @@
                     android:background="@drawable/text_backgroud_green">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/_40sdp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:paddingStart="7dp"
-                        android:paddingEnd="7dp"
+                        android:gravity="center"
                         android:text="Buy"
                         android:textAlignment="center"
                         android:textColor="@color/color_text_buy"
@@ -510,11 +509,10 @@
                     android:background="@drawable/text_backgroud_red">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/_40sdp"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
                         android:text="Sell"
                         android:textAlignment="center"
                         android:textColor="@color/color_text_sell"

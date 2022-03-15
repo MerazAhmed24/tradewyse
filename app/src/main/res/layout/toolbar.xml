@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cancel"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_type_done"
                 android:textSize="@dimen/text_size_large"
                 android:visibility="gone"/>
 
@@ -65,14 +65,13 @@
 
             <TextView
                 android:id="@+id/otherAction"
-                android:layout_marginRight="@dimen/common_paddng_10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/common_paddng_10dp"
                 android:text="Post Tips"
-                android:textColor="@color/next_color"
+                android:textColor="@color/color_text_type_done"
                 android:textSize="@dimen/text_size_large"
                 android:visibility="gone">
 

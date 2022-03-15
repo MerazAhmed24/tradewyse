@@ -4,7 +4,7 @@
     <!--border color and border width-->
     <stroke
         android:width="0.5dp"
-        android:color="@color/color_app_dark_card_india" />
+        android:color="@color/color_border_stroke" />
     <!--border radius in dp-->
-    <corners android:radius="4dp" />
+    <corners android:radius="5dp" />
 </shape>
