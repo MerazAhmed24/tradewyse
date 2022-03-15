@@ -111,7 +111,7 @@ public class DashBoardActivity extends BaseActivity
     private int visitCount;
     Context context;
     SimpleDraweeView imgProfile;
-    ImageView imgSearch;
+    ImageView imgSearch,imgHomeButtonNavigation;
     DashBoardFragment dashBoardFragment;
     BroadcastReceiver logoutReceiver;
     public TradWyseSession tradWyseSession;
@@ -161,7 +161,7 @@ public class DashBoardActivity extends BaseActivity
         imgProfile.setOnClickListener(this);
         imgSearch = findViewById(R.id.imgSearch);
         bottomlinearLayout = findViewById(R.id.bottomView);
-
+        imgHomeButtonNavigation = findViewById(R.id.home_btn_img);
         drawerLayout = findViewById(R.id.drawer_layout);
         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         toolbar = findViewById(R.id.toolbar);
@@ -205,6 +205,7 @@ public class DashBoardActivity extends BaseActivity
 
             }
         };
+
         registerReceiver(logoutReceiver, intentFilter);
         displayDashboardFragment();
         String userName = tradWyseSession.getUserName();

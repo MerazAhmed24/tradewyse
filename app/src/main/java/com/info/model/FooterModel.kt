@@ -1,5 +1,8 @@
 package com.info.model
 
+import android.view.ViewGroup
+import androidx.databinding.BindingAdapter
+
 /**
  * Created by Amit Gupta on 21,July,2021
  */
