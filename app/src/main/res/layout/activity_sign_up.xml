@@ -4,72 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="@color/color_app_dark_bg_india"
     android:paddingLeft="@dimen/common_paddng_10dp"
     android:paddingRight="@dimen/common_paddng_10dp"
     android:id="@+id/layoutSignUpbg"
     tools:context="com.info.tradewyse.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/sign_up_screen_icon" />
+
     <LinearLayout
         android:id="@+id/lyProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/common_paddng_20dp"
+        android:layout_below="@+id/imgicon"
         android:layout_marginLeft="@dimen/common_paddng_20dp"
-        android:layout_marginTop="@dimen/signup_root_layout_margin_top"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="@dimen/common_paddng_20dp"
         android:gravity="center"
         android:orientation="vertical">
-        <RelativeLayout
-            android:id="@+id/btnLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_paddng_15dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/txthaveAcc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/HaveAcc"
-                android:background="@android:color/transparent"
-                android:textColor="@color/text_color_white"
-                android:textSize="@dimen/text_size_large" />
 
-            <TextView
-                android:id="@+id/txtLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:layout_toRightOf="@+id/txthaveAcc"
-                android:layout_marginLeft="@dimen/common_paddng_10dp"
-                android:text="@string/loginSpace"
-                android:background="@android:color/transparent"
-                android:textColor="@color/login_screen_link_color"
-                android:textSize="@dimen/text_size_large" />
-        </RelativeLayout>
 
         <TextView
             android:id="@+id/txtHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/StockPrice"
-            android:text="@string/createAcc"
-            android:textColor="@color/text_color_white"
             android:layout_marginTop="@dimen/common_paddng_15dp"
             android:layout_marginBottom="@dimen/common_paddng_30dp"
-            android:textSize="@dimen/text_size_large_heading" />
+            android:text="@string/createAcc"
+            android:textColor="@color/color_text_dark_layout"
+            android:textSize="@dimen/_22ssp" />
 
         <EditText
             android:id="@+id/edtUserName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.5"
+            android:layout_height="@dimen/_40sdp"
             android:background="@drawable/edit_text_login_bg"
             android:hint="@string/username"
             android:inputType="textEmailAddress"
             android:padding="@dimen/common_paddng_10dp"
-            android:textColor="@color/text_color_white"
-            android:textColorHint="@color/text_color_white" />
+            android:textColor="@color/color_text_dark_layout"
+            android:textColorHint="@color/color_text_dark_layout" />
 
         <View
             android:id="@+id/eUserNameLine"
@@ -77,85 +58,90 @@
             android:layout_height="@dimen/white_seperator_line_height"
             android:layout_below="@+id/eEmail"
             android:background="@color/text_color_white"
-            android:textColor="@color/text_color_white" />
+            android:textColor="@color/text_color_white"
+            android:visibility="gone" />
 
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/common_paddng_10dp"
+            android:background="@drawable/edit_text_login_bg"
             android:capitalize="words"
             android:hint="@string/email"
+            android:inputType="textEmailAddress"
             android:padding="@dimen/common_paddng_10dp"
-            android:background="@drawable/edit_text_login_bg"
-            android:alpha="0.5"
-            android:layout_marginTop="@dimen/common_paddng_25dp"
-            android:textColor="@color/text_color_white"
-            android:textColorHint="@color/text_color_white"
-            android:inputType="textEmailAddress" />
+            android:textColor="@color/color_text_dark_layout"
+            android:textColorHint="@color/color_text_dark_layout" />
+
         <View
             android:id="@+id/eEmailLine"
             android:layout_width="match_parent"
             android:layout_height="@dimen/white_seperator_line_height"
             android:layout_below="@+id/eEmail"
             android:background="@color/text_color_white"
-            android:textColor="@color/text_color_white" />
+            android:textColor="@color/text_color_white"
+            android:visibility="gone" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintEnabled="false"  
-            android:layout_marginTop="@dimen/common_paddng_25dp"
-            app:passwordToggleTint="@color/text_color_light_grey"
-            app:passwordToggleEnabled="true">
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/common_paddng_10dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/text_color_light_grey">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:capitalize="words"
-            android:hint="@string/pwd"
-            android:padding="@dimen/common_paddng_10dp"
-            android:background="@drawable/edit_text_login_bg"
-            android:alpha="0.5"
-            android:textColor="@color/text_color_white"
-            android:textColorHint="@color/text_color_white"
-            android:inputType="textPassword" />
-        <View
-            android:id="@+id/ePasswordLine"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/white_seperator_line_height"
-            android:layout_below="@+id/eEmail"
-            android:background="@color/text_color_white"
-            android:textColor="@color/text_color_white" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/edit_text_login_bg"
+                android:capitalize="words"
+                android:hint="@string/pwd"
+                android:inputType="textPassword"
+                android:padding="@dimen/common_paddng_10dp"
+                android:textColor="@color/color_text_dark_layout"
+                android:textColorHint="@color/color_text_dark_layout" />
+
+            <View
+                android:id="@+id/ePasswordLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/white_seperator_line_height"
+                android:layout_below="@+id/eEmail"
+                android:background="@color/text_color_white"
+                android:textColor="@color/text_color_white"
+                android:visibility="gone" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/confirm_pass_til"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_paddng_10dp"
             app:hintEnabled="false"
-            android:layout_marginTop="@dimen/common_paddng_25dp"
-            app:passwordToggleTint="@color/text_color_light_grey"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/text_color_light_grey">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtcnfPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:capitalize="words"
-            android:hint="@string/confirm_pwd"
-            android:padding="@dimen/common_paddng_10dp"
-            android:background="@drawable/edit_text_login_bg"
-            android:alpha="0.5"
-            android:textColor="@color/text_color_white"
-            android:textColorHint="@color/text_color_white"
-            android:inputType="textPassword" />
-        <View
-            android:id="@+id/cnfPasswordLine"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/white_seperator_line_height"
-            android:layout_below="@+id/eEmail"
-            android:background="@color/text_color_white"
-            android:textColor="@color/text_color_white" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtcnfPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/edit_text_login_bg"
+                android:capitalize="words"
+                android:hint="@string/confirm_pwd"
+                android:inputType="textPassword"
+                android:padding="@dimen/common_paddng_10dp"
+                android:textColor="@color/color_text_dark_layout"
+                android:textColorHint="@color/color_text_dark_layout" />
+
+            <View
+                android:id="@+id/cnfPasswordLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/white_seperator_line_height"
+                android:layout_below="@+id/eEmail"
+                android:background="@color/text_color_white"
+                android:textColor="@color/text_color_white"
+                android:visibility="gone" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -164,11 +150,42 @@
             android:layout_height="@dimen/login_btn_height"
             android:layout_below="@+id/edCompanyName"
             android:layout_marginTop="@dimen/common_paddng_25dp"
-            android:textAllCaps="false"
+            android:background="@drawable/background_dark_button"
             android:text="@string/Submit"
-            android:textColor="@color/text_color_white"
-            android:background="@color/login_btn_color"
-            android:textSize="@dimen/text_size_large"/>
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_dark_layout"
+            android:textSize="@dimen/text_size_large" />
+
+        <RelativeLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_paddng_15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txthaveAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/HaveAcc"
+                android:textAllCaps="false"
+                android:textColor="@color/color_text_dark_layout"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_paddng_10dp"
+                android:layout_toRightOf="@+id/txthaveAcc"
+                android:background="@android:color/transparent"
+                android:text="@string/loginSpace"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
 
     </LinearLayout>
 

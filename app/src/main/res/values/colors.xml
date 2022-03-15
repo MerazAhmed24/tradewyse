@@ -162,5 +162,7 @@
     <color name="color_bg_buy">#285D34</color>
     <color name="color_bg_sell">#B33F40</color>
     <color name="color_bg_avoid">#858484</color>
+    <color name="color_button_dark_background">#EDF0F4</color>
+    <color name="color_edit_text_border_stroke">#5A5A61</color>
 
 </resources>
