@@ -28,7 +28,7 @@
             android:gravity="center"
             android:padding="@dimen/common_paddng_10dp"
             android:text="@string/make_a_tip"
-            android:textColor="@color/text_color_white"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="@dimen/text_size_xlarge" />
 
         <ImageView
@@ -187,7 +187,7 @@
         android:layout_marginEnd="@dimen/common_paddng_5dp"
         android:minWidth="@dimen/_179sdp"
         android:orientation="vertical"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -279,7 +279,7 @@
                         android:textAlignment="center"
                         android:textColor="@color/color_text_sell"
                         android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
