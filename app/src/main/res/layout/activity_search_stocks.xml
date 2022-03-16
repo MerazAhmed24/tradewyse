@@ -43,7 +43,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/color_text_avoid">
+                    android:background="@drawable/bg_search_stock_edit_text">
 
                     <EditText
                         android:id="@+id/edtSearchStock"
@@ -52,7 +52,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="@dimen/common_paddng_5dp"
                         android:layout_weight="1"
-                        android:background="@color/color_text_avoid"
+                        android:background="@drawable/bg_search_stock_edit_text"
                         android:hint="Enter symbol or company name"
                         android:imeOptions="actionSearch"
                         android:inputType="textCapCharacters"
