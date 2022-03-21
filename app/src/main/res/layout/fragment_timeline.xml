@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:id="@+id/frag_timeline_parent_rl"
     android:layout_height="match_parent"
-    android:background="@color/color_app_dark_bg"
+    android:background="@color/color_app_dark_bg_india"
     tools:context="com.info.fragment.TimelineFragment">
 
     <LinearLayout
@@ -25,10 +25,10 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
-            android:background="@drawable/bg_fill_white_round_border"
+            android:background="@drawable/background_dark_button"
             android:gravity="center"
             android:text="All"
-            android:textColor="@color/color_app_dark_bg"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="14dp"
             android:textStyle="bold" />
 
@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Followed Tips"
-            android:textColor="@color/text_color_white"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="14dp"
             android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Comments"
-            android:textColor="@color/text_color_white"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="14dp"
             android:textStyle="bold" />
 
@@ -64,10 +64,10 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Followers"
-            android:visibility="gone"
             android:textColor="@color/text_color_white"
             android:textSize="14dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone" />
     </LinearLayout>
 
     <RelativeLayout
@@ -99,11 +99,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_toLeftOf="@id/diamondIcon"
                 android:padding="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_10sdp"
                 android:text="It's Your Time Now!"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_19sdp" />
         </RelativeLayout>
 
@@ -124,7 +124,7 @@
                 android:gravity="left"
                 android:padding="@dimen/_10sdp"
                 android:text="@string/_1_track_the_comments_you_ve_made_on_mentor_tips"
-                android:textColor="@android:color/white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_13sdp" />
 
             <TextView
@@ -135,7 +135,7 @@
                 android:gravity="left"
                 android:padding="@dimen/_10sdp"
                 android:text="@string/_2_save_tips_and_see_their_progress_here"
-                android:textColor="@android:color/white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_13sdp" />
 
             <TextView
@@ -146,7 +146,7 @@
                 android:gravity="left"
                 android:padding="@dimen/_10sdp"
                 android:text="@string/_3_share_tips_and_chat_with_your_mentors_followers"
-                android:textColor="@android:color/white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_13sdp" />
 
             <TextView
@@ -157,7 +157,7 @@
                 android:gravity="left"
                 android:padding="@dimen/_10sdp"
                 android:text="@string/hint_visit_other_people_s_profiles_to_connect_and_learn_from_them"
-                android:textColor="@android:color/white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_13sdp" />
         </LinearLayout>
     </RelativeLayout>

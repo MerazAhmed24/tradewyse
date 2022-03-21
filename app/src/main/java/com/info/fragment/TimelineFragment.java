@@ -165,11 +165,11 @@ public class TimelineFragment extends BaseFragment implements com.info.interface
 
         setEmptyDataText();
         if (((ProfileTabbedActivity) getActivity()).fromLoggedInProfile) {
-            (view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
-            recList.setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
+            (view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.transparent));
+            recList.setBackgroundColor(getResources().getColor(R.color.transparent));
         } else {
-            (view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
-            recList.setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
+            (view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.transparent));
+            recList.setBackgroundColor(getResources().getColor(R.color.transparent));
         }
         initScrollListener();
     }
@@ -211,17 +211,17 @@ public class TimelineFragment extends BaseFragment implements com.info.interface
     }
 
     private void tvFragAllClicked() {
-        tvFragmentAll.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        tvFragmentAll.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        tvFragmentAll.setBackground(getResources().getDrawable(R.drawable.background_dark_button));
+        tvFragmentAll.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentComment.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentComment.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentComment.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentFollowers.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentSavedTips.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         ACTIVITY_TYPE = "All";
         isFirstTime = true;
@@ -232,17 +232,17 @@ public class TimelineFragment extends BaseFragment implements com.info.interface
     }
 
     private void tvFragSavedTipsClicked() {
-        tvFragmentSavedTips.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        tvFragmentSavedTips.setBackground(getResources().getDrawable(R.drawable.background_dark_button));
+        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentAll.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentAll.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentAll.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentComment.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentComment.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentComment.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentFollowers.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         ACTIVITY_TYPE = ACTIVITY_TYPE_TIP_PIN;
         isFirstTime = true;
@@ -255,16 +255,16 @@ public class TimelineFragment extends BaseFragment implements com.info.interface
 
     private void tvFragCommentsClicked() {
         tvFragmentSavedTips.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentAll.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentAll.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentAll.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
-        tvFragmentComment.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        tvFragmentComment.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        tvFragmentComment.setBackground(getResources().getDrawable(R.drawable.background_dark_button));
+        tvFragmentComment.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentFollowers.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         ACTIVITY_TYPE = ACTIVITY_TYPE_COMMENT;
         isFirstTime = true;
@@ -277,16 +277,16 @@ public class TimelineFragment extends BaseFragment implements com.info.interface
 
     private void tvFragFollwersClicked() {
         tvFragmentSavedTips.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentSavedTips.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentAll.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentAll.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentAll.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFragmentComment.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFragmentComment.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFragmentComment.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
-        tvFragmentFollowers.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        tvFragmentFollowers.setBackground(getResources().getDrawable(R.drawable.background_dark_button));
+        tvFragmentFollowers.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         ACTIVITY_TYPE = Constants.ACTIVITY_TYPE_FOLLOW_USER;
         isFirstTime = true;

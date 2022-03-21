@@ -59,7 +59,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:background="@color/color_app_dark_bg_india"
             android:gravity="center"
             android:orientation="vertical"
             android:visibility="gone">
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No Stocks"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_medium"
                 android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/common_paddng_10dp"
                 android:text="Please add stock using the 🔍 symbol."
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 

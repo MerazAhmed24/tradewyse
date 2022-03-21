@@ -17,11 +17,11 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:background="@color/text_color_grey" />
+            android:background="@color/color_small_text__dark_layout" />
 
         <ImageView
             android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:layout_marginTop="@dimen/common_paddng_20dp"
             android:src="@drawable/drawable_circle" />
@@ -74,7 +74,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:text="@string/tweeted"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_large" />
                 </LinearLayout>
 
@@ -90,12 +90,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.9"
-                        android:background="@drawable/bg_with_white_rounded_border"
+                        android:background="@drawable/mentor_list_item_bg_rounded"
                         android:justificationMode="inter_word"
                         android:maxEms="10"
                         android:padding="@dimen/_5sdp"
                         android:text="$JSM current price: $20.52 suggested entry: $21.95 exit: $24.17 and stop: $22.00 Stock Tip made at 21.95 price by @starvivek91"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_large" />
 
                     <TextView
@@ -108,7 +108,7 @@
                         android:gravity="right"
                         android:padding="@dimen/common_paddng_2dp"
                         android:text="8:35 pm"
-                        android:textColor="@color/dot_dark_screen3"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="@dimen/text_size_small" />
 
                 </LinearLayout>

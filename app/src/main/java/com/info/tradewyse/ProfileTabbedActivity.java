@@ -314,10 +314,12 @@ public class ProfileTabbedActivity extends BaseActivity implements View.OnClickL
 
         if (fromLoggedInProfile) {
             //(view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
-            tabLayout.setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
+            //tabLayout.setBackgroundColor(getResources().getColor(R.color.color_border_stroke));
+
+            tabLayout.setBackgroundResource(R.drawable.mentor_list_item_bg_rounded);
         } else {
             //(view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
-            tabLayout.setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
+            tabLayout.setBackgroundResource(R.drawable.mentor_list_item_bg_rounded);
         }
     }
 

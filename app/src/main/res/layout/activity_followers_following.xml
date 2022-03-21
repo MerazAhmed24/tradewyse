@@ -14,7 +14,7 @@
         android:id="@+id/parent_rl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_app_dark_bg"
+        android:background="@color/color_app_dark_bg_india"
         android:orientation="vertical"
         tools:context="com.info.tradewyse.FollowersFollowingActivity">
 
@@ -22,7 +22,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
-            android:background="@drawable/toolbar_bg_new">
+            android:background="@color/transparent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                     android:gravity="center"
                     android:inputType="textNoSuggestions"
                     android:text="@string/Follows"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -66,10 +66,10 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_2sdp"
                 android:layout_weight="1"
-                android:background="@drawable/bg_fill_white_round_border"
+                android:background="@drawable/background_dark_button"
                 android:gravity="center"
                 android:text="@string/followers"
-                android:textColor="@color/color_app_dark_bg"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="14dp"
                 android:textStyle="bold" />
 
@@ -81,7 +81,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/Following"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="14dp"
                 android:textStyle="bold" />
 
@@ -93,9 +93,10 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tab_bar"
             android:layout_above="@+id/dividerView"
-            android:layout_marginTop="5dp"/>
+            android:layout_below="@+id/tab_bar"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp" />
 
         <ProgressBar
             android:id="@+id/progress"
@@ -217,6 +218,7 @@
             android:layout_height="1dp"
             android:layout_above="@+id/bottomView"
             android:background="@drawable/divider_shape" />
+
         <include
             layout="@layout/footer_layout"
             bind:footerModel="@{footerModel}" />

@@ -105,7 +105,7 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
         textViewEmptyDesLink = findViewById(R.id.textViewEmptyDesLink);
         bottomLinearLayout = findViewById(R.id.bottomView);
         //progressBar.setVisibility(View.VISIBLE);
-        Common.BottomTabColorChange(ServicesActivity.this,bottomLinearLayout);
+       // Common.BottomTabColorChange(ServicesActivity.this,bottomLinearLayout);
 
 
 
@@ -132,11 +132,11 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
 
     @SuppressLint("UseCompatLoadingForDrawables")
     private void AllServicesClicked() {
-        textViewAllServices.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        textViewAllServices.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        textViewAllServices.setBackground(getResources().getDrawable(R.drawable.bg_service_selector_blue));
+        textViewAllServices.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         textViewMyServices.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        textViewMyServices.setTextColor(getResources().getColor(R.color.text_color_white));
+        textViewMyServices.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
         selectedTab = 1;
 
         if (ALL_SERVICE_TYPE.equalsIgnoreCase("-1")) {
@@ -149,11 +149,11 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
 
     @SuppressLint("UseCompatLoadingForDrawables")
     private void MyServicesClicked() {
-        textViewMyServices.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        textViewMyServices.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        textViewMyServices.setBackground(getResources().getDrawable(R.drawable.bg_service_selector_blue));
+        textViewMyServices.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         textViewAllServices.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        textViewAllServices.setTextColor(getResources().getColor(R.color.text_color_white));
+        textViewAllServices.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
         selectedTab = 2;
 
         if (ALL_SERVICE_TYPE.equalsIgnoreCase("-1")) {

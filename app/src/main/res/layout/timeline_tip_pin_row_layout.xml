@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:background="@color/text_color_grey" />
+            android:background="@color/color_small_text__dark_layout" />
 
         <ImageView
             android:layout_width="15dp"
@@ -52,7 +52,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
-                android:background="@color/text_color_grey" />
+                android:background="@color/color_small_text__dark_layout" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:text="Followed Tip"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="@dimen/text_size_medium" />
                 </LinearLayout>
 
@@ -89,15 +89,15 @@
                         android:id="@+id/center_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:weightSum="2">
 
                         <LinearLayout
                             android:layout_width="@dimen/_150sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
                             android:layout_weight="0.1"
-                            android:background="@drawable/bg_fill_white_round_border"
+                            android:background="@drawable/mentor_list_item_bg_rounded"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -114,7 +114,7 @@
                                     android:layout_width="@dimen/_25sdp"
                                     android:layout_height="@dimen/_25sdp"
                                     android:layout_gravity="center_vertical"
-                                    android:background="@drawable/ic_user_default"
+                                    android:background="@drawable/ic_baseline_account_circle_24"
                                     app:roundAsCircle="true"
                                     fresco:actualImageScaleType="centerCrop"
                                     fresco:viewAspectRatio="1.33" />
@@ -127,7 +127,7 @@
                                     android:layout_marginLeft="@dimen/_5sdp"
                                     android:padding="@dimen/_3sdp"
                                     android:text="@string/user_name"
-                                    android:textColor="@color/text_color_dark_grey1"
+                                    android:textColor="@color/color_text_dark_layout"
                                     android:textSize="@dimen/text_size_vsmall" />
                             </LinearLayout>
 
@@ -137,7 +137,7 @@
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:layout_marginTop="@dimen/_2sdp"
                                 android:layout_marginRight="@dimen/_5sdp"
-                                android:background="@color/text_color_light_grey" />
+                                android:background="@color/color_divider" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -162,7 +162,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="GIB"
-                                        android:textColor="@color/dark_black_color"
+                                        android:textColor="@color/color_text_dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -176,7 +176,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="@string/entry"
-                                        android:textColor="@color/text_color_dark_grey1"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -188,7 +188,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="$62.25"
-                                        android:textColor="@color/text_color_green"
+                                        android:textColor="@color/color_text_dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -208,7 +208,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="$62.25"
-                                        android:textColor="@color/dark_black_color"
+                                        android:textColor="@color/color_text_dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -221,7 +221,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="@string/exit"
-                                        android:textColor="@color/text_color_dark_grey1"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -233,7 +233,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="$62.25"
-                                        android:textColor="@color/text_color_green"
+                                        android:textColor="@color/color_text_dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -252,12 +252,12 @@
                                         android:layout_marginLeft="@dimen/_3sdp"
                                         android:layout_marginRight="@dimen/_3sdp"
                                         android:background="@drawable/rounded_corner_bg_green"
+                                        android:ems="3"
                                         android:gravity="center_horizontal"
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="@string/buy"
-                                        android:ems="3"
-                                        android:textColor="@color/text_color_white"
+                                        android:textColor="@color/color_text_buy"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -270,7 +270,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="STOP"
-                                        android:textColor="@color/text_color_dark_grey1"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -282,7 +282,7 @@
                                         android:maxLines="1"
                                         android:padding="@dimen/_2sdp"
                                         android:text="$62.25"
-                                        android:textColor="@color/dark_black_color"
+                                        android:textColor="@color/color_text_dark_layout"
                                         android:textSize="@dimen/text_size_small_plus"
                                         android:textStyle="bold" />
 
@@ -296,13 +296,13 @@
                             android:id="@+id/txtTime"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1.9"
-                            android:layout_marginBottom="@dimen/_7sdp"
-                            android:gravity="right"
                             android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_weight="1.9"
+                            android:gravity="right"
                             android:padding="@dimen/common_paddng_2dp"
                             android:text="8:35 pm"
-                            android:textColor="@color/dot_dark_screen3"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="@dimen/text_size_small" />
 
                     </LinearLayout>
@@ -333,7 +333,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginLeft="@dimen/_3sdp"
                                 android:text="2"
-                                android:textColor="@color/tw__solid_white"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_large" />
                         </LinearLayout>
 
@@ -359,7 +359,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginLeft="@dimen/_3sdp"
                                 android:text="2"
-                                android:textColor="@color/tw__solid_white"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_large" />
                         </LinearLayout>
                     </RelativeLayout>
