@@ -80,11 +80,11 @@ public class ServiceFragment extends BaseFragment implements View.OnClickListene
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         if (((ProfileTabbedActivity) getActivity()).fromLoggedInProfile) {
-            (view.findViewById(R.id.frag_service_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
-            rvService.setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
+            (view.findViewById(R.id.frag_service_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg_india));
+            rvService.setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg_india));
         } else {
-            (view.findViewById(R.id.frag_service_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
-            rvService.setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
+            (view.findViewById(R.id.frag_service_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg_india));
+            rvService.setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg_india));
         }
     }
 

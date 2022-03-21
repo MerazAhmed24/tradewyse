@@ -112,10 +112,10 @@ public class ServiceAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recyc
             }
 
             if (fromLoggedInProfile) {
-                holder.llRoot.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                holder.llRoot.setBackgroundColor(context.getResources().getColor(R.color.transparent));
                 //holder.txtServiceType.setVisibility(View.VISIBLE);
             } else {
-                holder.llRoot.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                holder.llRoot.setBackgroundColor(context.getResources().getColor(R.color.transparent));
                 //holder.txtServiceType.setVisibility(View.GONE);
             }
 
@@ -312,14 +312,14 @@ public class ServiceAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recyc
             titleViewHolder.txtServiceTitle.setText(userServiceList.get(position).getServiceHeaderTitle());
 
             if (isFromHomePageService) {
-                titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
                 if (((ProfileTabbedActivity) activityContext).fromLoggedInProfile) {
-                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
                     //titleViewHolder.txtServiceTitle.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
                 } else {
-                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
                     //titleViewHolder.txtServiceTitle.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
                 }
             }
@@ -367,13 +367,13 @@ public class ServiceAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recyc
             titleViewHolder.txtServiceTitle.setText(userServiceList.get(headerPosition).getServiceHeaderTitle());
 
             if (isFromHomePageService) {
-                titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
                 if (((ProfileTabbedActivity) activityContext).fromLoggedInProfile) {
-                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
                 } else {
-                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                    titleViewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
                 }
             }
         }

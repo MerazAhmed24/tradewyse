@@ -22,13 +22,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/dividerView"
-            android:background="@color/colorPrimary"
+            android:background="@color/color_app_dark_bg_india"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/toolbar_bg_new"
+                android:background="@color/transparent"
                 android:orientation="vertical"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -80,7 +80,7 @@
                         android:layout_width="@dimen/profile_image_height"
                         android:layout_height="@dimen/profile_image_weidth"
                         android:layout_gravity="center"
-                        android:background="@drawable/place_holder_profile_icon"
+                        android:background="@drawable/ic_baseline_account_circle_24"
                         android:visibility="visible"
                         app:roundAsCircle="true"
                         fresco:actualImageScaleType="centerCrop"
@@ -161,7 +161,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="0"
-                                    android:textColor="@color/text_color_white"
+                                    android:textColor="@color/color_small_text__dark_layout"
                                     android:textSize="17sp"
                                     android:textStyle="bold" />
 
@@ -170,7 +170,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Followers"
-                                    android:textColor="@color/text_color_white"
+                                    android:textColor="@color/color_text_dark_layout"
                                     android:textSize="17sp"
                                     android:textStyle="bold" />
 
@@ -190,7 +190,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="0"
-                                    android:textColor="@color/text_color_white"
+                                    android:textColor="@color/color_small_text__dark_layout"
                                     android:textSize="17sp"
                                     android:textStyle="bold" />
 
@@ -199,7 +199,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Following"
-                                    android:textColor="@color/text_color_white"
+                                    android:textColor="@color/color_text_dark_layout"
                                     android:textSize="17sp"
                                     android:textStyle="bold" />
 
@@ -220,12 +220,12 @@
                                 android:id="@+id/txtFollowBtn"
                                 android:layout_width="95dp"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
+                                android:layout_gravity="bottom"
                                 android:background="@drawable/rect_border"
                                 android:gravity="center"
                                 android:paddingVertical="3dp"
                                 android:text=""
-                                android:textColor="@color/text_color_white"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="@dimen/text_size_large" />
                         </LinearLayout>
                     </RelativeLayout>
@@ -337,13 +337,13 @@
                 style="@style/MyTabLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color_app_dark_bg"
+                android:background="@drawable/mentor_list_item_bg_rounded"
                 android:paddingLeft="@dimen/_5sdp"
                 android:paddingRight="@dimen/_5sdp"
-                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabIndicatorColor="@color/color_border_stroke"
                 app:tabIndicatorHeight="4dp"
-                app:tabSelectedTextColor="@color/text_color_white"
-                app:tabTextColor="@color/text_color_white">
+                app:tabSelectedTextColor="@color/color_text_dark_layout"
+                app:tabTextColor="@color/color_text_dark_layout">
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/tabItem"

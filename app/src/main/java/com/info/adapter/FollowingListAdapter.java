@@ -74,10 +74,10 @@ public class FollowingListAdapter extends RecyclerView.Adapter<FollowingListAdap
 
         if (fromLoggedInProfile) {
             //(view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
-            holder.rootLayout.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+            holder.rootLayout.setBackgroundResource(R.drawable.mentor_list_item_bg_rounded);
         } else {
             //(view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
-            holder.rootLayout.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+            holder.rootLayout.setBackgroundResource(R.drawable.mentor_list_item_bg_rounded);
         }
 
         setUserImage(holder.imgProfile, model);
@@ -214,9 +214,9 @@ public class FollowingListAdapter extends RecyclerView.Adapter<FollowingListAdap
                         txtFollowView.setText(context.getResources().getString(R.string.Following));
                         mOnFollowItemClick.onFollowClick(position);
                         if (fromLoggedInProfile) {
-                            txtFollowView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                            txtFollowView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
                         } else {
-                            txtFollowView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                            txtFollowView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
                         }
                     }
                 }

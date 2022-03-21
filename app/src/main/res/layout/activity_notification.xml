@@ -19,13 +19,19 @@
         <include
             android:id="@+id/include_header"
             layout="@layout/toolbar_notification" />
+        <View
+            android:id="@+id/seperator"
+            style="@style/item_separator"
+            android:background="@color/text_color_grey"
+            android:textColor="@color/text_color_dark_grey"
+            android:layout_below="@+id/include_header" />
 
         <com.info.commons.OnlyVerticalSwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/dividerView"
-            android:layout_below="@id/include_header"
+            android:layout_below="@id/seperator"
             android:visibility="visible">
 
             <RelativeLayout

@@ -173,10 +173,10 @@ public class FollowersFollowingActivity extends AppCompatActivity implements Vie
 
         if (fromLoggedInProfile) {
             //(view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
-            (findViewById(R.id.parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg));
+            (findViewById(R.id.parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg_india));
         } else {
             //(view.findViewById(R.id.frag_timeline_parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
-            (findViewById(R.id.parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_other_profile_bg));
+            (findViewById(R.id.parent_rl)).setBackgroundColor(getResources().getColor(R.color.color_app_dark_bg_india));
         }
     }
 
@@ -228,22 +228,22 @@ public class FollowersFollowingActivity extends AppCompatActivity implements Vie
     }
 
     private void tvFollowingClicked() {
-        tvFollowing.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        tvFollowing.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        tvFollowing.setBackground(getResources().getDrawable(R.drawable.background_dark_button));
+        tvFollowing.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFollowers.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFollowers.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFollowers.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
         isFromFollowing = true;
         //mAdapter.EmptyList();
         getAllFollowUserListByUserName(userName, 0, true);
     }
 
     private void tvFollowerClicked() {
-        tvFollowers.setBackground(getResources().getDrawable(R.drawable.bg_fill_white_round_border));
-        tvFollowers.setTextColor(getResources().getColor(R.color.color_app_dark_bg));
+        tvFollowers.setBackground(getResources().getDrawable(R.drawable.background_dark_button));
+        tvFollowers.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
 
         tvFollowing.setBackground(getResources().getDrawable(R.drawable.bg_transparent));
-        tvFollowing.setTextColor(getResources().getColor(R.color.text_color_white));
+        tvFollowing.setTextColor(getResources().getColor(R.color.color_text_dark_layout));
         isFromFollowing = false;
         //mAdapter.EmptyList();
         getAllFollowUserListByUserName(userName, 0, true);

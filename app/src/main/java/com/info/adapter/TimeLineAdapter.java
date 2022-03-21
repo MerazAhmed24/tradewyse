@@ -121,10 +121,10 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
             FollowUserViewHolder followUserViewHolder = (FollowUserViewHolder) holder;
             SpannableString ss1 = new SpannableString(timeLineDataModel.getFollowUserName() + " followed You.");
             if (fromLoggedInProfile) {
-                followUserViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                followUserViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
-                followUserViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                followUserViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             }
             if (fromLoggedInProfile || tradWyseSession.getUserName().equalsIgnoreCase(otherUserName)) {
@@ -137,7 +137,7 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
                 }
             }
             ss1.setSpan(new RelativeSizeSpan(1.1f), 0, timeLineDataModel.getFollowUserName().length(), 0); // set size
-            ss1.setSpan(new ForegroundColorSpan(Color.WHITE), 0, timeLineDataModel.getFollowUserName().length(), 0);// set color
+            ss1.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.color_text_dark_layout)), 0, timeLineDataModel.getFollowUserName().length(), 0);// set color
             ss1.setSpan(new StyleSpan(Typeface.BOLD), 0, timeLineDataModel.getFollowUserName().length(), 0);// set bold
 
             followUserViewHolder.txtName.setText(ss1);
@@ -185,10 +185,10 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
         } else if (timeLineDataModel.getActivityType().equalsIgnoreCase(Constants.ACTIVITY_TYPE_TIP_TWEET_DETAIL)) {
             TweetDetailRowViewHolder tweetDetailRowViewHolder = (TweetDetailRowViewHolder) holder;
             if (fromLoggedInProfile) {
-                tweetDetailRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                tweetDetailRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
-                tweetDetailRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                tweetDetailRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             }
             tweetDetailRowViewHolder.tvTweet.setText(timeLineDataModel.getTweetText());
@@ -206,10 +206,10 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
         else if (timeLineDataModel.getActivityType().equalsIgnoreCase(Constants.ACTIVITY_TYPE_TIP_PIN)) {
             TipPinRowViewHolder tipPinRowViewHolder = (TipPinRowViewHolder) holder;
             if (fromLoggedInProfile) {
-                tipPinRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                tipPinRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
-                tipPinRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                tipPinRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             }
             if (timeLineDataModel.getTipResponse() != null) {
@@ -226,14 +226,14 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
 
                 tipPinRowViewHolder.tvStockSuggestion.setText(timeLineDataModel.getTipResponse().getTip().getStockSuggestion());
                 if (timeLineDataModel.getTipResponse().getTip().getStockSuggestion().toUpperCase().equalsIgnoreCase("avoid")) {
-                    tipPinRowViewHolder.tvStockSuggestion.setTextColor(Color.parseColor("#707890"));
+                    tipPinRowViewHolder.tvStockSuggestion.setTextColor(context.getResources().getColor(R.color.color_text_avoid));
                     tipPinRowViewHolder.tvStockSuggestion.setBackgroundResource(R.drawable.text_backgroud_black);
                 } else if (timeLineDataModel.getTipResponse().getTip().getStockSuggestion().toUpperCase().equalsIgnoreCase("sell")) {
                     tipPinRowViewHolder.tvStockSuggestion.setBackgroundResource(R.drawable.text_backgroud_red);
-                    tipPinRowViewHolder.tvStockSuggestion.setTextColor(Color.parseColor("#a94018"));
+                    tipPinRowViewHolder.tvStockSuggestion.setTextColor(context.getResources().getColor(R.color.color_text_sell));
                 } else if (timeLineDataModel.getTipResponse().getTip().getStockSuggestion().toUpperCase().equalsIgnoreCase("buy")) {
                     tipPinRowViewHolder.tvStockSuggestion.setBackgroundResource(R.drawable.text_backgroud_green);
-                    tipPinRowViewHolder.tvStockSuggestion.setTextColor(Color.parseColor("#1e841c"));
+                    tipPinRowViewHolder.tvStockSuggestion.setTextColor(context.getResources().getColor(R.color.color_text_buy));
                 }
 
                 Common.changeLikeBtnBg(context, tipPinRowViewHolder.ivLike, timeLineDataModel.getTipResponse().isUserLikeStatus());
@@ -263,10 +263,10 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
         else if (timeLineDataModel.getActivityType().equalsIgnoreCase(Constants.ACTIVITY_TYPE_COMMENT)) {
             CommentRowViewHolder commentRowViewHolder = (CommentRowViewHolder) holder;
             if (fromLoggedInProfile) {
-                commentRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                commentRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
-                commentRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                commentRowViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             }
 
@@ -278,7 +278,7 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
                     ss1 = new SpannableString(otherUserName + " commented on " + timeLineDataModel.getTipResponse().getTip().getStockName());
                 }
                 ss1.setSpan(new RelativeSizeSpan(1.1f), (ss1.length() - timeLineDataModel.getTipResponse().getTip().getStockName().length()), ss1.length(), 0); // set size
-                ss1.setSpan(new ForegroundColorSpan(Color.WHITE), (ss1.length() - timeLineDataModel.getTipResponse().getTip().getStockName().length()), ss1.length(), 0);// set color
+                ss1.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.color_text_dark_layout)), (ss1.length() - timeLineDataModel.getTipResponse().getTip().getStockName().length()), ss1.length(), 0);// set color
                 ss1.setSpan(new StyleSpan(Typeface.BOLD), (ss1.length() - timeLineDataModel.getTipResponse().getTip().getStockName().length()), ss1.length(), 0);// set bold
 
                 commentRowViewHolder.tvComment.setText(ss1);
@@ -300,10 +300,10 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
         } else if (timeLineDataModel.getActivityType().equalsIgnoreCase(Constants.ACTIVITY_TYPE_DATE_ROW)) {
             DateTypeViewHolder dateTypeViewHolder = (DateTypeViewHolder) holder;
             if (fromLoggedInProfile) {
-                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
-                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             }
             Long currentNYTInMiliseconds = DateTimeHelperElapsed.getNewYorkCurrentTimeInMiliSec();
@@ -367,10 +367,10 @@ public class TimeLineAdapter extends StickyAdapter<RecyclerView.ViewHolder, Recy
         if (headerPosition != -1) {
             DateTypeViewHolder dateTypeViewHolder = (DateTypeViewHolder) holder;
             if (fromLoggedInProfile) {
-                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg));
+                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             } else {
-                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_other_profile_bg));
+                dateTypeViewHolder.parentView.setBackgroundColor(context.getResources().getColor(R.color.color_app_dark_bg_india));
 
             }
             Long currentNYTInMiliseconds = DateTimeHelperElapsed.getNewYorkCurrentTimeInMiliSec();

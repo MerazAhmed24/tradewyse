@@ -17,7 +17,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="@color/text_color_grey" />
+            android:background="@color/color_small_text__dark_layout" />
 
         <ImageView
             android:layout_width="15dp"
@@ -47,9 +47,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginTop="@dimen/common_paddng_3dp"
-                android:layout_toRightOf="@+id/imgProfile"
                 android:text="You commented on "
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_large" />
 
         </RelativeLayout>
@@ -80,7 +79,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/_3sdp"
                     android:text="2"
-                    android:textColor="@color/tw__solid_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -106,7 +105,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/_3sdp"
                     android:text="2"
-                    android:textColor="@color/tw__solid_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -118,7 +117,7 @@
                 android:layout_centerVertical="true"
                 android:padding="@dimen/common_paddng_2dp"
                 android:text="8:35 pm"
-                android:textColor="@color/dot_dark_screen3"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="@dimen/text_size_small" />
         </RelativeLayout>
     </LinearLayout>

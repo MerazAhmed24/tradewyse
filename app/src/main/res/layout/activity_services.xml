@@ -15,7 +15,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#203257"
+        android:background="@color/color_app_dark_bg_india"
         android:focusableInTouchMode="true"
         tools:context=".ServicesActivity">
 
@@ -45,10 +45,10 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_2sdp"
                 android:layout_weight="1"
-                android:background="@drawable/bg_fill_white_round_border"
+                android:background="@drawable/bg_service_selector_blue"
                 android:gravity="center"
                 android:text="@string/all_services"
-                android:textColor="@color/color_app_dark_bg"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="14dp"
                 android:textStyle="bold" />
 
@@ -60,7 +60,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/my_services"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="14dp"
                 android:textStyle="bold" />
 
@@ -71,7 +71,7 @@
             android:id="@+id/recyclerViewServices"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/layoutFooter"
+            android:layout_above="@+id/dividerView"
             android:layout_below="@+id/tab_bar"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp"
@@ -82,7 +82,7 @@
             android:id="@+id/scrollViewEmpty"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/layoutFooter"
+            android:layout_above="@+id/footerview"
             android:layout_below="@+id/tab_bar"
             android:visibility="gone">
 
@@ -154,11 +154,12 @@
         <View
             android:id="@+id/dividerView"
             android:layout_width="match_parent"
+            android:layout_above="@+id/footerview"
             android:layout_height="1dp"
-            android:layout_above="@+id/bottomView"
             android:background="@drawable/divider_shape" />
 
         <include
+            android:id="@+id/footerview"
             layout="@layout/footer_layout"
             bind:footerModel="@{footerModel}" />
 
