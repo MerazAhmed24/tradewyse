@@ -153,7 +153,7 @@
     <color name="color_icon_tint">#66666A</color>
     <color name="color_border_stroke">#333338</color>
     <color name="color_text_dark_layout">#A2A2A7</color>
-    <color name="color_small_text__dark_layout">#C67F7F88</color>
+    <color name="color_small_text__dark_layout">#C67F7F88</color> // also used to divider color
     <color name="color_text_type_done">#616163</color>
 
     <color name="color_text_avoid">#D6D6E1</color>
@@ -166,5 +166,9 @@
     <color name="color_edit_text_border_stroke">#5A5A61</color>
     <color name="color_divider">#C67F7F88</color>
     <color name="color_cursor_dark">#C6C1C1C1</color>
+    <color name="color_button_enable">#429AF9</color>
+    <color name="color_text_red">#B53334</color>
+    <color name="color_text_green">#285D34</color>
+
 
 </resources>

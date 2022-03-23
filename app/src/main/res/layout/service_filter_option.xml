@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/tip_bg_color"
+    android:id="@+id/bottomsheetDialog"
+    android:background="@color/transparent"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_app_dark_bg_india"
         app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true"
         app:contentPaddingTop="0dp">
@@ -16,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_app_dark_bg_india"
             android:orientation="vertical">
 
             <TextView
@@ -27,15 +30,15 @@
                 android:gravity="center"
                 android:text="@string/services_filter"
                 android:textStyle="bold"
-                android:textColor="@color/text_color_dark_grey"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_large" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="0.5dp"
                 android:layout_marginTop="@dimen/common_paddng_10dp"
-                android:background="@color/text_color_light_grey"
-                android:textColor="@color/colorPrimary"
+                android:background="@color/color_small_text__dark_layout"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="@dimen/text_size_xlarge" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -51,7 +54,7 @@
                 android:gravity="center"
                 android:visibility="gone"
                 android:layout_margin="@dimen/common_paddng_15dp"
-                android:textColor="@color/text_color_red"
+                android:textColor="@color/color_text_red"
                 android:textSize="@dimen/text_size_xlarge"/>
 
         </LinearLayout>
@@ -61,6 +64,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_app_dark_bg_india"
         app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true">
 
@@ -71,7 +75,7 @@
             android:layout_margin="14dp"
             android:gravity="center"
             android:text="Cancel"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_xlarge" />
 
     </androidx.cardview.widget.CardView>
