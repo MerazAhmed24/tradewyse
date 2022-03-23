@@ -45,12 +45,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:background="@drawable/bg_rounded_background_blue"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:layout_marginTop="@dimen/_10ssp"
                     app:srcCompat="@drawable/diamond_icon_pramotion"
@@ -77,9 +78,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="@dimen/_50sdp"
-
-                    android:layout_height="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:layout_marginTop="@dimen/_10ssp"
                     app:srcCompat="@drawable/save_icon_pramotion"
@@ -102,12 +102,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:background="@drawable/bg_rounded_background_blue"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:layout_marginTop="@dimen/_10ssp"
                     app:srcCompat="@drawable/bell_icon"
