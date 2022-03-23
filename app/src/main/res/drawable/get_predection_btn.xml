@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#1D2B47" />
-    <!--border color and border width-->
-    <stroke
-        android:width="2dp"
-        android:color="@color/text_color_white" />
-    <!--border radius in dp-->
-    <corners android:radius="32dp" />
-    <stroke android:color="@color/text_color_white" android:width="10dp"/>
-    <!-- Set the same value for both width and height to get a circular shape -->
-
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <corners
+        android:radius="30dp"
+        />
+    <gradient
+        android:centerColor="#01398D"
+        android:startColor="#001830"
+        android:endColor="#0052A2"
+        android:type="linear"
+        />
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp"
+        />
+    <size
+        android:width="270dp"
+        android:height="60dp" />
 </shape>

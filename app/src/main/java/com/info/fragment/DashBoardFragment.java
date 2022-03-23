@@ -733,7 +733,7 @@ public class DashBoardFragment extends BaseFragment implements TipsAdapter.CallT
     private void showFiltersDialog() {
         DashBoardFragment activity = this;
         try {
-            BottomSheetDialog filterOption = new BottomSheetDialog(getActivity());
+            BottomSheetDialog filterOption = new BottomSheetDialog(getActivity(),R.style.CustomBottomSheetDialogTheme);
             View sheetView = activity.getLayoutInflater().inflate(R.layout.filter_option, null);
             TextView filterAITips = sheetView.findViewById(R.id.filterAITips);
             TextView filterMentorTips = sheetView.findViewById(R.id.filterMentorTips);

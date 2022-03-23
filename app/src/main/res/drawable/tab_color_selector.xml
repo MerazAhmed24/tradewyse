@@ -3,12 +3,12 @@
 
     <!-- drawable for selected tab -->
     <item
-        android:drawable="@drawable/tab_background_selected"
+        android:drawable="@drawable/button_shape_more_tab"
         android:state_selected="true"/>
 
     <!-- drawable for unselected tab -->
     <item
-        android:drawable="@drawable/tab_background"
+        android:drawable="@drawable/background_dark_button"
         android:state_selected="false"/>
 
 </selector>

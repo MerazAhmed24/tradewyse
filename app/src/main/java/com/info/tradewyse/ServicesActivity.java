@@ -20,6 +20,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.info.adapter.ServiceAdapter;
 import com.info.adapter.ServiceFilterAdapter;
 import com.info.api.APIClient;
@@ -61,7 +62,7 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
     private TextView textViewAllServices, textViewMyServices;
     private int selectedTab = 1;
     private ScrollView scrollViewEmpty;
-    private LinearLayout layoutEmpty;
+    private LinearLayout layoutEmpty,bottomsheetDialog;
     private TextView textViewEmptyTitle, textViewEmptyDes, textViewEmptyDesLink;
     private TextView otherAction;
     private boolean isFilterList = false;
@@ -104,6 +105,7 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
         textViewEmptyDes = findViewById(R.id.textViewEmptyDes);
         textViewEmptyDesLink = findViewById(R.id.textViewEmptyDesLink);
         bottomLinearLayout = findViewById(R.id.bottomView);
+        bottomsheetDialog = findViewById(R.id.bottomsheetDialog);
         //progressBar.setVisibility(View.VISIBLE);
        // Common.BottomTabColorChange(ServicesActivity.this,bottomLinearLayout);
 
@@ -413,8 +415,9 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
 
     private void showFiltersDialog() {
         try {
-            BottomSheetDialog filterOption = new BottomSheetDialog(this);
+            BottomSheetDialog filterOption = new BottomSheetDialog(this,R.style.CustomBottomSheetDialogTheme);
             View sheetView = getLayoutInflater().inflate(R.layout.service_filter_option, null);
+            //bottomsheetDialog.setBackgroundColor(getResources().getColor(R.color.transparent));
             RecyclerView recyclerViewFilter = sheetView.findViewById(R.id.recyclerViewFilter);
             TextView optionCancel = sheetView.findViewById(R.id.optionCancel);
             TextView filterResetTips = sheetView.findViewById(R.id.filterResetTips);
@@ -483,6 +486,7 @@ public class ServicesActivity extends BaseActivity implements AddSubscribeSugges
         }
 
     }
+
 
     public void getMyServiceListFilter(String serviceTypeId) {
         progressBar.setVisibility(View.VISIBLE);

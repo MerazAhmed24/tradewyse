@@ -3,13 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/tip_bg_color"
+    android:background="@color/transparent"
     android:orientation="vertical">
-
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="@dimen/_5sdp"
+         android:background="@drawable/mentor_list_item_bg_rounded">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/transparent"
         app:cardUseCompatPadding="true"
         app:contentPaddingTop="0dp">
 
@@ -22,17 +27,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/common_paddng_10dp"
+                android:layout_margin="@dimen/common_paddng_12dp"
                 android:gravity="center"
                 android:text="@string/tips_filter"
-                android:textColor="@color/text_color_dark_grey"
+                android:textStyle="bold"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_large" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="0.5dp"
                 android:layout_marginTop="@dimen/common_paddng_10dp"
-                android:background="@color/text_color_light_grey"
+                android:background="@color/color_divider"
                 android:text="Camera"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/text_size_xlarge" />
@@ -45,13 +51,13 @@
                 android:layout_margin="@dimen/common_paddng_15dp"
                 android:gravity="center"
                 android:text="@string/ai_tips"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="@dimen/text_size_xlarge" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/text_color_light_grey"
+                android:layout_height="0.5dp"
+                android:background="@color/color_divider"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/text_size_xlarge" />
 
@@ -62,15 +68,9 @@
                 android:layout_margin="@dimen/common_paddng_15dp"
                 android:gravity="center"
                 android:text="@string/mentors_tips"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/color_small_text__dark_layout"
                 android:textSize="@dimen/text_size_xlarge" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/text_color_light_grey"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/text_size_xlarge" />
 
             <TextView
                 android:id="@+id/filterResetTips"
@@ -84,11 +84,13 @@
                 android:visibility="gone" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
+        android:backgroundTint="@color/color_app_dark_bg_india"
         app:cardUseCompatPadding="true">
 
         <TextView
@@ -98,7 +100,7 @@
             android:layout_margin="@dimen/common_paddng_15dp"
             android:gravity="center"
             android:text="Cancel"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_xlarge" />
 
     </androidx.cardview.widget.CardView>

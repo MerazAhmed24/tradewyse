@@ -4,7 +4,7 @@
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/color_app_dark_bg_india">
 
     <include
         android:id="@+id/include_header"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/include_header"
         android:layout_marginTop="@dimen/_3sdp"
-        android:background="@color/white">
+        android:background="@color/color_app_dark_bg_india">
 
         <LinearLayout
             android:id="@+id/linearViewOnline"
@@ -32,16 +32,15 @@
                 android:layout_marginEnd="@dimen/_6sdp"
                 android:gravity="center"
                 android:text="Members"
-                android:textColor="@color/black" />
+                android:textColor="@color/color_text_dark_layout" />
 
             <ImageView
                 android:id="@+id/imagegroupIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="6dp"
                 android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/ic_group_icon"
-                app:tint="@color/gray" />
+                android:layout_marginEnd="6dp"
+                app:srcCompat="@drawable/ic_group_icon" />
 
             <ImageView
                 android:id="@+id/nextIcon"
@@ -50,7 +49,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="@dimen/common_paddng_15dp"
                 app:srcCompat="@drawable/chevronrightarrow"
-                app:tint="@color/gray" />
+                app:tint="@color/color_icon_tint" />
         </LinearLayout>
 
         <View
@@ -85,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/layoutReplyRoot"
-            android:background="@color/text_color_white"
+            android:background="@color/color_app_dark_bg_india"
             android:foregroundGravity="top" />
 
         <ImageView
@@ -154,22 +153,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginBottom="@dimen/_5sdp"
-        android:background="@color/text_color_white">
+        android:background="@color/transparent">
 
         <View
             android:id="@+id/ViewDivider"
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
+            android:layout_marginBottom="@dimen/_3sdp"
             android:layout_weight="3"
             android:background="@color/gray" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:layout_centerInParent="true"
             android:layout_below="@+id/ViewDivider"
+            android:layout_centerInParent="true"
             android:layout_marginHorizontal="@dimen/_5sdp"
-            android:background="@color/text_color_white"
+            android:background="@drawable/edit_text_login_bg"
             android:paddingVertical="@dimen/_5sdp">
 
             <ImageView
@@ -187,19 +187,23 @@
 
             <EditText
                 android:id="@+id/message_edt"
+
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="1dp"
                 android:layout_toLeftOf="@id/sendTv"
                 android:layout_toRightOf="@id/attachmentIv"
-                android:background="@color/text_color_white"
+                android:background="@null"
                 android:focusable="true"
-                android:inputType="textCapSentences"
                 android:gravity="center_vertical"
                 android:hint="Type your message here."
+                android:inputType="textCapSentences"
                 android:maxLines="9"
                 android:minLines="2"
-                android:textCursorDrawable="@drawable/cursor_color"
+                android:textColor="@color/color_text_dark_layout"
+                android:textColorHint="@color/color_small_text__dark_layout"
+                android:textCursorDrawable="@color/color_cursor_dark"
                 android:textSize="@dimen/_12ssp" />
 
             <TextView
@@ -215,17 +219,17 @@
                 android:paddingRight="@dimen/_10sdp"
                 android:paddingBottom="@dimen/_5sdp"
                 android:text="@string/send"
-                android:textColor="@color/tw__medium_gray"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_12sdp" />
         </RelativeLayout>
     </RelativeLayout>
 
-    <ImageView
+    <View
         android:id="@+id/divider_iv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_1sdp"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_shape"
         android:layout_above="@id/bottom_rl"
-        android:background="@color/graph_color"
         android:visibility="gone" />
 
 </RelativeLayout>
