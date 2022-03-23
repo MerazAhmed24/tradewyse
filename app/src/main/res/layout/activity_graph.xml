@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_app_dark_bg">
+        android:background="@color/color_app_dark_bg_india">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:id="@+id/appbar"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
-                android:background="@drawable/toolbar_bg_new"
+                android:background="@color/transparent"
                 android:fitsSystemWindows="true"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -69,7 +69,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_gravity="center"
                                 android:text="sdf"
-                                android:textColor="@color/text_color_white"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="19dp" />
 
 
@@ -82,7 +82,7 @@
                                 android:gravity="center"
                                 android:maxLines="2"
                                 android:text=""
-                                android:textColor="@color/text_color_white"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_vsmall" />
 
                             <TextView
@@ -132,8 +132,8 @@
                     android:layout_marginTop="@dimen/common_paddng_5dp"
                     android:layout_marginBottom="@dimen/common_paddng_2dp"
                     android:gravity="center"
-                    android:text="$"
-                    android:textColor="@color/text_color_white"
+                    android:text="₹"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="22dp"
                     android:textStyle="normal" />
 
@@ -144,7 +144,7 @@
                     android:layout_below="@+id/profileLayout"
                     android:gravity="center"
                     android:text="356.62"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="28dp"
                     android:textStyle="normal" />
 
@@ -169,7 +169,7 @@
                     android:gravity="left"
                     android:maxLines="1"
                     android:text="NY Time 1.22 PM"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="14sp" />
 
                 <TextView
@@ -183,7 +183,7 @@
                     android:maxLines="1"
                     android:textColor="@color/text_color_green"
                     android:textSize="14sp"
-                    tools:text="$0" />
+                    tools:text="₹0" />
 
                 <TextView
                     android:id="@+id/txtLow"
@@ -195,7 +195,7 @@
                     android:maxLines="1"
                     android:textColor="@color/text_color_red"
                     android:textSize="14sp"
-                    tools:text="$0" />
+                    tools:text="₹0" />
 
             </RelativeLayout>
 
@@ -207,7 +207,7 @@
                 android:layout_marginTop="@dimen/common_paddng_5dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                app:cardBackgroundColor="@color/text_color_white"
+                app:cardBackgroundColor="@color/transparent"
                 app:cardCornerRadius="1dp"
                 app:cardUseCompatPadding="true">
 
@@ -221,9 +221,9 @@
                     app:tabMode="fixed"
                     app:tabPadding="2dp"
                     app:tabRippleColor="@null"
-                    app:tabSelectedTextColor="@color/cardview_dark_background"
+                    app:tabSelectedTextColor="@color/color_text_dark_layout"
                     app:tabTextAppearance="@style/TabTextAppearance"
-                    app:tabTextColor="@color/text_color_white">
+                    app:tabTextColor="@color/color_text_dark_layout">
 
                     <com.google.android.material.tabs.TabItem
                         android:layout_width="wrap_content"
@@ -266,10 +266,10 @@
                 android:layout_marginRight="@dimen/common_paddng_5dp"
                 android:layout_marginBottom="@dimen/common_paddng_3dp"
                 android:layout_weight="1"
-                android:visibility="invisible"
-                android:background="@color/color_app_dark_bg"
+                android:background="@color/transparent"
                 android:clipChildren="false"
-                android:clipToPadding="false" />
+                android:clipToPadding="false"
+                android:visibility="invisible" />
 
 
             <Button
@@ -345,27 +345,25 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="@dimen/common_paddng_20dp"
                 android:layout_marginTop="@dimen/common_paddng_15dp"
                 android:layout_marginRight="@dimen/common_paddng_20dp"
                 android:layout_marginBottom="17dp"
                 android:background="@drawable/get_predection_btn"
-                android:backgroundTint="@color/text_color_white">
+                android:backgroundTint="@color/color_text_dark_layout">
 
                 <TextView
                     android:id="@+id/textViewGetPrediction"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_margin="1dp"
                     android:background="@drawable/get_predection_btn"
-                    android:backgroundTint="#3C1E58"
                     android:gravity="center"
                     android:text="Get 5 Day Prediction"
                     android:textAlignment="center"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="@dimen/_14ssp"
                     android:visibility="visible" />
 

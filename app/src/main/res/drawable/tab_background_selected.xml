@@ -4,10 +4,11 @@
 
     <!-- radius should be half of the desired TabLayout height -->
     <corners
-        android:radius="0dp"/>
+        android:radius="5dp"
+        />
 
     <!-- color of the selected tab -->
     <solid
-        android:color="@color/text_color_white"/>
+        android:color="@color/color_icon_tint"/>
 
 </shape>

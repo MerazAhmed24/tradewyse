@@ -563,13 +563,13 @@ public class GraphStockPrediction extends BaseActivity implements OnNotification
         String suggestion = Common.calculatedSuggestion(sectorNews.getStockPrice(), sectorNews);
         if (suggestion.toUpperCase().equalsIgnoreCase("avoid")) {
             txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_black);
-            txtStatusBuySellAvoid.setTextColor(ContextCompat.getColor(context, R.color.text_color_avoid));
+            txtStatusBuySellAvoid.setTextColor(ContextCompat.getColor(context, R.color.color_text_avoid));
         } else if (suggestion.toUpperCase().equalsIgnoreCase("sell")) {
             txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_red);
-            txtStatusBuySellAvoid.setTextColor(ContextCompat.getColor(context, R.color.text_color_sell));
+            txtStatusBuySellAvoid.setTextColor(ContextCompat.getColor(context, R.color.color_text_sell));
         } else if (suggestion.toUpperCase().equalsIgnoreCase("buy")) {
             txtStatusBuySellAvoid.setBackgroundResource(R.drawable.text_backgroud_green);
-            txtStatusBuySellAvoid.setTextColor(ContextCompat.getColor(context, R.color.text_color_buy));
+            txtStatusBuySellAvoid.setTextColor(ContextCompat.getColor(context, R.color.color_text_buy));
         }
 
         if (suggestion.length() >= 4)
@@ -643,13 +643,13 @@ public class GraphStockPrediction extends BaseActivity implements OnNotification
         }
         // set color to grey if values are --.
         if (!Common.checkStringIsDouble(sectorNews.getAvg10days())) {
-            txtFirstValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
+            txtFirstValue.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         }
         if (!Common.checkStringIsDouble(sectorNews.getAvg50days())) {
-            txtSecondValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
+            txtSecondValue.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         }
         if (!Common.checkStringIsDouble(sectorNews.getAvg200days())) {
-            txtThirdValue.setTextColor(context.getResources().getColor(R.color.text_color_dark_grey));
+            txtThirdValue.setTextColor(context.getResources().getColor(R.color.color_text_dark_layout));
         }
     }
 

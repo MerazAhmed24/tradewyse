@@ -13,13 +13,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:background="@color/color_app_dark_bg_india"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/dividerView"
-            android:background="@color/color_app_dark_bg"
             android:orientation="vertical"
             tools:context=".GraphActivity">
 
@@ -27,7 +27,7 @@
                 android:id="@+id/appbar"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
-                android:background="@drawable/toolbar_bg_new"
+                android:background="@color/transparent"
                 android:fitsSystemWindows="true"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -71,7 +71,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_gravity="center"
                                 android:text=""
-                                android:textColor="@color/text_color_white"
+                                android:textColor="@color/color_text_dark_layout"
 
                                 android:textSize="19dp" />
 
@@ -85,7 +85,7 @@
                                 android:gravity="center"
                                 android:maxLines="2"
                                 android:text=""
-                                android:textColor="@color/text_color_white"
+                                android:textColor="@color/color_text_dark_layout"
                                 android:textSize="@dimen/text_size_vsmall" />
 
                             <TextView
@@ -97,7 +97,7 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginRight="@dimen/common_paddng_10dp"
                                 android:text="Post Tips"
-                                android:textColor="@color/text_color_white"
+                                android:textColor="@color/color_small_text__dark_layout"
                                 android:textSize="@dimen/text_size_medium"
                                 android:visibility="gone">
 
@@ -136,7 +136,7 @@
                     android:layout_marginBottom="@dimen/common_paddng_2dp"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="22dp"
                     android:textStyle="normal" />
 
@@ -147,7 +147,7 @@
                     android:layout_below="@+id/profileLayout"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="28dp"
                     android:textStyle="normal" />
 
@@ -173,7 +173,7 @@
                     android:layout_weight="1"
                     android:gravity="left"
                     android:text=""
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_large" />
 
                 <TextView
@@ -207,7 +207,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/layout1"
                 android:layout_weight="1"
-                android:background="@color/color_app_dark_bg"></com.github.mikephil.charting.charts.LineChart>
+                android:background="@color/transparent"></com.github.mikephil.charting.charts.LineChart>
 
             <TextView
                 android:layout_width="match_parent"
@@ -215,7 +215,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="5-Day Prediction Models:"
-                android:textColor="@color/text_color_white"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_large"></TextView>
 
             <LinearLayout
@@ -236,7 +236,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/common_paddng_5dp"
                     android:text="Technical Model"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_small"></TextView>
 
                 <TextView
@@ -250,7 +250,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/common_paddng_5dp"
                     android:text="VXX Model"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_small"></TextView>
 
                 <TextView
@@ -264,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/common_paddng_5dp"
                     android:text="News Model"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_small_text__dark_layout"
                     android:textSize="@dimen/text_size_small"></TextView>
             </LinearLayout>
 
@@ -363,7 +363,7 @@
                                             android:layout_height="wrap_content"
                                             android:maxLines="1"
                                             android:text="@string/TradeWyseAI"
-                                            android:textColor="@color/text_color_username"
+                                            android:textColor="@color/color_text_dark_layout"
                                             android:textSize="@dimen/text_size_large"
                                             android:textStyle="bold" />
 
@@ -374,7 +374,7 @@
                                             android:layout_below="@id/txtName"
                                             android:maxLines="1"
                                             android:text="@string/momentsAgo"
-                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textColor="@color/color_small_text__dark_layout"
                                             android:textSize="@dimen/text_size_small"
                                             android:visibility="gone" />
                                     </LinearLayout>
@@ -388,7 +388,7 @@
                                         android:paddingLeft="@dimen/common_paddng_5dp"
                                         android:paddingRight="@dimen/common_paddng_5dp"
                                         android:text="   "
-                                        android:textColor="@color/text_color_white"
+                                        android:textColor="@color/color_small_text__dark_layout"
                                         android:textSize="@dimen/text_size_medium"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -402,8 +402,8 @@
                             android:layout_below="@+id/bottomLayout"
                             android:layout_marginTop="@dimen/common_paddng_1dp"
                             android:layout_marginBottom="@dimen/common_paddng_1dp"
-                            android:background="@color/text_color_grey"
-                            android:textColor="@color/text_color_dark_grey"
+                            android:background="@color/color_small_text__dark_layout"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="@dimen/text_size_medium" />
 
                         <RelativeLayout
@@ -433,8 +433,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="@dimen/common_paddng_2dp"
                                     android:layout_marginRight="@dimen/common_paddng_15dp"
-                                    android:text="     "
-                                    android:textColor="@color/text_color_black"
+                                    android:text=""
+                                    android:textColor="@color/color_text_dark_layout"
                                     android:textSize="@dimen/text_size_xxxlarge"
                                     android:textStyle="bold" />
 
@@ -458,7 +458,7 @@
                                             android:gravity="center_vertical"
                                             android:paddingRight="@dimen/common_paddng_7dp"
                                             android:text="@string/news"
-                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textColor="@color/color_small_text__dark_layout"
                                             android:textSize="@dimen/text_size_small"
                                             android:textStyle="bold" />
 
@@ -493,7 +493,7 @@
                                             android:gravity="center_vertical|left"
                                             android:paddingRight="@dimen/common_paddng_1dp"
                                             android:text="@string/sma"
-                                            android:textColor="@color/text_color_dark_grey"
+                                            android:textColor="@color/color_small_text__dark_layout"
                                             android:textSize="@dimen/text_size_small"
                                             android:textStyle="bold" />
 
@@ -509,7 +509,7 @@
                                             android:paddingLeft="@dimen/common_paddng_3dp"
                                             android:paddingRight="@dimen/common_paddng_1dp"
                                             android:text="   "
-                                            android:textColor="@color/text_color_black"
+                                            android:textColor="@color/color_text_dark_layout"
                                             android:textSize="@dimen/text_size_medium"
                                             android:textStyle="bold" />
 
@@ -524,7 +524,7 @@
                                             android:paddingLeft="@dimen/common_paddng_3dp"
                                             android:paddingRight="@dimen/common_paddng_1dp"
                                             android:text="    "
-                                            android:textColor="@color/text_color_black"
+                                            android:textColor="@color/color_text_dark_layout"
                                             android:textSize="@dimen/text_size_medium"
                                             android:textStyle="bold" />
 
@@ -540,7 +540,7 @@
                                             android:paddingLeft="@dimen/common_paddng_3dp"
                                             android:paddingRight="@dimen/common_paddng_5dp"
                                             android:text="   "
-                                            android:textColor="@color/text_color_black"
+                                            android:textColor="@color/color_text_dark_layout"
                                             android:textSize="@dimen/text_size_medium"
                                             android:textStyle="bold" />
                                     </RelativeLayout>
