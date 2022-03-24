@@ -47,7 +47,7 @@
         <activity
             android:name=".ChatRoomMemberActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:exported="false" />
         <activity
@@ -55,7 +55,7 @@
             android:exported="false"
             android:parentActivityName=".DashBoardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="SocialChat" />
@@ -66,44 +66,44 @@
         <activity
             android:name=".SocialChatReplyActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ServicesPaymentActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ServicesActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".MacdAlertDetailsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ChangePasswordActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2" />
+            android:theme="@style/AppTheme.NoActionAndStatusBar" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
             android:name=".FullScreenImagePinchZoomActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".FaqActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".TabbedChatActivity"
             android:parentActivityName=".DashBoardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize">
 
             <!--
@@ -116,7 +116,7 @@
             android:name=".NotificationActivity"
             android:parentActivityName=".DashBoardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -126,7 +126,7 @@
             android:name=".MoreTabActivity"
             android:parentActivityName=".DashBoardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -135,7 +135,7 @@
         <activity
             android:name=".BecomeMentorActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".CreateRoomActivity"
@@ -144,7 +144,7 @@
         <activity
             android:name=".SettingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".SplashActivity"
@@ -174,24 +174,24 @@
         </activity>
         <activity
             android:name=".SubscriptionActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SubscriptionListActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".CheckoutActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".PaymentSuccessActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2" />
+            android:theme="@style/AppTheme.NoActionAndStatusBar" />
         <activity
             android:name=".PaymentFailureActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2" />
+            android:theme="@style/AppTheme.NoActionAndStatusBar" />
 
         <activity
             android:name=".MemeMeActivity"
@@ -235,13 +235,13 @@
         <activity
             android:name=".AddTipsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".TipDetailActivity"
             android:parentActivityName=".DashBoardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:exported="false">
             <intent-filter>
@@ -304,33 +304,33 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".SpecialOfferActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".ChatActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ActiveSessionsActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ConfirmationActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".FollowersFollowingActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
             android:name=".WebViewActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ServiceDetailsScreen"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionAndStatusBar2"
+            android:theme="@style/AppTheme.NoActionAndStatusBar"
             android:windowSoftInputMode="stateAlwaysHidden">
 
             <!--

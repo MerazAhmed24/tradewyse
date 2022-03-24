@@ -13,7 +13,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_primary_dark_list_bg"
+        android:background="@color/color_app_dark_bg_india"
         tools:context="com.info.tradewyse.FaqActivity">
 
         <include

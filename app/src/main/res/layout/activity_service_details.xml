@@ -26,6 +26,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
                 android:layout_height="?android:attr/actionBarSize">
 
                 <androidx.appcompat.widget.AppCompatImageView

@@ -147,7 +147,7 @@
     <color name="textColor2">#C1C1C1</color>
     <color name="textColor3">#F3F3F3</color>
 
-
+// Use color for dark layout design
     <color name="color_app_dark_bg_india">#212123</color>
     <color name="color_app_dark_card_india">#F7090909</color>
     <color name="color_icon_tint">#66666A</color>

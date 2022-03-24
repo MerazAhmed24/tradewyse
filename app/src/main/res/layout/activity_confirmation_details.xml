@@ -4,7 +4,7 @@
     android:id="@+id/layoutRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/text_color_white">
+    android:background="@color/color_app_dark_bg_india">
 
     <include layout="@layout/toolbar_add_tip" />
 
@@ -30,7 +30,7 @@
                     android:layout_centerInParent="true"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Payment Information"
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -66,7 +66,7 @@
                     android:paddingStart="@dimen/_10sdp"
                     android:paddingEnd="@dimen/_10sdp"
                     android:text="@string/card_holder_info"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="14sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -100,7 +100,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/last_4_digits"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/color_text_dark_layout" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/card_no"
@@ -109,7 +109,7 @@
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingEnd="@dimen/_10sdp"
                             android:text=""
-                            android:textColor="@color/text_color_white"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="15sp" />
 
                     </LinearLayout>
@@ -124,7 +124,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/exp"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/color_text_dark_layout" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/expiry_date"
@@ -133,7 +133,7 @@
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingEnd="@dimen/_10sdp"
                             android:text=""
-                            android:textColor="@color/text_color_white"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="15sp" />
                     </LinearLayout>
 
@@ -147,7 +147,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/billing_zip"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/color_text_dark_layout" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/zip_code"
@@ -155,7 +155,7 @@
                             android:layout_height="wrap_content"
                             android:paddingStart="@dimen/_5sdp"
                             android:text=""
-                            android:textColor="@color/text_color_white" />
+                            android:textColor="@color/color_small_text__dark_layout" />
 
                     </LinearLayout>
 
@@ -168,7 +168,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Email:"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/color_text_dark_layout" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/email_id"
@@ -177,7 +177,7 @@
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingEnd="@dimen/_10sdp"
                             android:text=""
-                            android:textColor="@color/text_color_white"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="15sp" />
                     </LinearLayout>
 
@@ -207,7 +207,7 @@
                         android:paddingStart="@dimen/_10sdp"
                         android:paddingEnd="@dimen/_10sdp"
                         android:textColor="@color/text_color_white"
-                        android:textColorHint="@color/text_color_white"
+                        android:textColorHint="@color/color_text_dark_layout"
                         android:textSize="15sp" />
 
                     <View
@@ -281,7 +281,7 @@
                             android:layout_height="wrap_content"
                             android:alpha="0.35"
                             android:text="Subscription Amount"
-                            android:textColor="@color/text_color_white"
+                            android:textColor="@color/color_text_dark_layout"
                             android:textSize="16sp" />
 
 
@@ -311,7 +311,7 @@
                             android:layout_height="wrap_content"
                             android:alpha="0.35"
                             android:text="Discount"
-                            android:textColor="@color/text_color_white"
+                            android:textColor="@color/color_text_dark_layout"
                             android:textSize="16sp" />
 
 
@@ -339,7 +339,7 @@
                             android:layout_height="wrap_content"
                             android:alpha="0.35"
                             android:text="Total Amount"
-                            android:textColor="@color/text_color_white"
+                            android:textColor="@color/color_text_dark_layout"
                             android:textSize="16sp" />
 
 
@@ -393,7 +393,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="@dimen/common_paddng_2dp"
             android:text="Credit Card Secured By"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="14sp" />
 
         <ImageView
@@ -408,15 +408,14 @@
     <Button
         android:id="@+id/btnSubscribe"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_20sdp"
-        android:background="@drawable/round_corner_btn_bg_blue"
-        android:backgroundTint="@color/blue_color"
+        android:background="@drawable/background_dark_button"
         android:gravity="center"
         android:text="@string/subscribe"
         android:textAllCaps="false"

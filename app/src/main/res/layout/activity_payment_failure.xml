@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_color">
+    android:background="@color/color_app_dark_bg_india">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,9 +41,9 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_margin="@dimen/common_paddng_20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_paddng_20dp"
             android:background="@drawable/mentor_list_item_bg_rounded"
             android:padding="@dimen/_15sdp">
 
@@ -64,7 +64,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/well_that_didn_t_work"
-                android:textColor="@color/dark_black_color"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="26sp"
                 android:textStyle="bold" />
 
@@ -113,109 +113,109 @@
                     <ImageView
                         android:layout_width="@dimen/_16sdp"
                         android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/close_icon_gray"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/close_icon_gray" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingStart="@dimen/_5sdp"
                         android:gravity="center|start|center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
                         android:text="@string/you_ve_entered_the_wrong_information"
-                        android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/dark_black_color"/>
+                        android:textColor="@color/color_small_text__dark_layout"
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_5sdp">
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="@dimen/_16sdp"
                         android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/close_icon_gray"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/close_icon_gray" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingStart="@dimen/_5sdp"
                         android:gravity="center|start|center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
                         android:text="@string/your_credit_card_is_expired"
-                        android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/dark_black_color"/>
+                        android:textColor="@color/color_small_text__dark_layout"
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_5sdp">
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="@dimen/_16sdp"
                         android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/close_icon_gray"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/close_icon_gray" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingStart="@dimen/_5sdp"
                         android:gravity="center|start|center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
                         android:text="@string/you_have_a_large_pending_transaction"
-                        android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/dark_black_color"/>
+                        android:textColor="@color/color_small_text__dark_layout"
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_5sdp">
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="@dimen/_16sdp"
                         android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/close_icon_gray"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/close_icon_gray" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingStart="@dimen/_5sdp"
                         android:gravity="center|start|center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
                         android:text="@string/you_ve_reached_your_credit_limit"
-                        android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/dark_black_color"/>
+                        android:textColor="@color/color_small_text__dark_layout"
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_5sdp">
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="@dimen/_16sdp"
                         android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/close_icon_gray"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/close_icon_gray" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingStart="@dimen/_5sdp"
                         android:gravity="center|start|center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
                         android:text="@string/your_purchase_was_flagged_as_fraud"
-                        android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/dark_black_color"/>
+                        android:textColor="@color/color_small_text__dark_layout"
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
@@ -237,17 +237,16 @@
             <Button
                 android:id="@+id/btnTryAgainPaymentFail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_20sdp"
-                android:background="@drawable/round_corner_btn_bg_blue"
-                android:backgroundTint="@color/blue_color"
+                android:background="@drawable/background_dark_button"
                 android:text="@string/try_entering_your_information_again"
-                android:textColor="@color/text_color_white"
                 android:textAllCaps="false"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="14sp" />
 
         </RelativeLayout>

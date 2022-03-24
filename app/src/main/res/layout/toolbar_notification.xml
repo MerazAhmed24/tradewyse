@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/appbar"
     android:layout_width="match_parent"
+    android:background="@color/color_app_dark_bg_india"
+    android:paddingTop="@dimen/_12sdp"
     android:layout_height="wrap_content"
     android:gravity="center">
 

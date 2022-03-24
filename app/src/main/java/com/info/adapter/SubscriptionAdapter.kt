@@ -57,17 +57,17 @@ class SubscriptionAdapter(var list: ArrayList<Subscription>, var context: Contex
 
         if (list[position].isSelected) {
             holder.itemView.layoutRoot.setBackgroundResource(R.drawable.selected_subscription);
-            holder.itemView.txtSubscriptionAmount.setTextColor(ContextCompat.getColor(context, R.color.text_color_white));
-            holder.itemView.txtSubscriptionName.setTextColor(ContextCompat.getColor(context, R.color.text_color_white));
+            holder.itemView.txtSubscriptionAmount.setTextColor(ContextCompat.getColor(context, R.color.color_small_text__dark_layout));
+            holder.itemView.txtSubscriptionName.setTextColor(ContextCompat.getColor(context, R.color.color_small_text__dark_layout));
         } else {
             holder.itemView.layoutRoot.setBackgroundResource(R.drawable.unselected_subscription);
-            holder.itemView.txtSubscriptionAmount.setTextColor(ContextCompat.getColor(context, R.color.textColor));
-            holder.itemView.txtSubscriptionName.setTextColor(ContextCompat.getColor(context, R.color.textColor));
+            holder.itemView.txtSubscriptionAmount.setTextColor(ContextCompat.getColor(context, R.color.color_text_dark_layout));
+            holder.itemView.txtSubscriptionName.setTextColor(ContextCompat.getColor(context, R.color.color_text_dark_layout));
         }
 
         if (list[position].planSubscribedByUser) {
             //holder.itemView.layoutDisable.setBackgroundColor(ContextCompat.getColor(context, R.color.disable_color));
-            holder.itemView.layoutRoot.setBackgroundTintList(context.getResources().getColorStateList(R.color.textColor, null));
+            holder.itemView.layoutRoot.setBackgroundTintList(context.getResources().getColorStateList(R.color.color_text_dark_layout, null));
             holder.itemView.layoutRoot.alpha = 0.5F;
             holder.itemView.txtYourCurrentPlan.visibility = View.VISIBLE;
             holder.itemView.txtYourCurrentPlan.setText("Your Current Plan")

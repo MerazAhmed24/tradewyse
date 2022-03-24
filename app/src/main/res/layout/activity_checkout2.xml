@@ -6,7 +6,7 @@
     android:id="@+id/parentView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/text_color_white"
+    android:background="@color/color_app_dark_bg_india"
     android:clickable="true"
     android:focusable="true"
     android:focusableInTouchMode="true"
@@ -17,7 +17,7 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:fillViewport="true"
         android:isScrollContainer="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -66,7 +66,7 @@
                     android:gravity="bottom"
                     android:paddingStart="@dimen/_8sdp"
                     android:text="30.00"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="30dp"
                     android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
                     android:layout_toEndOf="@+id/textViewAmount"
                     android:gravity="bottom"
                     android:text=" USD"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
@@ -106,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:alpha="0.35"
                         android:text="@string/service"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <TextView
@@ -117,7 +117,7 @@
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:layout_toStartOf="@+id/textViewCompanyName"
                         android:text="Premium Membership"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="16sp" />
 
                     <TextView
@@ -127,7 +127,7 @@
                         android:layout_alignParentEnd="true"
                         android:alpha="0.35"
                         android:text="@string/company"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_small_text__dark_layout"
                         android:textSize="14sp" />
 
                     <TextView
@@ -137,7 +137,7 @@
                         android:layout_below="@+id/companyTitle"
                         android:layout_alignParentEnd="true"
                         android:text="@string/app_name"
-                        android:textColor="@color/text_color_white"
+                        android:textColor="@color/color_text_dark_layout"
                         android:textSize="16sp" />
 
                 </RelativeLayout>
@@ -187,7 +187,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:text="@string/credit_card_details"
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -204,7 +204,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Secured By"
-                        android:textColor="@color/text_color_grey"
+                        android:textColor="@color/color_text_green"
                         android:textSize="12sp"
                         android:textStyle="normal" />
 
@@ -230,16 +230,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColorHint="@color/text_color_grey">
+                    android:textColorHint="@color/color_small_text__dark_layout">
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/edit_text_login_bg"
                         android:hint="@string/fullname_hint"
                         android:inputType="text"
                         android:padding="12dp"
-                        android:textColor="@color/dark_black_color"
-                        android:textColorHint="@color/text_color_grey"
+                        android:textColor="@color/color_text_dark_layout"
+                        android:textColorHint="@color/color_small_text__dark_layout"
                         android:textCursorDrawable="@null"
                         android:textStyle="bold" />
 
@@ -250,18 +251,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColorHint="@color/text_color_grey">
+                    android:textColorHint="@color/color_small_text__dark_layout">
 
                     <com.stripe.android.view.CardNumberEditText
                         android:id="@+id/cardNumberEditText"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/edit_text_login_bg"
                         android:hint="@string/cardno_hint"
                         android:inputType="number"
                         android:orientation="vertical"
                         android:padding="12dp"
-                        android:textColor="@color/dark_black_color"
-                        android:textColorHint="@color/text_color_grey"
+                        android:textColor="@color/color_text_dark_layout"
+                        android:textColorHint="@color/color_small_text__dark_layout"
                         android:textCursorDrawable="@null"
                         android:textStyle="bold" />
 
@@ -279,20 +281,21 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_6sdp"
                         android:layout_weight="1"
-                        android:textColorHint="@color/text_color_grey">
+                        android:textColorHint="@color/color_small_text__dark_layout">
 
                         <com.stripe.android.view.ExpiryDateEditText
                             android:id="@+id/expiryDateEditText"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/edit_text_login_bg"
                             android:hint="@string/expiry_date_hint"
                             android:inputType="number"
                             android:maxLength="5"
                             android:orientation="vertical"
                             android:padding="12dp"
                             android:textSize="15sp"
-                            android:textColor="@color/dark_black_color"
-                            android:textColorHint="@color/text_color_grey"
+                            android:textColor="@color/color_text_dark_layout"
+                            android:textColorHint="@color/color_small_text__dark_layout"
                             android:textCursorDrawable="@null"
                             android:textStyle="bold" />
 
@@ -306,19 +309,20 @@
                         android:layout_marginStart="@dimen/_6sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_weight="1"
-                        android:textColorHint="@color/text_color_grey">
+                        android:textColorHint="@color/color_small_text__dark_layout">
 
                         <EditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/edit_text_login_bg"
                             android:hint="@string/cvv_hint"
                             android:inputType="number"
                             android:maxLength="4"
                             android:orientation="vertical"
                             android:padding="12dp"
                             android:textSize="15sp"
-                            android:textColor="@color/dark_black_color"
-                            android:textColorHint="@color/text_color_grey"
+                            android:textColor="@color/color_text_dark_layout"
+                            android:textColorHint="@color/color_small_text__dark_layout"
                             android:textCursorDrawable="@null"
                             android:textStyle="bold" />
 
@@ -332,17 +336,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColorHint="@color/text_color_grey">
+                    android:textColorHint="@color/color_small_text__dark_layout">
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/edit_text_login_bg"
                         android:hint="@string/zipcode_hint"
                         android:inputType="number"
                         android:maxLength="5"
                         android:padding="12dp"
-                        android:textColor="@color/dark_black_color"
-                        android:textColorHint="@color/text_color_grey"
+                        android:textColor="@color/color_text_dark_layout"
+                        android:textColorHint="@color/color_small_text__dark_layout"
                         android:textCursorDrawable="@null"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -355,16 +360,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColorHint="@color/text_color_grey">
+                    android:textColorHint="@color/color_small_text__dark_layout">
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/edit_text_login_bg"
                         android:hint="@string/confirmemail_hint"
                         android:inputType="text"
                         android:padding="12dp"
-                        android:textColor="@color/dark_black_color"
-                        android:textColorHint="@color/text_color_grey"
+                        android:textColor="@color/color_text_dark_layout"
+                        android:textColorHint="@color/color_small_text__dark_layout"
                         android:textCursorDrawable="@null"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -381,7 +387,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hint:"
-                        android:textColor="@color/text_color_grey" />
+                        android:textColor="@color/color_small_text__dark_layout" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/txt_email"
@@ -389,7 +395,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text=""
-                        android:textColor="@color/text_color_grey" />
+                        android:textColor="@color/color_text_dark_layout" />
 
                 </LinearLayout>
 
@@ -397,15 +403,13 @@
                 <Button
                     android:id="@+id/btnSubscribe"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/round_corner_btn_bg_blue"
-                    android:backgroundTint="@color/blue_color"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_dark_button"
                     android:gravity="center"
                     android:text="Checkout"
-                    android:textAllCaps="true"
-                    android:textColor="@color/text_color_white"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="16sp" />
 
 

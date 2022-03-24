@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:textColor="@color/textColor"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="@dimen/text_size_xxxlarge"
             android:textStyle="bold"
             tools:text="$30" />
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:paddingBottom="@dimen/_10sdp"
-                android:textColor="@color/textColor"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/text_size_large"
                 android:textStyle="normal"
                 tools:text="A Week" />
@@ -55,7 +55,7 @@
                 android:layout_marginStart="@dimen/_15sdp"
                 android:paddingBottom="@dimen/_10sdp"
                 android:layout_marginTop="-15dp"
-                android:textColor="@color/textColor"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="@dimen/_11ssp"
                 android:textStyle="bold"
                 tools:text="Your Current Plan"/>

@@ -19,7 +19,7 @@
         android:clickable="true"
         android:focusable="true"
         tools:context=".AddTipsActivity"
-        android:background="@color/text_color_white"
+        android:background="@color/color_app_dark_bg_india"
         android:focusableInTouchMode="true">
 
         <include
@@ -56,7 +56,7 @@
                     android:layout_marginTop="@dimen/common_paddng_5dp"
                     android:gravity="center"
                     android:text="@string/time_to_become_a_member"
-                    android:textColor="@color/text_color_black"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="21sp"
                     android:textStyle="bold" />
 
@@ -140,7 +140,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="Select A Plan That’s Right For You"
-                        android:textColor="@color/text_color_grey"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:visibility="visible" />
 
@@ -187,7 +187,7 @@
                             android:paddingStart="@dimen/common_paddng_5dp"
                             android:paddingEnd="@dimen/common_paddng_10dp"
                             android:text="@string/feature_one"
-                            android:textColor="@color/dark_black_color"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="@dimen/_11ssp" />
 
                     </LinearLayout>
@@ -212,7 +212,7 @@
                             android:paddingStart="@dimen/common_paddng_5dp"
                             android:paddingEnd="@dimen/common_paddng_10dp"
                             android:text="@string/feature_two"
-                            android:textColor="@color/dark_black_color"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="@dimen/_11ssp" />
 
                     </LinearLayout>
@@ -237,7 +237,7 @@
                             android:paddingStart="@dimen/common_paddng_5dp"
                             android:paddingEnd="@dimen/common_paddng_10dp"
                             android:text="@string/feature_three"
-                            android:textColor="@color/dark_black_color"
+                            android:textColor="@color/color_small_text__dark_layout"
                             android:textSize="@dimen/_11ssp" />
 
                     </LinearLayout>
@@ -366,20 +366,20 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="@dimen/_10sdp"
             android:text="@string/money_back_guarantee"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="@dimen/text_size_large" />
 
 
         <android.widget.Button
             android:id="@+id/btn_continue_special_offer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_35sdp"
             android:layout_above="@+id/special_offer"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_5sdp"
-            android:background="@drawable/round_corner_btn_bg_blue"
+            android:background="@drawable/background_dark_button"
             android:enabled="false"
             android:text="@string/continues"
             android:textAllCaps="true"
