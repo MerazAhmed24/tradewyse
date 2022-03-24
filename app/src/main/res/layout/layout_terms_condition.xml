@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
-            android:background="@drawable/login_bg"
+            android:background="@color/color_app_dark_bg_india"
             android:scaleType="centerCrop" />
 
     </RelativeLayout>
@@ -44,14 +44,14 @@
                     android:id="@+id/webView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="45dp"
-                    android:padding="5dp"
                     android:layout_marginLeft="@dimen/common_paddng_20dp"
-                    android:layout_marginRight="@dimen/common_paddng_20dp"
-                    android:background="@drawable/login_bg"
                     android:layout_marginTop="@dimen/common_paddng_50dp"
+                    android:layout_marginRight="@dimen/common_paddng_20dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="@drawable/login_bg"
+                    android:padding="5dp"
 
-                />
+                    />
             </RelativeLayout>
         </ScrollView>
     </LinearLayout>
@@ -60,31 +60,29 @@
         android:id="@+id/btnLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/lyProfile"
-
         android:gravity="bottom|center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnCancelTerm"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:layout_weight="1"
-            android:background="@color/term_cancel_color"
+            android:background="@drawable/mentor_list_item_bg_rounded"
             android:text="@string/term_cancel"
             android:textAllCaps="false"
-            android:textColor="@color/text_color_white"
+            android:textColor="@color/color_text_dark_layout"
             android:textSize="@dimen/text_size_medium" />
 
         <Button
             android:id="@+id/btnAcceptTerm"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:layout_weight="1"
             android:text="@string/term_accept"
             android:textAllCaps="false"
-            android:textColor="@color/text_color_white"
-            android:background="@color/login_btn_color"
+            android:textColor="@color/color_text_dark_layout"
+            android:background="@drawable/background_dark_button"
             android:textSize="@dimen/text_size_medium" />
     </LinearLayout>
 </RelativeLayout>

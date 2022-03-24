@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_color">
+    android:background="@color/color_app_dark_bg_india">
 
 <!--    <include layout="@layout/toolbar_add_tip" />-->
 
@@ -15,6 +15,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
             android:layout_height="?attr/actionBarSize"
             android:orientation="horizontal">
 
@@ -67,7 +68,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/your_purchase_was_successful"
-                android:textColor="@color/dark_black_color"
+                android:textColor="@color/color_button_enable"
                 android:textSize="26sp"
                 android:textStyle="bold" />
 
@@ -83,7 +84,7 @@
                 android:gravity="center"
                 android:maxLines="1"
                 android:text="We’ve sent a receipt to your email."
-                android:textColor="@color/text_color_grey"
+                android:textColor="@color/color_text_dark_layout"
                 android:textSize="15sp"
                 android:textStyle="normal" />
 
@@ -114,7 +115,7 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_toStartOf="@+id/txtAmount"
                     android:text=""
-                    android:textColor="@color/text_color_grey"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="15sp"
                     android:textStyle="normal" />
 
@@ -126,7 +127,7 @@
                     android:layout_gravity="center"
                     android:gravity="end"
                     android:text=""
-                    android:textColor="@color/dark_black_color"
+                    android:textColor="@color/color_text_dark_layout"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -145,16 +146,15 @@
             <Button
                 android:id="@+id/btnLoginToUnlockSubs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_20sdp"
-                android:background="@drawable/round_corner_btn_bg_blue"
-                android:backgroundTint="@color/blue_color"
+                android:background="@drawable/background_dark_button"
                 android:text="@string/continues"
-                android:textAllCaps="true"
+                android:textAllCaps="false"
                 android:textColor="@color/text_color_white"
                 android:textSize="14sp" />
 
